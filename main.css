@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-	width: 200%;
+	width: 100%;
 	/*-webkit-transition: left 0.5s;*/
 	position: absolute; top: 0; left: 0;
 }
@@ -55,7 +55,7 @@ body {
 
 .items {
 	position: absolute;
-	left: 50%; top: 0;
+	left: 100%; top: 0;
 	width: 50%;
 	height: 100%;
 	display: none;

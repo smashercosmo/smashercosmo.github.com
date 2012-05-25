@@ -82,7 +82,7 @@
 }
 
 .slide.out {
-	-webkit-transform: translateX(-50%);
+	-webkit-transform: translateX(-100%);
 }
 
 .slide.in {
