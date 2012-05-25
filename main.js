@@ -63,6 +63,7 @@ var CategoriesView = Backbone.View.extend({
 	className: 'categories',
 	initialize: function(){
 		this.$list = $('<ul>');
+		this.$el.css({ width: $(window).width() })
 		_.bindAll(this);
 	},
 	render: function(){
@@ -156,6 +157,7 @@ var ItemsView = Backbone.View.extend({
 	initialize: function(){
 		_.bindAll(this);
 		eventEmitter.on('categorySelected', this.showItems);
+		this.$el.css({ width: $(window).width() })
 	},
 	render: function(){
 		this.collection.each(this.addItemSection);
@@ -177,7 +179,7 @@ var PageView = Backbone.View.extend({
 	el: '.container',
 	initialize: function(){
 		var categoriesView, itemsView;
-
+		this.$el.css({ width: $(window).width()*2 });
 		_.bindAll(this);
 		eventEmitter.on('categorySelected', this.showItems);
 		eventEmitter.on('showCategories', this.showCategories);
