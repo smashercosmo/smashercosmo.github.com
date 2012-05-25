@@ -205,7 +205,7 @@ var PageView = Backbone.View.extend({
 			//transitionRunning = false;
 			//that.itemsView.hideItems();
 		//});
-		this.$el.css({ 'left': '-100%'});
+		this.$el.css({ 'left': '0%'});
 	}
 });
 
