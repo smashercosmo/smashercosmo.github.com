@@ -4,15 +4,14 @@ _.templateSettings = {
 
 var router = new (Backbone.Router.extend({
 	routes: {
-		':category': 'loadItems',
-		'*path': 'loadCategories'
+		':category': 'showItems',
+		'*path': 'showCategories'
 	},
-	loadItems: function(category){
-		eventEmitter.trigger('categorySelected', category);
+	showItems: function(category){
+		eventEmitter.trigger('showItems', category);
 	},
-	loadCategories: function(){
+	showCategories: function(){
 		eventEmitter.trigger('showCategories');
-		$(window).scrollTop(1200);
 	}
 }));
 
@@ -37,6 +36,8 @@ var spinnerConfig = {
 var data = [{ category: 'men' }, { category: 'women' }, { category: 'kids' }, { category: 'all' }];
 
 var eventEmitter = _.extend({}, Backbone.Events);
+
+/* ------------------------------------------------ APPLICATION START ----------------------------------------------- */
 
 var categoriesCollection = new (Backbone.Collection.extend({
 	model: Backbone.Model.extend({
@@ -63,7 +64,6 @@ var CategoriesView = Backbone.View.extend({
 	className: 'categories',
 	initialize: function(){
 		this.$list = $('<ul>');
-		//this.$el.css({ width: $(window).width() })
 		_.bindAll(this);
 	},
 	render: function(){
@@ -81,14 +81,13 @@ var ItemsSectionView = Backbone.View.extend({
 	className: 'items-section',
 	initialize: function(){
 		_.bindAll(this);
-		eventEmitter.on('categorySelected', this.scrollToSection);
+		eventEmitter.on('showItems', this.scrollToSection);
+		eventEmitter.on('showCategories', this.stopLoading);
 		eventEmitter.on('itemsLoaded', this.resetHeight);
 		eventEmitter.on('itemsLoaded', this.insertContent);
-		eventEmitter.on('showCategories', this.stopLoading);
 		$(window).on('scroll', this.insertContent);
 		this.spinner = new Spinner(spinnerConfig);
 		this.adjustHeight();
-		this.counter = 1;
 	},
 	template:_.template('<span class="category-name" title="{{ category }}">{{ category }}</span><div class="items-list"></div>'),
 	render: function(){
@@ -112,20 +111,12 @@ var ItemsSectionView = Backbone.View.extend({
 		this.insertContent();
 	},
 	insertContent: function(){
-
-		//console.log(this.counter, ' ', this.model.get('category'), ' | loaded:', this.loaded, ' | inViewport: ', this.insideViewport(), ' ');
-
-		setTimeout($.proxy(function(){
-			if(!this.loaded && !this.loading && this.insideViewport() && this.visible){
-				this.loading = true;
-				this.spinner.spin(this.el);
-				console.log(this.counter, ' ', this.model.get('category'), ' | loaded:', this.loaded, ' | inViewport: ', this.insideViewport(), ' ');
-				//this.counter++;
-
-				var i = 10,
-					that = this;
-
-				this.timeout = setTimeout(function(){
+		var i = 10, that = this;
+		setTimeout(function(){
+			if(!that.loaded && !that.loading && that.insideViewport() && that.visible){
+				that.loading = true;
+				that.spinner.spin(that.el);
+				that.timeout = setTimeout(function(){
 
 					while(i--){
 						that.$itemsList.append($('<div>'))
@@ -133,11 +124,11 @@ var ItemsSectionView = Backbone.View.extend({
 
 					that.loaded = true;
 					that.loading = false;
-					eventEmitter.trigger('itemsLoaded');
 					that.spinner.stop();
+					eventEmitter.trigger('itemsLoaded');
 				}, 2000);
 			}
-		}, this), 0);
+		}, 0);
 	},
 	insideViewport: function(){
 		var scrollPosition = $(window).scrollTop(),
@@ -146,8 +137,6 @@ var ItemsSectionView = Backbone.View.extend({
 		return (offsetPosition >= scrollPosition && offsetPosition < scrollPosition + $(window).height()) || (offsetPosition + height > scrollPosition && offsetPosition + height <= scrollPosition + $(window).height());
 	},
 	stopLoading: function(){
-		//clearTimeout(this.timeout);
-		//this.spinner.stop();
 		this.visible = false;
 	}
 });
@@ -156,8 +145,8 @@ var ItemsView = Backbone.View.extend({
 	className: 'items',
 	initialize: function(){
 		_.bindAll(this);
-		eventEmitter.on('categorySelected', this.showItems);
-		//this.$el.css({ width: $(window).width() })
+		eventEmitter.on('showItems', this.show);
+		eventEmitter.on('pageLoad', this.onPageLoad);
 	},
 	render: function(){
 		this.collection.each(this.addItemSection);
@@ -167,56 +156,65 @@ var ItemsView = Backbone.View.extend({
 		var section = new ItemsSectionView({ model: model });
 		this.$el.append(section.render().el);
 	},
-	showItems: function(){
+	show: function(){
 		this.$el.show();
 	},
-	hideItems: function(){
+	hide: function(){
 		this.$el.hide();
+	},
+	onPageLoad: function(page){
+		if(page === 'categories'){
+			this.hide();
+		}
 	}
 });
 
 var PageView = Backbone.View.extend({
 	el: '.container',
 	initialize: function(){
-		var categoriesView, itemsView;
-		//this.$el.css({ width: $(window).width()*2 });
 		_.bindAll(this);
-		eventEmitter.on('categorySelected', this.showItems);
+		eventEmitter.on('showItems', this.showItems);
 		eventEmitter.on('showCategories', this.showCategories);
-
+		this.el.addEventListener('webkitAnimationEnd', this.onTransitionEnd, false);
+		this.render();
+	},
+	render: function(){
+		/* filling collections with data */
 		categoriesCollection.reset(data);
 		itemsCollection.reset(data);
 
+		/* initializing views */
 		this.categoriesView = new CategoriesView({ collection: categoriesCollection });
 		this.itemsView = new ItemsView({ collection: itemsCollection });
 
+		/* appending views content to the page */
 		this.$el.append(this.categoriesView.render().el);
 		this.$el.append(this.itemsView.render().el);
-
-		this.initial = true;
+	},
+	onTransitionEnd: function(){
+		eventEmitter.trigger('pageLoad', this.page);
 	},
 	showItems: function(){
-		//transitionRunning = true;
-		//this.$el.animate({ 'left': '-100%'}, 500, 'linear', function(){
-			//transitionRunning = false;
-		//});
-		//this.$el.css({ 'left': '-100%'});
-		this.$el.removeClass('in');
-		this.$el.addClass('out');
+		/* if it's a first time we load a page
+		 * we don't need any transition
+		 */
+		if(this.page){
+			this.$el
+				.addClass('items-list-page')
+				.removeClass('categories-page');
+		}
+		this.page = 'items';
 	},
 	showCategories: function(){
-		//var that = this;
-		//transitionRunning = true;
-		//this.$el.animate({ 'left': '0%'}, 500, 'linear', function(){
-			//transitionRunning = false;
-			//that.itemsView.hideItems();
-		//});
-		//this.$el.css({ 'left': '0%'});
-		if(!this.initial){
-			this.$el.removeClass('out');
-			this.$el.addClass('in');
+		/* if it's a first time we load a page
+		 * we don't need any transition
+		 */
+		if(this.page){
+			this.$el
+				.addClass('categories-page')
+				.removeClass('items-list-page');
 		}
-		this.initial = false;
+		this.page = 'categories';
 	}
 });
 

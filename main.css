@@ -26,6 +26,9 @@ body {
 	width: 100%;
 	position: absolute; top: 0; left: 0;
 	-webkit-transform: translateZ(0);
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-duration: 350ms;
+	-webkit-animation-fill-mode: backwards;
 }
 
 .categories {
