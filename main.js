@@ -190,13 +190,17 @@ var PageView = Backbone.View.extend({
 
 		this.$el.append(this.categoriesView.render().el);
 		this.$el.append(this.itemsView.render().el);
+
+		this.initial = true;
 	},
 	showItems: function(){
 		//transitionRunning = true;
 		//this.$el.animate({ 'left': '-100%'}, 500, 'linear', function(){
 			//transitionRunning = false;
 		//});
-		this.$el.css({ 'left': '-100%'});
+		//this.$el.css({ 'left': '-100%'});
+		this.$el.removeClass('in');
+		this.$el.addClass('out');
 	},
 	showCategories: function(){
 		//var that = this;
@@ -205,7 +209,12 @@ var PageView = Backbone.View.extend({
 			//transitionRunning = false;
 			//that.itemsView.hideItems();
 		//});
-		this.$el.css({ 'left': '0%'});
+		//this.$el.css({ 'left': '0%'});
+		if(!this.initial){
+			this.$el.removeClass('out');
+			this.$el.addClass('in');
+		}
+		this.initial = false;
 	}
 });
 

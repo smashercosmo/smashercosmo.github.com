@@ -24,7 +24,7 @@ body {
 .container {
 	width: 200%;
 	height: 100%;
-	-webkit-transition: left 0.5s;
+	/*-webkit-transition: left 0.5s;*/
 	position: absolute; top: 0; left: 0;
 }
 
