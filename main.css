@@ -23,7 +23,6 @@ body {
 
 .container {
 	width: 200%;
-	height: 100%;
 	/*-webkit-transition: left 0.5s;*/
 	position: absolute; top: 0; left: 0;
 }
@@ -33,7 +32,8 @@ body {
 }
 
 .categories {
-	float: left;
+	position: absolute;
+	left: 0; top: 0;
 	height: 200px;
 	width: 50%;
 }
@@ -53,7 +53,8 @@ body {
 }
 
 .items {
-	float: left;
+	position: absolute;
+	left: 50%; top: 0;
 	width: 50%;
 	height: 100%;
 	display: none;
