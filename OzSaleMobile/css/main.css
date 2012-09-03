@@ -1,16 +1,52 @@
+/* -------------------------------------------------- RESET START --------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+/* -------------------------------------------------- RESET END ----------------------------------------------------- */
+
+/* -------------------------------------------------- SHOP START ---------------------------------------------------- */
+
 .sales {
 	padding: 4px;
 }
 
-.sale > img {
+.ui-block-a > .sale {
+	padding-right: 2px;
+}
+
+.ui-block-b > .sale {
+	padding-left: 2px;
+}
+
+.sales-section > .ui-grid-a,
+.sales-section > .ui-grid-b {
+	overflow: visible;
+}
+
+.sale-content {
+	position: relative;
+}
+
+.sale-image {
+	width: 100%;
+	position: absolute; top: 100%;
+}
+
+.fake-sale {
+	width: 50%;
+	clear: both;
+}
+
+.fake-sale-content {
+	padding-right: 2px;
+}
+
+.fake-sale-image {
 	width: 100%;
 	display: block;
 }
 
-.sales > .ui-block-a > .sale {
-	padding-right: 2px;
-}
-
-.sales > .ui-block-b > .sale {
-	padding-left: 2px;
+.sales-section-header {
+	font-size: 16px;
+	color: #B2B2B2;
 }
