@@ -1,0 +1,16 @@
+.sales {
+	padding: 4px;
+}
+
+.sale > img {
+	width: 100%;
+	display: block;
+}
+
+.sales > .ui-block-a > .sale {
+	padding-right: 3px;
+}
+
+.sales > .ui-block-b > .sale {
+	padding-left: 3px;
+}
