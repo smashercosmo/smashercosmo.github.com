@@ -1,3 +1,4 @@
+/*
 $(function(){
 	$.ajax({
 		url: 'data/shop.json',
@@ -7,6 +8,6 @@ $(function(){
 		}
 	});
 });
+*/
 
-
-
+kos.dialog.wait();
