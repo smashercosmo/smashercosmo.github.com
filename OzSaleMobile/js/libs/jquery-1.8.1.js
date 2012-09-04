@@ -2527,7 +2527,7 @@
 					ret = document.createAttribute( name );
 					elem.setAttributeNode( ret );
 				}
-				return ( ret.value = value + "" );
+				return ( ret['value'] = value + "" );
 			}
 		};
 
@@ -3149,12 +3149,12 @@
 
 			// Fix target property, if necessary (#1925, IE 6/7/8 & Safari2)
 			if ( !event.target ) {
-				event.target = originalEvent.srcElement || document;
+				event['target'] = originalEvent.srcElement || document;
 			}
 
 			// Target should not be a text node (#504, Safari)
 			if ( event.target.nodeType === 3 ) {
-				event.target = event.target.parentNode;
+				event['target'] = event.target.parentNode;
 			}
 
 			// For mouse/key events, metaKey==false if it's undefined (#3368, #11328; IE6/7/8)

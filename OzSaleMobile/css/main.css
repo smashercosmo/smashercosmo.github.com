@@ -1,6 +1,13 @@
 /* -------------------------------------------------- RESET START --------------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
 
 /* -------------------------------------------------- RESET END ----------------------------------------------------- */
 
@@ -8,40 +15,30 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 
 .sales {
 	padding: 4px;
+	font-size: 0;
 }
 
-.ui-block-a > .sale {
-	padding-right: 2px;
+.sale {
+	display: inline-block;
+	width: 50%;
 }
 
-.ui-block-b > .sale {
+.sale:nth-child(odd) .sale-content {
 	padding-left: 2px;
 }
 
-.sales-section > .ui-grid-a,
-.sales-section > .ui-grid-b {
-	overflow: visible;
-}
-
-.sale-content {
-	position: relative;
-}
-
-.sale-image {
-	width: 100%;
-	position: absolute; top: 100%;
-}
-
-.fake-sale {
-	width: 50%;
-	clear: both;
-}
-
-.fake-sale-content {
+.sale:nth-child(even) .sale-content {
 	padding-right: 2px;
 }
 
-.fake-sale-image {
+.sale-title {
+	font-size: 9px;
+	color: #333;
+	text-decoration: none;
+	display: block;
+}
+
+.sale-image {
 	width: 100%;
 	display: block;
 }

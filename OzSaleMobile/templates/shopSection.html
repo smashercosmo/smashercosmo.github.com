@@ -1,0 +1,15 @@
+{{#each List}}
+{{#if Sales}}
+<section class="sales-section">
+    <h2 class="sales-section-header">{{Name}}</h2>
+    {{#each Sales}}
+    <div class="sale">
+        <div class="sale-content">
+            <a href="#" class="sale-title">{{Name}}</a>
+            <img class="sale-image" src="{{saleImage this}}" alt="Sale image">
+        </div>
+    </div>
+    {{/each}}
+</section>
+{{/if}}
+{{/each}}
