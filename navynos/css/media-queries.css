@@ -1,0 +1,45 @@
+@media (max-width: 767px) {
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	.main-navigation-inner {
+		border-bottom: none;
+	}
+
+	.main-navigation .brand {
+		margin-bottom: 20px;
+		float: none;
+	}
+
+	.main-navigation .nav {
+		margin: 0 0 0 -10px;
+	}
+
+	.main-navigation .nav > li > a {
+		border-bottom: none;
+	}
+
+	.promo-banner {
+		margin-top: 30px;
+	}
+
+	.promo-banner:first-child {
+		margin-top: 0;
+	}
+}
+
+@media (max-width : 460px) {
+	h1 {
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+}
