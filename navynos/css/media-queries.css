@@ -14,7 +14,13 @@
 
 	.main-navigation .brand {
 		margin-bottom: 20px;
+		padding-right: 0;
 		float: none;
+	}
+
+	.logo {
+		width: auto;
+		height: auto;
 	}
 
 	.main-navigation .nav {
@@ -35,6 +41,7 @@
 }
 
 @media (max-width : 460px) {
+
 	h1 {
 		font-size: 24px;
 	}
@@ -42,4 +49,5 @@
 	h2 {
 		font-size: 18px;
 	}
+
 }

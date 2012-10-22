@@ -4,6 +4,8 @@
 		2. brown  - #382E27
 */
 
+/* ------------------------------------------------------ BASE STYLES START -------------------------------------------------- */
+
 body {
 	background-color: #32261d;
 	color: #382E27;
@@ -34,6 +36,15 @@ a:focus {
 	background-color: #ffffff;
 }
 
+.column {
+	border-top: 4px solid #000000;
+	padding-top: 15px;
+}
+
+/* ------------------------------------------------------ BASE STYLES END ---------------------------------------------------- */
+
+/* ------------------------------------------------------ HEADER START ------------------------------------------------------- */
+
 .header-top {
 	background: #55493f;
 	background: -moz-linear-gradient(top, #55493f 0%, #40352c 85%);
@@ -52,28 +63,7 @@ a:focus {
 	padding-top: 30px;
 }
 
-.column {
-	border-top: 4px solid #000000;
-	padding-top: 15px;
-}
-
-.promo {
-	margin-bottom: 30px;
-}
-
-.promo-banner {
-	overflow: hidden;
-}
-
-.promo-banner-image {
-	width: 100%;
-}
-
-.logo {
-	background: url('../img/logo.png');
-	background: none, url('../img/logo.svg');
-	background-repeat: no-repeat;
-	background-size: 100%;
+.header-logo {
 	width: 222px;
 	height: 22px;
 }
@@ -158,3 +148,21 @@ a:focus {
 	background: none;
 	text-decoration: none;
 }
+
+/* ------------------------------------------------------ HEADER END --------------------------------------------------------- */
+
+/* ------------------------------------------------------ INDEX PAGE START --------------------------------------------------- */
+
+.promo {
+	margin-bottom: 30px;
+}
+
+.promo-banner {
+	overflow: hidden;
+}
+
+.promo-banner-image {
+	width: 100%;
+}
+
+/* ------------------------------------------------------ INDEX PAGE END ----------------------------------------------------- */
