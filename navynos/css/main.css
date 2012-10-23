@@ -195,11 +195,15 @@ a:focus {
 .catalog-section-title {
 	font: 30px Times, 'Times New Roman', serif;
 	font-weight: bold;
+	position: absolute;
+	width: 50px;
+	text-align: center;
 }
 
 .catalog-section-list {
-	margin: 0 0 10px 25px;
+	margin: 0 0 15px 45px;
 	list-style: none;
+	padding-top: 30px;
 }
 
 /* ------------------------------------------------------ INDEX PAGE END ----------------------------------------------------- */
