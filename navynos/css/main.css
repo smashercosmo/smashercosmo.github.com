@@ -9,7 +9,7 @@
 /* ------------------------------------------------------ BASE STYLES START -------------------------------------------------- */
 
 body {
-	background-color: #32261d;
+	background: url('../img/bg.jpg');
 	color: #382E27;
 	padding-top: 40px;
 	font-size: 13px;
@@ -79,6 +79,13 @@ a {
 	padding-bottom: 15px;
 	text-align: center;
 	color: #ffffff;
+	position: relative;
+}
+
+.header-top-logo {
+	position: absolute; top: 0; left: 30px; bottom: 0; right: 30px;
+	background: url('../img/logo-icon.svg') left bottom no-repeat;
+	background-size: 38px;
 }
 
 .header {
@@ -86,8 +93,7 @@ a {
 }
 
 .header-logo {
-	width: 222px;
-	height: 22px;
+	background: url('../img/logo.svg') left top no-repeat;
 }
 
 .main-navigation {
@@ -193,6 +199,16 @@ a {
 
 .promo-banner-image {
 	width: 100%;
+}
+
+.form-search-instruction {
+	font-family: 'Georgia', 'Times New Roman', sans-serif;
+	font-size: 18px;
+	text-align: right;
+	width: 275px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
 }
 
 .catalog {

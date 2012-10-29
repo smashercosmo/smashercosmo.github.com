@@ -1,4 +1,3 @@
-/*
 $.fn.dropdownHover = function(){
 	return this.each(function(){
 		var $el = $(this);
@@ -8,4 +7,4 @@ $.fn.dropdownHover = function(){
 			.next()
 			.on('mouseenter mouseleave', function(){ $el.dropdown('toggle') })
 	})
-};*/
+};

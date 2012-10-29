@@ -1,3 +1,12 @@
+@media (max-width: 979px) {
+	.header-top-logo {
+		background-size: contain;
+		background-position: center bottom;
+		top: 15px;
+		opacity: 0.2;
+	}
+}
+
 @media (max-width: 767px) {
 
 	h1 {
@@ -9,8 +18,7 @@
 	}
 
 	.header-logo {
-		width: auto;
-		height: auto;
+		width: 100%;
 	}
 
 	.main-navigation-inner {
@@ -29,6 +37,10 @@
 
 	.main-navigation .nav > li > a {
 		border-bottom: none;
+	}
+
+	.header-order-details-column {
+		margin-bottom: 15px;
 	}
 
 	.promo-banner {

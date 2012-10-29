@@ -1,7 +1,11 @@
 /* ------------------------------------------------------ HEADER START ------------------------------------------------------- */
 
-.main-navigation-inner {
-	filter: none;
+.main-navigation .dropdown-toggle {
+	margin-bottom: 0;
+}
+
+.header-logo {
+	background-image: url('../img/logo.png');
 }
 
 /* ------------------------------------------------------ HEADER END --------------------------------------------------------- */

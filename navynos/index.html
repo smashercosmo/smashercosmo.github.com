@@ -6,22 +6,27 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-responsive.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media-queries.css">
 	<title></title>
 	<!--[if lte IE 8]>
-		<link rel="stylesheet" href="css/ie.css">
+		<link rel="stylesheet" href="css/ie-old.css">
 		<script src="js/html5shiv.js"></script>
 	<![endif]-->
+	<!--[if lte IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+	<link rel="stylesheet" href="css/media-queries.css">
 </head>
 <body>
 
-<div class="container header-top">Заказ и доставка еды из ресторанов и кафе в Санкт-Петербурге</div>
+<div class="container header-top">
+	<div class="header-top-logo"></div>
+	Заказ и доставка еды из ресторанов и кафе в Санкт-Петербурге
+</div>
 <header class="container header">
 	<nav class="navbar main-navigation">
 		<div class="navbar-inner main-navigation-inner">
 			<a class="brand" href="#">
-				<img src="img/logo.svg" class="header-logo" alt="Навынос">
-				<!--[if lte IE 8]><div class="header-logo-ie"></div><![endif]-->
+				<img src="img/logo-fake.png" class="header-logo" alt="Навынос">
 			</a>
 			<ul class="nav" role="navigation">
 				<li class="active">
@@ -48,21 +53,21 @@
 		</div>
 	</nav>
 	<div class="row-fluid header-order-details">
-		<div class="span4">
+		<div class="span4 header-order-details-column">
 			<div class="header-order-details-title">Мой город:</div>
 			<div class="header-order-details-content">
 				<span class="header-order-details-city">Санкт-Петербург</span>
 				<span class="action-link">изменить</span>
 			</div>
 		</div>
-		<div class="span4">
+		<div class="span4 header-order-details-column">
 			<div class="header-order-details-title">Адрес доставки:</div>
 			<div class="header-order-details-content">
 				<span class="header-order-details-address">Каменноостровский проспект 55</span>
 				<span class="action-link">изменить</span>
 			</div>
 		</div>
-		<div class="span4">
+		<div class="span4 header-order-details-column">
 			<div class="header-order-details-title">Ваш заказ:</div>
 			<div class="header-order-details-content">
 				<span class="header-order-details-order">3 блюда на сумму 125.0 q</span>
@@ -73,6 +78,11 @@
 </header>
 <div class="main container">
 	<h1>Доставка еды в Санкт-Петербурге</h1>
+	<form class="form-search">
+		<label for="search" class="form-search-instruction">Введите ваш адрес и узнайте, в каком ресторане или кафе вы можете сделать заказ.</label>
+		<input type="text" id="search" class="input-medium search-query input-xxlarge">
+		<button type="submit" class="btn">Search</button>
+	</form>
 	<div class="row-fluid promo">
 		<div class="span4 promo-banner">
 			<img src="img/tmp/pizza.jpg" class="promo-banner-image" alt="">
@@ -217,7 +227,6 @@
 			<div style="height: 100px; background-color: pink;"></div>
 		</div>
 	</div>
-
 	<p>Санкт-Петербург — это чудесная архитектура, величественный Эрмитаж, потрясающие дворцы и огромное разнообразие ресторанов, которые готовы удовлетворить запросы любого гурмана. Большая часть этих заведений оказывает услуги доставки еды на дом или в офис, а все их предложения собраны в нашей службе заказа и доставки еды.</p>
 	<p>Заказ еды из ресторана — это лучшее решение для тех, кто хочет питаться не полуфабрикатами, а вкусной пищей. Ведь так часто у нас нет времени или желания стоять у плиты после рабочего дня! А бывает, что внезапно к нам приходят гости, и мы хотим угостить их чем-нибудь посущественней чая с печеньем. Заказ профессионально приготовленных в ресторане блюд поможет организовать и чудесный романтический вечер, и семейное торжество, и просто рядовой ужин с горячей, вкусной и полезной едой для семьи или друзей. Доставка еды из ресторанов в Санкт-Петербурге многими заведениями осуществляется даже ночью, даже разведенные мосты не проблема.</p>
 	<p>Современные петербуржцы заказывают еду через интернет именно в нашей службе. Это удобно тем, что перед вашими глазами список всех ресторанов, предлагающих доставку, и аппетитные фото блюд. Помимо этого вы можете выбрать кухню той страны, которая вам больше импонирует. Доставка из ресторанов происходит очень быстро, ведь наша задача — сохранить вашу еду горячей! Круглосуточная доставка еды в Санкт-Петербурге пользуется особой популярностью среди молодежи, ведь Санкт-Петербург — это клубная столица России. Навынос дает вам возможность просто, быстро и удобно заказать блюда из любимых рестороанов или кафе, побаловать себя и своих близких чем-то особенным, сделать вкусный сюрприз по случаю торжества.</p>
@@ -248,12 +257,8 @@
 		<div class="span5 column">
 			<h3>Заказывйте еду из ресторанов неподалеку</h3>
 			<p class="footer-cuisine-list"><b>Выберите ближайшую станцию метро: </b><a href="#">Лиговсикй проспект</a>, <a href="#">Маяковская</a>, <a href="#">Звенигородская</a>, <a href="#">Фрунзенская</a>.</p>
-
 			<p class="footer-cuisine-list"><b>Выберите ваш район: </b><a href="#">Московский</a>, <a href="#">Центральный</a>, <a href="#">Кировский</a>, <a href="#">Фрунзенский</a>.</p>
-
-			
 			<h3>Доставка блюд любой кухни</h3>
-			
 			<p class="footer-cuisine-list"><b>Выберите кухню: </b><a href="#">Европейская</a>, <a href="#">Русская</a>, <a href="#">Японская</a>, <a href="#">Итальянская</a>, <a href="#">Китайская</a>, <a href="#">Мексиканская</a>, <a href="#">Авторская</a>, <a href="#">Азербайджанская</a>, <a href="#">Американская</a>, <a href="#">Арабская</a>, <a href="#">Аргентинская</a>, <a href="#">Армянская</a>, <a href="#">Белорусская</a>, <a href="#">Бельгийская</a>, <a href="#">Болгарская</a>, <a href="#">Вьетнамская</a>, <a href="#">Греческая</a>, <a href="#">Грузинская</a>, <a href="#">Датская</a>, <a href="#">Еврейская</a>, <a href="#">Индийская</a>, <a href="#">Индонезийская</a>, <a href="#">Интернациональная</a>, <a href="#">Испанская</a>, <a href="#">Карибская</a>, <a href="#">Корейская</a>, <a href="#">Кубинская</a>, <a href="#">Латвийская</a>, <a href="#">Литовская</a>, <a href="#">Марокканская</a>, <a href="#">Молдавская</a>, <a href="#">Немецкая</a>, <a href="#">Норвежская</a>, <a href="#">Пивные Рестораны</a>, <a href="#">Португальская</a>, <a href="#">Рыбные Рестораны</a>, <a href="#">Сербская</a>, <a href="#">Средиземноморская</a>, <a href="#">Тайская</a>, <a href="#">Татарская</a>, <a href="#">Турецкая</a>, <a href="#">Узбекская</a>, <a href="#">Украинская</a>, <a href="#">Французская</a>, <a href="#">Чешская</a>, <a href="#">Шведская</a>, <a href="#">Югославская</a>.</p>
 		</div>
 		<div class="span2 column"></div>
