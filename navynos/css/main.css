@@ -177,6 +177,10 @@ a {
 	text-decoration: none;
 }
 
+.header-order-details {
+	margin-bottom: 30px;
+}
+
 .header-order-details-title {
 	font-weight: bold;
 }
@@ -201,14 +205,61 @@ a {
 	width: 100%;
 }
 
-.form-search-instruction {
+.index-form-search {
+	text-align: center;
+	padding-top: 30px;
+	margin-bottom: 60px;
+}
+
+.index-form-search-instruction {
 	font-family: 'Georgia', 'Times New Roman', sans-serif;
 	font-size: 18px;
 	text-align: right;
-	width: 275px;
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 15px;
+	width: 31.623931623931625%;
+}
+
+.index-form-search-curly {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 65px;
+	margin-left: 2.564102564102564%;
+	background: url('../img/curly.svg') center center no-repeat;
+}
+
+input.index-form-search-input {
+	width: 40.17094017094017%;
+	margin-left: 2.564102564102564%;
+	margin-bottom: 0;
+}
+
+.index-form-search-submit {
+	font-family: 'Georgia', 'Times New Roman', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	width: 14.52991452991453%;
+	margin-left: 2.564102564102564%;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	background: #E73B23;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 1px solid #E73B23;
+	padding: 4px 14px;
+	font-size: 20px;
+	line-height: 20px;
+	position: relative;
+}
+
+.index-form-search-submit-icon {
+	position: absolute; top: 50%; left: 50%;
+	margin-top: -7px;
+	margin-left: -7px;
+	display: none;
 }
 
 .catalog {
