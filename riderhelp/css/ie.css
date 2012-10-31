@@ -1,0 +1,46 @@
+.clearfix { zoom: 1; }
+br { font-size: 0; }
+.ul { list-style: disc; list-style-position: inside; }
+.ul li { padding-left: 0; }
+.ol { list-style: decimal; list-style-position: inside; }
+.ol li { padding-left: 0; }
+
+.main-menu ul {
+	zoom: 1;
+	text-justify: newspaper;
+	text-align-last: justify;
+}
+.main-menu ul:after, .main-menu li {
+	display: inline; zoom: 1;
+	text-align-last: auto;
+}
+
+.footer-menu {
+	zoom: 1;
+	text-justify: newspaper;
+	text-align-last: justify;
+}
+.footer-menu:after, .footer-menu div, .footer-menu .sep {
+	display: inline; zoom: 1;
+	text-align-last: auto;
+}
+
+.tab-navigation li { zoom: expression(runtimeStyle.zoom = 1, insertAdjacentHTML('beforeEnd', '<span class="tab-right-side"></span>'), insertAdjacentHTML('afterBegin', '<span class="tab-left-side"></span>')); }
+
+.piste-map-title h3, .piste-map-title div { display: inline; zoom: 1; }
+
+.request-form .input { padding: 0 0 0 6px; }
+.request-form input[type=text], .request-form textarea { margin: 0 0 0 -6px; }
+
+.gallery-thumbnails { position: relative; }
+
+.choose-resort-select {
+	border-width: 3px;
+	border-style: solid;
+	border-color: #ffffff;
+	left: -12px; top: -12px;
+}
+
+.choose-resort-opened .choose-resort-select {
+	border-color: #ccc;
+}

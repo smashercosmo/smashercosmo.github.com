@@ -1,0 +1,1069 @@
+
+/* ---------------------------------------------- COMMON STYLES START ----------------------------------------------- */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+
+html { font-size: 100%; overflow-y: scroll; }
+body { margin: 0; font-size: 12px; line-height: 1.231; }
+body, button, input, select, textarea { font-family: sans-serif; color: #333; }
+
+a { color: #0060af; }
+a:visited { color: #551a8b; }
+a:hover {  }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+b, strong { font-weight: bold; }
+small { font-size: 85%; }
+sub, sup { line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.45em; }
+sub { bottom: -0.25em; }
+p { margin: 0 0 15px 0; }
+
+dd { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+.ul li { position: relative; padding-left: 15px; }
+.ul li:before {
+	content: '';
+	width: 5px; height: 5px;
+	position: absolute; left: 0; top: 50%;
+	margin-top: -2px;
+	background: url('../img/main-sprite.png') -266px -84px;
+}
+.ol { counter-reset: list; }
+.ol li:before {
+	counter-increment: list;
+    content: counter(list)".";
+	margin-right: 6px;
+	color: #0060af;
+}
+
+
+img { border: 0; vertical-align: middle; }
+figure { margin: 0; }
+
+form { margin: 0; }
+label { cursor: pointer; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+table { border-collapse: collapse; border-spacing: 0; width: 100%; table-layout: fixed; margin-bottom: 10px; }
+td, th { vertical-align: middle; border: 1px solid #cccccc; padding: 5px 10px; text-align: center; }
+th { background: #ededed; }
+td:first-child { text-align: left; }
+td b { display: block; }
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+
+h1, h2, h3, h4, h5 { margin: 0; font-weight: normal; }
+h1 { font-size: 22px; color: #e3001a; margin-bottom: 20px; }
+h2 { font-size: 18px; line-height: 1.1; color: #e3001a; margin-bottom: 10px; }
+h3 { font-size: 16px; margin-bottom: 10px; }
+h4 { font-size: 14px; }
+h5 { font-size: 12px; font-weight: bold; }
+h1 a { text-decoration: none; }
+h1 span { color: #0060af;  }
+
+.triangle {
+	width: 0; height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid;
+	position: absolute; top: 50%; left: 100%;
+	margin: -1px 0 0 5px;
+}
+
+.star {
+	color: #CC0000;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: text-top;
+}
+
+.form-error, .form-error-text {
+	color: #CC0000;
+}
+
+.form-error-text { position: absolute; }
+
+.all-link { color: #cc0000; }
+.all-link:hover { color: #ff0000; }
+.webcam-link, .twitter-link, .full-screen-link { position: relative; }
+.webcam-link-icon, .twitter-link-icon, .full-screen-link-icon {
+	position: absolute; top: 50%; left: 0;
+	background-image: url('../img/main-sprite.png');
+}
+.webcam-link { padding-left: 18px; }
+.webcam-link-icon {
+	background-position: -261px -53px;
+	width: 14px; height: 16px;
+	margin-top: -7px;
+}
+.webcam-link-icon.switched-off { background-position: -275px -74px; }
+.twitter-link { padding-left: 16px; }
+.twitter-link-icon {
+	background-position: -261px -69px;
+	width: 12px; height: 15px;
+	margin-top: -8px;
+}
+.full-screen-link { padding-right: 15px; }
+.full-screen-link-icon {
+	background-position: -261px -91px;
+	width: 10px; height: 10px;
+	margin-top: -3px;
+	left: auto; right: 0;
+}
+.dotted {
+	border-bottom: 1px dotted;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.rss-icon {
+	background: url('../img/main-sprite.png') -275px 0;
+	width: 14px; height: 14px;
+	position: absolute; top: 50%; left: 100%;
+	margin: -5px 0 0 8px;
+}
+
+.tab-navigation li {
+	float: left;
+	line-height: 40px;
+	height: 40px;
+	background: url('../img/tabs-bg.png') repeat-x;
+	border-top: 1px solid #cccccc;
+	padding: 0 10px;
+	margin-right: 15px;
+	position: relative; top: 1px;
+	left: 35px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.tab-navigation a { text-decoration: none; color: #333333; }
+
+/* hell hack for ie - the more tabs we have, the longer will be the chain :) */
+.tab-navigation li:first-child { z-index: 20; }
+.tab-navigation li ~ li { z-index: 19; }
+.tab-navigation li ~ li ~ li { z-index: 18; }
+.tab-navigation li ~ li ~ li ~ li { z-index: 17; }
+.tab-navigation li ~ li ~ li ~ li ~ li { z-index: 16; }
+.tab-navigation li ~ li ~ li ~ li ~ li ~ li { z-index: 15; }
+.tab-navigation li ~ li ~ li ~ li ~ li ~ li ~ li { z-index: 14; }
+.tab-navigation li ~ li ~ li ~ li ~ li ~ li ~ li ~ li { z-index: 15; }
+
+.tab-navigation li:before, .tab-navigation li:after, .tab-right-side, .tab-left-side {
+	content: "";
+	width: 30px; height: 40px;
+	background-image: url('../img/main-sprite.png');
+	background-position: -60px -162px;
+	position: absolute; top: -1px; left: -30px;
+	z-index: 0;
+}
+.tab-navigation li:after, .tab-right-side { background-position: -90px -162px; left: 100%; }
+
+.tab-navigation li.selected {
+	background: #fff;
+	z-index: 30;
+	cursor: auto;
+	font-weight: bold;
+}
+.tab-navigation li.selected:before, .tab-navigation li.selected:after, li.selected .tab-right-side, li.selected .tab-left-side { background-position: 0 -162px; }
+.tab-navigation li.selected:after, li.selected .tab-right-side { background-position: -30px -162px; }
+
+.tab-content {
+	border: 1px solid #cccccc;
+	padding: 20px 20px 40px 20px;
+	margin-top: -1px;
+}
+
+.show-hide-navigation { margin-bottom: 15px; }
+
+.show-hide-navigation  li {
+	display: inline;
+	font-size: 14px;
+	border-left: 1px solid #cccccc;
+	margin-right: 15px;
+	padding-left: 15px;
+}
+
+.show-hide-navigation li:first-child {
+	border: none;
+	padding: 0;
+}
+
+.show-hide-navigation span {
+	color: #0060af;
+	border-bottom: 1px dashed;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.show-hide-navigation span.selected {
+	cursor: auto;
+	font-weight: bold;
+	color: #333333;
+	border-bottom-color: transparent;
+}
+
+
+.show-hide-content > div { display: none; }
+.show-hide-content > div.selected { display: block; }
+
+.show-hide-navigation.vertical li {
+	display: list-item;
+	border: none;
+	padding: 0;
+	margin: 10px 0 0 0;
+}
+.show-hide-navigation.vertical li:first-child { margin: 0; }
+
+.float-left {
+	float: left;
+	margin: 0 15px 10px 0;
+}
+
+.float-right {
+	float: right;
+	margin: 0 0 10px 15px;
+}
+
+/* ---------------------------------------------- COMMON STYLES END ------------------------------------------------- */
+
+/* ---------------------------------------------- MAIN STYLES START ------------------------------------------------- */
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	font-family: Tahoma, sans-serif;
+}
+
+#bg {
+	background: url("../img/bg.jpg") repeat-x 265px 0;
+	position: absolute;
+	width: 100%; min-height: 100%;
+}
+
+#container {
+	width: 1000px;
+	margin: auto;
+}
+
+#main { margin-bottom: 75px; }
+
+#content {
+	width: 710px;
+	float: left;
+	position: relative;
+	background: #ffffff;
+	padding: 0 15px;
+}
+
+h1 ~ .page-description { font-size: 18px; color: #333333; margin: -20px 0 20px 0; }
+
+.left-column {
+	width: 240px;
+	margin-right: 20px;
+	float: left;
+}
+.right-column {
+	overflow: hidden;
+}
+
+.fade {
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+	background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	width: 100%; height: 40px;
+	position: absolute; top: -40px; left: 0; z-index: 0;
+}
+
+.main-menu {
+	position: relative;
+	z-index: 1;
+	margin-top: -45px;
+	margin-bottom: 25px;
+}
+
+.main-menu ul {
+	line-height: 0;
+	font-size: 1px;
+	text-align: justify;
+}
+
+.main-menu ul:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+	text-align: left;
+}
+
+.main-menu li {
+	line-height: 1.231;
+	font-size: 14px;
+	display: inline-block;
+    vertical-align: bottom;
+	text-align: center;
+}
+.main-menu .active a {
+	color: #e3001a;
+}
+
+.main-menu a {
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+.main-menu span { display: block; }
+
+.main-menu i {
+	display: inline-block;
+	height: 54px;
+	background-image: url("../img/main-sprite.png");
+	margin: 0 auto 5px auto;
+	position: relative;
+}
+
+.main-menu i b {
+	background: url("../img/main-sprite.png") -213px -60px;
+	width: 10px; height: 11px;
+	position: absolute; left: 58px; top: 12px;
+	display: none;
+}
+.main-menu li.active i b {
+	display: block;
+}
+
+.main-menu-about i { background-position: 0 -108px; width: 83px; }
+.main-menu-tickets i { background-position: -83px -108px; width: 83px; }
+.main-menu-transfer i { background-position: -166px -108px; width: 89px; }
+.main-menu-room i { background-position: -255px -108px; width: 82px; }
+.main-menu-rider i { background-position: -337px 0; width: 83px; }
+.main-menu-vacation i { background-position: -337px -54px; width: 80px; }
+.main-menu-map i { background-position: -337px -108px; width: 80px; }
+.main-menu-map { margin-left: -8px; }
+
+/* ---------------------------------------------- MAIN STYLES END --------------------------------------------------- */
+
+/* ---------------------------------------------- HEADER START ------------------------------------------------------ */
+
+header {
+	height: 215px;
+	background: url("../img/snow-flakes.png") no-repeat 190px 0;
+	position: relative;
+}
+
+.header-logo {
+	position: absolute; top: 15px; left: 0;
+	width: 257px; height: 118px;
+	background: url("../img/main-sprite.png") 0 -293px;
+	display: block;
+}
+.header-logo-dashed-line {
+	width: 292px;
+	height: 91px;
+	background: url("../img/main-sprite.png") 0 -202px;
+	position: absolute;
+	left: -260px;
+	top: 53px;
+}
+
+.site-description {
+	color: #fff;
+	position: absolute; top: 45px; left: 500px;
+	text-align: justify;
+	text-align-last: justify;
+	width: 300px;
+}
+.site-description span {
+	font-size: 22px; line-height: 1;
+	font-weight: normal;
+	text-transform: uppercase;
+	white-space: nowrap;
+	letter-spacing: 1px;
+}
+.site-description small { font-size: 18px; font-weight: normal; white-space: nowrap; }
+
+.site-description:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+
+.own-social-button { position: absolute; right: 0; top: 55px; color: #ffffff; }
+.own-social-button-text {
+	font-size: 11px;
+	background: #ed1c24;
+	border: 1px solid #cc0000;
+	padding: 2px 5px 4px;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: top;
+}
+.own-social-button-counter {
+	background: #14446e;
+	border: 1px solid #c3cad2;
+	padding: 3px 5px 3px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+.own-social-button-counter i {
+	position: absolute; top: 50%; left: -5px;
+	width: 5px; height: 7px;
+	margin-top: -3px;
+	background: url('../img/main-sprite.png') -261px -84px;
+}
+
+.vk-date-lang {
+	float: right;
+}
+
+.date-lang {
+	background: #14446e;
+	padding: 3px 10px 5px;
+	font-size: 11px;
+	color: #ffffff;
+	display: inline-block;
+}
+
+.date-lang span, .date-lang a {
+	display: inline-block;
+	position: relative;
+	color: #ffffff;
+}
+
+.date-lang .lang { padding-left: 18px; color: #ffffff; text-decoration: none; }
+
+.date-lang .separator { padding: 0 8px; }
+
+.date-lang .lang i {
+	width: 13px; height: 9px;
+	background: url("../img/main-sprite.png") -261px 0;
+	position: absolute; top: 50%; left: 0;
+	margin-top: -4px;
+}
+
+.header-vk-like { display: inline-block; vertical-align: top; }
+#vk_like { width: 140px !important; }
+
+/* ---------------------------------------------- HEADER END -------------------------------------------------------- */
+
+/* ---------------------------------------------- CONTENT START ----------------------------------------------------- */
+
+/* ------------------------------- INDEX PAGE START --------------------------------- */
+
+.avatar { position: relative; }
+.avatar img { position: absolute; top: 0; left: 0; z-index: 0 }
+.avatar-frame {
+	border-width: 10px 10px 0 10px;
+	border-color: #dfebf5;
+	border-color: rgba(255,255,255,0.5);
+	border-style: solid;
+	width: 220px; height: 257px;
+	position: relative; z-index: 1;
+}
+.avatar figcaption {
+	position: relative; z-index: 1;
+	text-align: center;
+	background: #dfebf5;
+	background: rgba(255,255,255,0.5);
+	height: 39px;
+	padding-top: 6px;
+}
+.avatar-contacts {
+	font-weight: bold;
+	padding: 13px;
+	background: #14446e;
+	color: #ffffff;
+	margin-bottom: 20px;
+	letter-spacing: -3px;
+}
+.avatar-contacts-phone, .avatar-social-buttons {
+	display: inline-block;
+	width: 100%;
+	margin-right: -100%;
+	vertical-align: middle;
+}
+.avatar-contacts-phone { letter-spacing: normal; }
+.avatar-social-buttons { text-align: right; }
+.avatar-social-buttons a {
+	width: 16px; height: 16px;
+	display: inline-block;
+	margin-left: 4px;
+	background-image: url('../img/main-sprite.png');
+}
+.avatar-vk-icon { background-position: -275px -14px; }
+.avatar-fb-icon { background-position: -275px -30px; }
+.avatar-tw-icon { background-position: -275px -46px; }
+
+.video { margin-bottom: 10px; }
+.slope-condition a { font-size: 12px; display: inline-block; margin-left: 5px; }
+
+/* ------------------------------- INDEX PAGE END ----------------------------------- */
+
+/* ------------------------------- KATALKI PAGE START ------------------------------- */
+
+.common-slope-map { margin-bottom: 30px; }
+.common-slope-map-title { font-size: 22px; margin-bottom: 10px; }
+
+.place-common-info, .prices-characteristics, .piste-map, .photos-videos-webcams-place {
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+.place-title {
+	color: #e3001a;
+	font-size: 22px;
+	margin-bottom: 15px;
+	line-height: 1;
+}
+.place-contacts {
+	float: left;
+	width: 35%;
+	margin-right: 5%;
+}
+.place-contacts > div {
+	margin-bottom: 10px;
+}
+
+.place-description {
+	overflow: hidden;
+}
+
+.prices-menu-title {
+	font-size: 16px;
+	color: #cc0000;
+	margin-bottom: 10px;
+}
+
+.prices-characteristics .show-hide-navigation {
+	float: left;
+	width: 20%;
+}
+
+.prices-characteristics .show-hide-content {
+	overflow: hidden;
+}
+
+.characteristics-heights, .characteristics-chairlifts, .characteristics-pistes { float: left; }
+.characteristics-heights {
+	width: 25%;
+}
+
+.characteristics-chairlifts {
+	width: 25%;
+}
+
+.characteristics-pistes {
+	width: 49%;
+}
+
+.chairlifts-title, .heights-title, .pistes-title {
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.chairlift-type {
+	display: inline-block;
+	padding-left: 30px;
+	position: relative;
+	height: 26px;
+	line-height: 26px;
+	margin: 0 10px 10px 0;
+}
+.chairlift-icon {
+	width: 30px; height: 26px;
+	position: absolute; top: 0; left: 0;
+	background-image: url('../img/main-sprite.png');
+}
+.chairlifts-number {
+	background: #61b4f2;
+	font-size: 11px;
+	color: #ffffff;
+	display: inline-block;
+	width: 16px; height: 16px;
+	line-height: 15px;
+ 	text-align: center;
+}
+.big-cabin { background-position: -120px -162px; }
+.small-cabin { background-position: -150px -162px; }
+.chair-lift { background-position: -180px -162px; }
+.ass-lift { background-position: -210px -162px; }
+.self-lift { background-position: -240px -162px; }
+
+.piste { margin-bottom: 10px; }
+.piste-length { font-size: 11px; }
+.piste-graph { height: 6px; }
+.green-piste { background-color: #339900; }
+.blue-piste { background-color: #0060af; }
+.red-piste { background-color: #cc0000; }
+.black-piste { background-color: #333333; }
+
+.piste-map-title {
+	margin-bottom: 6px;
+	letter-spacing: -3px;
+}
+.piste-map-title h3, .piste-map-title div {
+	display: inline-block;
+	width: 100%;
+	margin-right: -100%;
+	vertical-align: middle;
+	letter-spacing: normal;
+}
+.piste-map-title h3 { margin-bottom: 0; }
+.piste-map-title div { text-align: right; }
+
+.photos-videos, .shops-resto {
+	float: left;
+	width: 68%;
+}
+.photo {
+	float: left;
+	margin-right: 20px;
+	text-align: center;
+	width: 120px;
+}
+.photo img { display: block; margin-bottom: 6px; }
+.web-cams, .official-site { overflow: hidden; }
+.web-cams li { margin-bottom: 10px; }
+
+td.prices-table-tariff { text-align: left; }
+th.prices-table-tariff { width: 40%; }
+
+/* ------------------------------- KATALKI PAGE END --------------------------------- */
+
+/* ------------------------------- TRANSFER PAGE START ------------------------------ */
+
+.transfer { padding-top: 40px; }
+.transfer h2 { line-height: 1.231; margin-bottom: 15px; }
+.transfer img { float: left; margin-right: 60px; }
+.transfer-prices-place {
+	overflow: hidden;
+}
+.transfer-prices { margin-bottom: 20px; }
+.transfer-title {
+	font-size: 18px;
+	clear: both;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* ------------------------------- TRANSFER PAGE END -------------------------------- */
+
+/* ------------------------------- FORMS PAGE START --------------------------------- */
+
+.request-form label { 
+	display: block;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.request-field-desc {
+	display: block;
+}
+
+.request-field {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.request-form .input { display: block; }
+
+.request-form input[type=text], .request-form textarea {
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.request-form textarea { min-height: 100px; }
+
+.request-field-phone, .request-field-email { width: 48%; }
+.request-field-phone { float: left; }
+.request-field-email { float: right; }
+
+.request-submit {
+	background: #CC0000;
+	border: medium none;
+	color: #FFFFFF;
+	height: 35px;
+	width: 140px;
+	font-size: 14px;
+}
+
+/* ------------------------------- FORMS PAGE END ----------------------------------- */
+
+/* ------------------------------- GALLERY PAGE START-------------------------------- */
+
+#gallery {
+	margin-bottom: 25px;
+}
+
+.gallery-desc {
+	margin-bottom: 15px;
+}
+
+.gallery-photo-big {
+	position: relative;
+}
+
+.gallery-photo-title {
+	padding: 10px 0;
+    text-align: center;
+}
+
+.gallery-scroller {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.gallery-thumbnails {
+	overflow: hidden;
+	margin-left: -5px;
+	white-space: nowrap;
+}
+
+.gallery-thumbnails a {
+	display: inline-block;
+	position: relative;
+	margin-left: 5px;
+}
+
+.gallery-arrow-left, .gallery-arrow-right {
+	width: 0; height: 0;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	position: absolute; top: 50%;
+	margin-top: -3px;
+	cursor: pointer;
+}
+
+.gallery-arrow-left {
+	border-right: 6px solid #14446e;
+	left: -14px;
+}
+
+.gallery-arrow-right {
+	border-left: 6px solid #14446e;
+	right: -14px;
+}
+
+.hotels-number {
+	color: #cccccc;
+	margin-bottom: 10px;
+}
+
+.other-hotels h3 {
+	margin-bottom: 20px;
+}
+
+.other-hotels-left, .other-hotels-right { width: 49%; margin-bottom: 15px; }
+.other-hotels-left { float: left; }
+.other-hotels-right { float: right; }
+
+.hotel-photo {
+	float: left;
+	display: block;
+	margin-right: 15px;
+}
+
+.hotel-desc {
+	overflow: hidden;
+}
+
+.hotel-title {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.all-hotels-link {
+	font-weight: bold;
+	clear: both;
+	display: inline-block;
+}
+
+/* ------------------------------- GALLERY PAGE END --------------------------------- */
+
+/* ------------------------------- ASIDE START -------------------------------------- */
+
+aside { width: 227px; float: right; margin-top: -40px; padding: 18px 16px 16px 17px; background: #ffffff; }
+
+.choose-resort {
+	height: 45px;
+	margin-bottom: 20px;
+	position: relative;
+	z-index: 1;
+}
+.choose-resort-title { position: relative; z-index: 1; }
+.choose-resort-opened .choose-resort-select { box-shadow: 0 0 6px 0 #666666; }
+.choose-resort-opened .choose-resort-select li { display: list-item; }
+.choose-resort-select {
+	background: #FFFFFF;
+	position: absolute; left: -9px; top: -9px;
+	padding: 30px 35px 15px 8px;
+}
+.choose-resort-select li { margin-top: 4px; display: none }
+.choose-resort-select a {
+	font-size: 16px;
+	color: #006699;
+	position: relative;
+	text-decoration: none;
+	outline: none;
+}
+.choose-resort-select .triangle { display: none; }
+.choose-resort-select li:first-child { margin-top: 0; display: list-item; }
+.choose-resort-select li:first-child .triangle { display: block; }
+.choose-resort-select li:first-child a { color: #cc0000; }
+
+.aside-menu { margin-bottom: 20px; }
+.aside-menu li { font-size: 16px; margin-top: 10px; }
+.aside-menu li:first-child { margin-top: 0; }
+
+.calc { padding: 8px 8px 12px 8px; border: 1px solid #cccccc; margin-bottom: 20px; }
+.calc h2 { margin-bottom: 14px; }
+.calc-form { border-bottom:  1px solid #cccccc; padding-bottom: 15px; margin-bottom: 10px; }
+.calc-field { margin-top: 10px; }
+.calc-field:first-child { margin-top: 0; }
+.calc label, .calc .input {
+    display: inline-block;
+	width: 100%;
+	margin-right: -100%;
+}
+.calc .input { text-align: right; }
+.calc label span { display: inline-block; width: 90px; position: relative; }
+.calc input { width: 110px; position: relative; text-align: center; }
+
+.calc-total { line-height: 1.5; }
+.calc-expenses { color: #cc0000; }
+.calc-alco { color: #0060af; }
+
+.cottages a {
+	display: block;
+	margin-bottom: 4px;
+	font-size: 14px;
+}
+
+.cottages img {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.cottages div {
+	margin-bottom: 20px;
+}
+
+/* ------------------------------- ASIDE END ---------------------------------------- */
+
+/* ------------------------------- INDEPENDENT BLOCKS START ------------------------- */
+
+.reviews, .friends, .offers, .faq, .weather, .index-news, .contacts { margin-bottom: 20px; }
+.reviews h2, .friends h2, .offers h2, .faq h2, .weather h2, .index-news h2 {
+	letter-spacing: normal;
+	margin-bottom: 14px;
+}
+
+.review, .offer, .index-news-item { padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #cccccc; }
+.review-date, .offer-title, .index-news-title { margin-bottom: 4px; display: block; }
+.review p, .offer p, .index-news-item p { margin: 0; }
+
+.index-news h2 span { display: inline-block; position: relative; }
+.index-news-title { font-weight: bold; }
+.index-news-title:hover { color: #4696d6; }
+
+.friends { letter-spacing: -3px; }
+.friends a, .friends span { display: inline-block; margin: 0 5px 5px 0; }
+
+.offer { overflow: hidden; width: 100%; }
+.offer img { float: left; margin-right: 10px; }
+.offer div { overflow: hidden; }
+
+.contacts-title { margin-bottom: 8px; }
+.contacts li:first-child { margin-top: 0; }
+.contacts li {
+	padding-left: 16px;
+	margin-top: 5px;
+	position: relative;
+}
+.contacts i { 
+	background-image: url('../img/main-sprite.png');
+	position: absolute; top: 50%; left: 0;
+}
+.small-phone-icon { background-position: -261px -9px; width: 12px; height: 12px; margin-top: -6px; }
+.small-mail-icon { background-position: -261px -21px; width: 12px; height: 9px; margin-top: -3px; }
+.small-skype-icon { background-position: -261px -30px; width: 12px; height: 12px; margin-top: -5px; }
+.small-vk-icon { background-position: -261px -42px; width: 11px; height: 11px; margin-top: -5px; }
+
+.social-share-buttons { padding-top: 10px; margin-bottom: 20px; }
+.social-share-buttons span { display: inline-block; background: #6079ac; margin-right: 20px; padding: 5px 10px; color: #ffffff; }
+
+.reviews, .friends, .offers, .faq, .weather, .index-news, .contacts { margin-bottom: 20px; }
+.reviews h2, .friends h2, .offers h2, .faq h2, .weather h2, .index-news h2 {
+	letter-spacing: normal;
+	margin-bottom: 14px;
+}
+
+.news {
+	overflow: hidden; width: 100%;
+}
+.news-item {
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+.news-title {
+	font-weight: bold;
+}
+.news-date-source {
+	color: #999999;
+	margin-bottom: 10px;
+}
+.news img { float: left; margin-right: 15px; }
+.news-content { overflow: hidden; }
+
+.page-navigation { word-spacing: -0.3em; white-space: nowrap; }
+.page-navigation .arrow { font-size: 13px; color: #0060af; text-decoration: none; }
+.page-navigation .arrow.disabled { color: #999999; }
+.page-navigation .arrow span {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.page-navigation .numbers { display: inline-block; padding: 0 2px; }
+/* in case you want a separator between number uncomment following rule */
+.page-navigation .numbers span { display: inline-block; /*border-left: 1px solid #e0e0e0;*/ }
+.page-navigation .numbers span:first-child { border: none; }
+
+.page-navigation .numbers .active, .page-navigation .numbers .active + span { border: none; }
+.page-navigation .numbers .active + span a { margin-left: 0; }
+.page-navigation .numbers .active a, .page-navigation .numbers .active span {
+    background: #cc0000;
+    color: #FFFFFF;
+	text-decoration: none;
+	margin-left: 0;
+}
+.page-navigation .numbers .active:first-child a { margin-left: 3px; }
+.page-navigation .numbers a {
+    display: inline-block;
+    line-height: 1;
+    padding: 2px 5px;
+	margin: 0 3px;
+}
+
+.logo-list {
+	overflow: hidden; width: 100%;
+}
+.logo-list-item {
+	margin-bottom: 25px;
+}
+.logo-list-company {
+	width: 180px;
+	float: left;
+}
+.logo-list-company-name {
+	display: block;
+	margin-bottom: 2px;
+}
+.logo-list-company-site {
+	color: #999999;
+	text-decoration: none;
+}
+.logo-list img { margin-bottom: 15px; display: block; }
+.logo-list p { margin: 0; }
+.logo-list-content { overflow: hidden; }
+
+/* ------------------------------- INDEPENDENT BLOCKS END --------------------------- */
+
+/* ------------------------------- BANNERS START ------------------------------------ */
+
+.banner100pcX130 { height: 90px; background: #fff; }
+.banner227x130 { margin-bottom: 15px; }
+.banner450x110 { margin-bottom: 20px; }
+
+/* ------------------------------- BANNERS END -------------------------------------- */
+
+/* ---------------------------------------------- CONTENT END ------------------------------------------------------- */
+
+/* ---------------------------------------------- FOOTER START ------------------------------------------------------ */
+
+footer {
+	padding: 20px 20px 100px 20px;
+	border-top: 1px solid #cccccc;
+}
+
+.footer-menu {
+	line-height: 0;
+	font-size: 1px;
+	text-align: justify;
+	margin-bottom: 40px;
+}
+
+.footer-menu:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+
+.footer-menu a {
+	line-height: 1.231;
+	font-size: 12px;
+	display: inline-block;
+	text-align: left;
+}
+.footer-menu div {
+	line-height: 1.231;
+	font-size: 12px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+.footer-menu .sep {
+	display: inline-block;
+	width: 1px; height: 12px;
+	background: #cccccc;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.footer-left, .footer-right {
+	display: inline-block;
+	width: 100%;
+	margin-right: -100%;
+	vertical-align: middle;
+}
+.footer-right { text-align: right; }
+.copyright { font-size: 11px; margin-right: 75px; }
+.copyright, .site-search { display: inline-block; vertical-align: middle; position: relative; }
+.site-search input { width: 170px; padding: 2px 16px 1px 2px; }
+.site-search-icon {
+	width: 12px; height: 12px;
+	position: absolute; top: 50%; right: 4px;
+	margin-top: -6px;
+	cursor: pointer;
+	background: url('../img/main-sprite.png') -275px -62px;
+}
+
+
+::-webkit-input-placeholder { color: #cccccc; }
+:-moz-placeholder { color: #cccccc; }
+
+
+/* ---------------------------------------------- FOOTER END -------------------------------------------------------- */
+
