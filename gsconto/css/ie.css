@@ -1,0 +1,21 @@
+.ir {
+	line-height: 0;
+	font-size: 0;
+}
+
+.coming-soon-bg {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFC1D3D2', endColorstr='#FFE4E1CD');
+}
+
+.coming-soon-question, .coming-soon-promise,
+.coming-soon-date, .coming-soon-desc {
+	top: auto;
+	display: block;
+}
+
+.coming-soon-social-twitter, .coming-soon-social-google,
+.coming-soon-social-vk, .coming-soon-social-fb {
+	top: auto;
+	display: inline-block;
+}

@@ -1,0 +1,150 @@
+@import "compass";
+$experimental-support-for-svg: true;
+
+body {
+	margin: 0;
+}
+
+header, footer {
+	display: block;
+}
+
+.ir {
+    display: block;
+    border: 0;
+    text-indent: -999em;
+    overflow: hidden;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+}
+
+.coming-soon-wrapper {
+	position: relative;
+	min-width: 960px;
+}
+
+.coming-soon-header {
+	height: 79px;
+	background: url('../images/coming-soon-sprite.png') no-repeat top center;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+
+.coming-soon-question, .coming-soon-promise,
+.coming-soon-date, .coming-soon-desc,
+.coming-soon-social-twitter, .coming-soon-social-google,
+.coming-soon-social-vk, .coming-soon-social-fb {
+	background-image: url('../images/coming-soon-sprite.png');
+	position: relative; top: -10px;
+	display: none;
+	margin: auto;
+}
+
+.coming-soon-question {
+	height: 62px;
+	width: 827px;
+	background-position: 0 -79px;
+	margin-bottom: 20px;
+}
+
+.coming-soon-promise {
+	height: 31px;
+	width: 407px;
+	background-position: 0 -141px;
+	margin-bottom: 20px;
+}
+
+.coming-soon-date {
+	height: 69px;
+	width: 409px;
+	background-position: -829px -79px;
+	margin-bottom: 20px;
+}
+
+.coming-soon-desc {
+	height: 29px;
+	width: 988px;
+	background-position: 0 -183px;
+	margin-bottom: 30px;
+}
+
+.coming-soon-social {
+	text-align: center;
+}
+
+.coming-soon-social-twitter, .coming-soon-social-google,
+.coming-soon-social-vk, .coming-soon-social-fb {
+	width: 64px; height: 64px;
+	margin-left: 15px;
+}
+
+.coming-soon-social-twitter {
+    background-position: -988px -148px;
+    margin: 0;
+}
+
+.coming-soon-social-google {
+	background-position: -1052px -148px;
+}
+
+.coming-soon-social-vk {
+	background-position: -1116px -148px;
+}
+
+.coming-soon-social-fb {
+	background-position: -1180px -148px;
+}
+
+.coming-soon-bg, .coming-soon-pattern {
+	position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.coming-soon-bg {
+	background-color: #a8bdbc;
+	@include background-image(linear-gradient(top, #a8bdbc 0%,#dbd7c0 100%));
+}
+
+.coming-soon-pattern {
+	background: url('../images/coming-soon-pattern.png') 0 bottom;
+}
+
+.coming-soon-city-back {
+    background: url('../images/city-back.png') repeat-x 0 bottom;
+	width: 100%;
+}
+.coming-soon-city-front {
+	height: 621px;
+	background: url('../images/city-front.png') repeat-x 0 bottom;
+}
+
+.coming-soon-content {
+	padding-bottom: 736px;
+	margin-bottom: -736px;
+}
+
+.coming-soon-footer {
+    border-top: 4px solid #ffffff;
+	height: 111px;
+	background: url('../images/coming-soon-footer-pattern.png') repeat;
+	text-align: center;
+}
+
+.comming-soon-contact-us-title {
+    width: 556px; height: 19px;
+	background: url('../images/coming-soon-sprite.png') 0 -212px;
+	margin: 15px auto 8px auto;
+}
+
+.comming-soon-contact-us-button {
+	width: 126px; height: 36px;
+	background: url('../images/coming-soon-sprite.png') -407px -141px;
+	margin: 0 auto 8px auto;
+}
+
+.comming-soon-made-by {
+    width: 57px; height: 10px;
+	background: url('../images/coming-soon-sprite.png') -533px -141px;
+	margin: auto;
+}
