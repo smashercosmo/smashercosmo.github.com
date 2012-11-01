@@ -1,0 +1,12 @@
+.index-gallery {
+	zoom: 1;
+	text-justify: newspaper;
+	text-align-last: justify;
+}
+.index-gallery:after, .index-gallery div {
+	display: inline; zoom: 1;
+	text-align-last: auto;
+}
+
+.process ol { padding-left: 30px; }
+.process { overflow: hidden; }

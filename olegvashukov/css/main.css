@@ -1,0 +1,373 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+[hidden] { display: none; }
+
+html {
+	font-size: 100%;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+a { color: #5071C9; }
+a:visited { color: #551a8b; }
+a[href]:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+.all-link { color: #222222; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+mark {
+	background: #ffffcc;
+	font-weight: normal;
+	font-style: normal;
+}
+
+small { font-size: 85%; }
+
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+p { margin: 0; }
+
+ul, ol { margin: 0; padding: 0; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol {
+	list-style: none;
+	list-style-image: none;
+	margin: 0; padding: 0;
+}
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+}
+
+h1, h2, h3, h4 { font-weight: normal; margin: 0 }
+
+h2, h3, h4 { font-family: 'Georgia', Times New Roman, serif; }
+h2 { font-size: 28px; margin-bottom: 20px; }
+h3 { font-size: 18px; margin-bottom: 15px; }
+h1 a { color: #222222; font-weight: bold; }
+
+.float-right { float: right; margin-left: 40px; }
+.float-left { float: left; margin-right: 40px; }
+figure { text-align: center; margin: 0 0 40px 0; }
+figure img { margin: 0 auto 10px auto; }
+figcaption { font-style: italic; }
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+
+.page-navigation {
+	margin: auto;
+	padding-top: 50px;
+	clear: both;
+}
+
+.page-navigation ul { overflow: hidden; list-style: none; }
+.page-navigation li { float: right; width: 46%; }
+.page-navigation li:first-child {
+	float: left;
+	text-align: right;
+}
+
+.image-side-text-wrapper {
+	display: inline-block;
+	position: relative;
+}
+.image-side-text {
+	left: 100%;
+	 padding-left: 25px;
+	 position: absolute;
+	 text-align: left;
+	 top: 0;
+	 width: 225px;
+}
+
+/* ------------------------------------------------- COMMON STYLES START -------------------------------------------- */
+
+.container {
+	min-width: 1000px;
+	max-width: 1360px;
+	margin: auto;
+	padding: 20px;
+}
+
+/* ------------------------------------------------- COMMON STYLES END ---------------------------------------------- */
+
+/* ------------------------------------------------- HEADER START --------------------------------------------------- */
+
+header { line-height: 1.5; margin-bottom: 80px; }
+
+.header-left { float: left; width: 25%; font-size: 13px; }
+.header-right { float: right; width: 25%; text-align: right; }
+.header-center { overflow: hidden; text-align: center; }
+
+.main-menu, .main-menu ul, .main-menu li { display: inline; }
+.main-menu li { margin-left: 5%; }
+.main-menu li:first-child { margin: 0; }
+.main-menu a { color: #333333; }
+
+.language {
+	color: #999999;
+}
+
+/* ------------------------------------------------- HEADER END ----------------------------------------------------- */
+
+/* ------------------------------------------------- INDEX PAGE START ----------------------------------------------- */
+
+.index-gallery {
+	line-height: 0;
+	font-size: 1px;
+	text-align: justify;
+	margin-bottom: 60px;
+}
+
+.index-gallery:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+.index-gallery a {
+	line-height: 1.231;
+	font-size: 12px;
+	display: inline-block;
+}
+
+.index-gallery div {
+	width: 240px;
+	display: inline-block;
+	text-align: center;
+}
+
+.index-gallery img { margin-bottom: 10px; }
+
+.index-about-section {
+	float: left;
+	width: 55%;
+	padding-left: 72px;
+	margin-right: 5%;
+	background: url('../img/blockquote.png') no-repeat;
+}
+
+.index-about-link { margin-bottom: 60px; }
+
+.index-about-link a { color: #222222; }
+
+.index-about-section p { margin-bottom: 15px; }
+
+.last-news-section { overflow: hidden; }
+
+.last-news-item { margin-bottom: 40px; }
+
+.last-news-title {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.last-articles {
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+.last-articles li { margin-top: 6px; }
+
+.last-articles li:first-child { margin: 0; }
+
+.contacts {	font-size: 11px; }
+
+.index-vcard {
+	float: left;
+	margin-right: 10%;
+	list-style: none;
+}
+
+.vcard .fn { display: none; }
+
+.index-vcard li { margin-bottom: 5px; }
+
+.social { overflow: hidden; }
+
+.social-title { margin-bottom: 5px; }
+
+.social ul { list-style: none; }
+
+.social li { display: inline; margin-right: 5px; }
+
+.social a { color: #222222; }
+
+/* ------------------------------------------------- INDEX PAGE END ------------------------------------------------- */
+
+/* ------------------------------------------------- GALLERY PAGE START --------------------------------------------- */
+
+.portfolio-navigation, .library-navigation { margin-bottom: 35px; }
+.portfolio-navigation li, .library-navigation li { display: inline; margin-right: 10px; }
+.portfolio-navigation a, .library-navigation a { text-decoration: none; border-bottom: 1px dotted; }
+
+.portfolio-category, .library-category {
+	margin-bottom: 35px;
+	overflow: hidden;
+}
+
+.portfolio-category > div, .library-category > div {
+	float: left;
+	margin-right: 10px;
+	margin-top: 20px;
+	text-align: center;
+}
+.portfolio-category > div > a, .library-category > div > a { position: relative; display: block; }
+.portfolio-category > div > img, .library-category > div > img { margin-bottom: 8px; display: block; }
+
+.portfolio-category-title, .library-category-title {
+	font-weight: bold;
+	display: block;
+	color: #222222;
+	margin-bottom: -5px;
+}
+
+/* ------------------------------------------------- GALLERY PAGE END ----------------------------------------------- */
+
+/* ------------------------------------------------- PROCESS PAGE START --------------------------------------------- */
+
+.process, .result { width: 75%; position: relative; }
+.process-navigation, .result-navigation { margin-bottom: 20px; }
+.process-navigation li, .result-navigation li { display: inline; margin-right: 10px; }
+.process-description { width: 80%; }
+.process p, .result p { margin-bottom: 20px; }
+.process ol { padding-left: 20px; margin-bottom: 20px; }
+.process-subsection { margin-bottom: 40px; }
+.page-navigation__process, .page-navigation__result { width: 70%; }
+
+/* ------------------------------------------------- PROCESS PAGE END ----------------------------------------------- */
+
+/* ------------------------------------------------- RESULT PAGE START ---------------------------------------------- */
+
+.task-desc {
+	background: #DFF2F7;
+	border-radius: 5px;
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 2px 5px 3px;
+}
+
+.project-info {
+	border-left: 3px solid #999966;
+	color: #6E737D;
+	font-size: 11px;
+	left: 100%;
+	margin-left: 25px;
+	padding-left: 10px;
+	position: absolute;
+	width: 25%;
+}
+
+.project-info-place, .project-info-date { margin-bottom: 5px; }
+.project-info-my-work-title { display: block; margin-bottom: 2px; }
+
+/* ------------------------------------------------- RESULT PAGE END ------------------------------------------------ */
+
+/* ------------------------------------------------- ARTICLES PAGE START -------------------------------------------- */
+
+.articles { margin: auto; width: 65%; }
+.articles > div { margin-bottom: 25px; }
+.article-title { display: inline-block; margin-bottom: 5px; font-size: 14px; }
+
+/* ------------------------------------------------- ARTICLES PAGE END ---------------------------------------------- */
+
+/* ------------------------------------------------- ARTICLE PAGE START --------------------------------------------- */
+
+.article { margin: auto; width: 60%; }
+.article-desc { font-size: 16px; }
+.article p { margin-bottom: 20px; }
+
+/* ------------------------------------------------- ARTICLE PAGE END ----------------------------------------------- */
+
+/* ------------------------------------------------- BIBLIOTHEK PAGE START ------------------------------------------ */
+
+.library-category > div { width: 107px; margin: 20px 3% 0 3%; }
+.library-category a { display: block; margin-bottom: 2px; }
+.library-book-author { position: relative; }
+
+/* ------------------------------------------------- BIBLIOTHEK PAGE END -------------------------------------------- */
+
+/* ------------------------------------------------- BOOK PAGE START ------------------------------------------------ */
+
+.book { margin: auto; width: 60%; }
+.book p { margin-bottom: 20px; }
+.book-author { font-style: italic; margin: -15px 0 20px 0; }
+.page-navigation__book { width: 80%; }
+
+/* ------------------------------------------------- BOOK PAGE END -------------------------------------------------- */
+
+/* ------------------------------------------------- LINKS PAGE START ----------------------------------------------- */
+
+.links { margin: auto; width: 60%; }
+.links-category { margin-bottom: 20px; }
+.links-category-title { display: block; margin-bottom: 8px; }
+.links ul { list-style: none; }
+.links li { margin-bottom: 2px; }
+
+/* ------------------------------------------------- LINKS PAGE END ------------------------------------------------- */
+
+/* ------------------------------------------------- ABOUT PAGE START ----------------------------------------------- */
+
+.about { width: 90%; }
+.about p { margin-bottom: 20px; }
+.about-subsection { margin-bottom: 40px; }
+.about-carrier { overflow: hidden; }
+.cv-link { margin-top: -10px; margin-bottom: 30px; }
+.cv-link a { position: relative; padding-left: 24px; }
+.cv-link i {
+	position: absolute; left: 0; top: 50%;
+	width: 16px; height: 16px;
+	margin-top: -8px;
+	background: url('../img/cv-icon.png');
+}
+
+/* ------------------------------------------------- ABOUT PAGE END ------------------------------------------------- */
+
+/* ------------------------------------------------- FOOTER START --------------------------------------------------- */
+
+footer {
+	padding-top: 40px;
+	text-align: right;
+}
+
+.footer-content {
+	border-top: 1px solid #E2E2E2;
+	padding: 20px 0;
+}
+
+.footer-vcard li {
+	display: inline;
+	padding-left: 11px;
+	border-left: 1px solid #E2E2E2;
+	margin-left: 10px;
+}
+
+.footer-vcard li.skype {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* ------------------------------------------------- FOOTER END ----------------------------------------------------- */
