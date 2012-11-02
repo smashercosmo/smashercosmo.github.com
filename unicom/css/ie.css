@@ -1,0 +1,113 @@
+.ie-gradient {
+	position: absolute; top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.header-ie-gradient {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#ececec',GradientType=0 );
+}
+
+.pill-button-ie-gradient {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e1e1',GradientType=0 );
+}
+
+.pill-button-ie-gradient__violet {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8893a6', endColorstr='#677188',GradientType=0 );
+}
+
+.pill-button__pressed {
+	border: 1px solid #c6c6c6;
+}
+
+.pill-button__pressed > .pill-button-ie-gradient {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5d5d5', endColorstr='#eeeeee',GradientType=0 );
+}
+
+.column-top-ie-gradient {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#dedede',GradientType=0 );
+}
+
+.top-navigation-item {
+	border-left: 1px solid #fbfbfb;
+}
+
+.top-navigation-item > span {
+	right: -3px;
+}
+
+.side-navigation-menu-item-ie-bg {
+	position: absolute; top: 0; left: 0; bottom: 0; right: 0;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dffffff', endColorstr='#0dffffff',GradientType=0 );
+}
+
+.side-navigation-menu-item__selected .side-navigation-menu-item-ie-bg {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff0ef', endColorstr='#ffffff',GradientType=1 );
+}
+
+.document-status-info-ie-gradient {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#dadada',GradientType=0 );
+}
+
+.document-status-quantity-approved-ie-gradient {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3da20', endColorstr='#90b01a',GradientType=0 );
+}
+
+.document-status-quantity-sent-ie-gradient {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5dcfff', endColorstr='#10acef',GradientType=0 );
+}
+
+.document-status-quantity-review-ie-gradient {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fab336', endColorstr='#f57215',GradientType=0 );
+}
+
+.document-status-quantity-onhold-ie-gradient {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa1a03', endColorstr='#d50603',GradientType=0 );
+}
+
+.news-item-ie-gradient {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e5e5e5',GradientType=0 );
+}
+
+.companies-stats-quantity-ie-gradient {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fab335', endColorstr='#f57315',GradientType=0 );
+}
+
+.auth-page-bg {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aab0bb', endColorstr='#5c606d',GradientType=1 );
+}
+
+.auth-form-content-ie-gradient {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#eaeaea',GradientType=0 );
+}
+
+.auth-form-footer {
+	background: #4c586b;
+}
+
+.juicy-button {
+	border-top: 1px solid #ffffff;
+}
+
+.juicy-button-ie-gradient__green {
+
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce16d', endColorstr='#84b53f',GradientType=0 );
+}
+
+.main-banner {
+	background: #25B9E4;
+}
+
+.main-banner-button-ie-gradient {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8be7c', endColorstr='#f39326',GradientType=0 );
+}
+
+.simple-slider-navigation-item {
+	background: #e3e3e3;
+}
+
+.simple-slider-navigation-item__selected {
+	background: #f0870f;
+}
+
+.tab-content {
+	border-top: 4px solid #cccccc;
+}

@@ -1,0 +1,725 @@
+html {
+	height: 100%;
+}
+
+body {
+	min-width: 1280px;
+	height: 100%;
+}
+
+/* ----------------------------------------------- HEADER START ----------------------------------------------------- */
+
+header {
+	padding: 10px 145px;
+	border-bottom: 1px solid #efefef;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.header-shadow {
+	width: 100%; height: 20px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: url('../img/header-shadow.png') top center no-repeat;
+	margin-top: 2px;
+}
+
+.top-navigation {
+	text-align: justify;
+	text-align-last: justify;
+	text-justify: newspaper;
+	font-size: 2px;
+}
+
+.top-navigation:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+.top-navigation > a {
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	display: inline-block;
+	font-size: 18px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.top-navigation > .top-navigation-item__selected {
+	color: #f5a345;
+}
+
+
+
+/* ----------------------------------------------- HEADER END ------------------------------------------------------- */
+
+.container {
+	min-height: 100%;
+	position: relative;
+	margin-bottom: -100px;
+}
+
+.content {
+	padding-bottom: 140px;
+	position: relative;
+}
+
+.content-section {
+	padding: 0 145px;
+}
+
+/* ----------------------------------------------- INDEX PAGE START ------------------------------------------------- */
+
+/* ------------------------ main banner start ------------------------ */
+
+.main-banner {
+	padding: 45px 75px 45px 145px;
+	background: #25B9E4;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM3ZGQ3ZjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMjViOWU0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover, #7dd7f0 0%, #25b9e4 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#7dd7f0), color-stop(100%,#25b9e4));
+	background: -webkit-radial-gradient(center, ellipse cover, #7dd7f0 0%,#25b9e4 100%);
+	background: -o-radial-gradient(center, ellipse cover, #7dd7f0 0%,#25b9e4 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #7dd7f0 0%,#25b9e4 100%);
+	background: radial-gradient(ellipse at center, #7dd7f0 0%,#25b9e4 100%);
+	margin-bottom: 40px;
+	margin-top: -40px;
+}
+
+.unicom-info {
+	float: left;
+	width: 45%;
+}
+
+.unicom-info-header {
+	color: #ffffff;
+	font-size: 36px;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	margin-bottom: 10px;
+}
+
+.unicom-info-text {
+	color: #ffffff;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+.unicom-info-button {
+	width: 425px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 18px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0 18px rgba(0,0,0,.2);
+	box-shadow: 0 0 18px rgba(0,0,0,.2);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4YmU3YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMzkzMjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #f8be7c 0%, #f39326 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8be7c), color-stop(100%,#f39326));
+	background: -webkit-linear-gradient(top, #f8be7c 0%,#f39326 100%);
+	background: -o-linear-gradient(top, #f8be7c 0%,#f39326 100%);
+	background: -ms-linear-gradient(top, #f8be7c 0%,#f39326 100%);
+	background: linear-gradient(to bottom, #f8be7c 0%,#f39326 100%);
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+}
+
+.unicom-info-button-text {
+	color: #ffffff;
+	font-size: 24px;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	text-shadow: -1px -1px 0 rgba(0,0,0,.3);
+	position: relative;
+}
+
+.unicom-info-image {
+	float: right
+}
+
+.main-banner-slider {
+
+}
+
+.simple-slider {
+	overflow: hidden;
+}
+
+.simple-slider-slides {
+	white-space: nowrap;
+	position: relative;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	font-size: 0;
+}
+
+.simple-slider-slide {
+	display: inline-block;
+	white-space: normal;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.simple-slider-navigation {
+	text-align: center;
+}
+
+.simple-slider-navigation-item {
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	-webkit-box-shadow: -1px -1px rgba(0,0,0,.3);
+	-moz-box-shadow: -1px -1px rgba(0,0,0,.3);
+	box-shadow: -1px -1px rgba(0,0,0,.3);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UzZTNlMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-45deg, #ffffff 0%, #e3e3e3 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(100%,#e3e3e3));
+	background: -webkit-linear-gradient(-45deg, #ffffff 0%,#e3e3e3 100%);
+	background: -o-linear-gradient(-45deg, #ffffff 0%,#e3e3e3 100%);
+	background: -ms-linear-gradient(-45deg, #ffffff 0%,#e3e3e3 100%);
+	background: linear-gradient(135deg, #ffffff 0%,#e3e3e3 100%);
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.simple-slider-navigation-item__selected {
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjRhZTVlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q2OTA0MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-45deg, #f4ae5e 0%, #d69040 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f4ae5e), color-stop(100%,#d69040));
+	background: -webkit-linear-gradient(-45deg, #f4ae5e 0%,#d69040 100%);
+	background: -o-linear-gradient(-45deg, #f4ae5e 0%,#d69040 100%);
+	background: -ms-linear-gradient(-45deg, #f4ae5e 0%,#d69040 100%);
+	background: linear-gradient(135deg, #f4ae5e 0%,#d69040 100%);
+}
+
+/* ------------------------ main banner end -------------------------- */
+
+/* ------------------------ advantages start ------------------------- */
+
+.advantages {
+	margin-bottom: 40px;
+}
+
+.advantages-row {
+	margin-top: 40px;
+}
+
+.advantages-row:first-child {
+	margin-top: 0;
+}
+
+.advantages-item {
+	width: 50%;
+	float: left;
+}
+
+.advantages-item:first-child {
+	margin-top: 0;
+}
+
+.advantages-item-icon {
+	width: 60px; height: 60px;
+	margin-right: 20px;
+	float: left;
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+.advantages-item-content {
+	overflow: hidden;
+	padding-right: 30px;
+}
+
+
+/* ------------------------ advantages end --------------------------- */
+
+/* ------------------------ blockquote start ------------------------- */
+
+.index-page-blockquote {
+	background: #f2f2f2;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.index-page-blockquote-text {
+	font-size: 16px;
+	font-style: italic;
+	display: inline-block;
+	position: relative;
+	padding: 0 80px;
+	margin-bottom: 10px;
+}
+
+.index-page-blockquote-mark {
+	width: 43px; height: 45px;
+	position: absolute; top: 50%;
+	margin-top: -23px;
+}
+
+.index-page-blockquote-mark__left {
+	background: url('../img/blockquote-mark-left.png') no-repeat;
+	left: 0;
+}
+
+.index-page-blockquote-mark__right {
+	background: url('../img/blockquote-mark-right.png') no-repeat;
+	right: 0;
+}
+
+.index-page-blockquote-author {
+	font-weight: bold;
+	text-align: right;
+	padding: 0 145px;
+}
+
+/* ------------------------ blockquote end --------------------------- */
+
+/* ------------------------ tabs start ------------------------------- */
+
+.index-page-tabs {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.index-page-tabs dt {
+	float: left;
+	height: 110px;
+	width: 25%;
+	cursor: pointer;
+	text-align: center;
+	padding-top: 10px;
+	position: relative;
+	background-color: #ffffff;
+}
+
+.index-page-tabs .index-page-tab__selected {
+	z-index: 3;
+	cursor: auto;
+}
+
+.index-page-tab__selected > .index-page-tab-shadow {
+	display: block;
+}
+
+.index-page-tab__selected .index-page-tab-text {
+	color: #000000;
+}
+
+.index-page-tabs dd {
+	background: #fff;
+	display: none;
+	float: right;
+	width: 100%;
+	margin: 120px 0 0 -100%;
+	position: relative;
+	z-index: 2;
+}
+
+.index-page-tabs .index-page-tab-content__selected {
+	display: block;
+}
+
+.index-page-tab-content {
+	padding-top: 40px;
+	position: relative;
+}
+
+.index-page-tab-content-shadow {
+	position: absolute; top: -5px; left: -30px; right: -30px;
+	height: 5px;
+	background: url('../img/tab-content-shadow.png') repeat-x;
+}
+
+.index-page-tab-inner {
+	padding: 0 10px;
+	display: inline-block;
+}
+
+.index-page-tab-text {
+	font-size: 16px;
+	color: #11b2e1;
+	display: block;
+	line-height: 1.2;
+}
+
+.index-page-tab-icon {
+	width: 50px; height: 50px;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.index-page-tab-shadow {
+	width: 10px;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0; bottom: 0;
+	display: none;
+}
+
+.index-page-tab-shadow__left {
+	background-image: url('../img/tab-shadow-left.png');
+	left: -10px;
+}
+
+.index-page-tab-shadow__right {
+	background-image: url('../img/tab-shadow-right.png');
+	right: -10px;
+}
+
+
+.index-page-tab-content-header {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.index-page-tab-content-column {
+	width: 49%;
+}
+
+.index-page-tab-content-column__left {
+	float: left;
+}
+
+.index-page-tab-content-column__right {
+	float: right;
+}
+
+.index-page-tab-list-header {
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.index-page-tab-list > li {
+	margin-bottom: 5px;
+	color: #676767;
+}
+
+/* ------------------------ tabs end --------------------------------- */
+
+/* ------------------------ banks start ------------------------------ */
+
+.index-page-banks {
+	text-align: justify;
+	text-align-last: justify;
+	text-justify: newspaper;
+	font-size: 2px;
+	margin-bottom: 30px;
+}
+
+.index-page-banks:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+/* ------------------------ banks end -------------------------------- */
+
+
+/* ----------------------------------------------- INDEX PAGE END --------------------------------------------------- */
+
+/* ----------------------------------------------- ABOUT PAGE START ------------------------------------------------- */
+
+.about-page {
+	width: 60%;
+}
+
+.page-header {
+	font-size: 36px;
+	margin-bottom: 30px;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+}
+
+.simple-text {
+	color: #676767;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+/* ----------------------------------------------- ABOUT PAGE END --------------------------------------------------- */
+
+/* ----------------------------------------------- OFFERS PAGE START ------------------------------------------------ */
+
+.offer-banners {
+	margin-bottom: 30px;
+}
+
+.offer-banners-row {
+	margin-bottom: 18px;
+}
+
+.offer-banner {
+	width: 32%;
+	float: left;
+	margin-left: 2%;
+	position: relative;
+}
+
+.offer-banner-icon {
+	position: absolute; top: 15px; right: 15px;
+}
+
+.offer-banner:first-child {
+	margin-left: 0;
+}
+
+.offer-banner-inner {
+	padding: 15px;
+	border: 2px solid #e3e3e3;
+}
+
+.offer-banner__big {
+	width: 100%;
+}
+
+.offer-banner-header {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.offer-banner__big .offer-banner-header {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.offer-banner-illustration {
+	width: 200px;
+	float: left;
+}
+
+.offer-banner-logo {
+	margin-bottom: 15px;
+}
+
+.offer-banner__big .offer-banner-logo {
+	width: 25%;
+	float: right;
+	text-align: center;
+	height: 175px;
+	min-width: 250px;
+	margin-bottom: 0;
+}
+
+.offer-banner-content {
+	overflow: hidden;
+}
+
+.offer-banner-text {
+	color: #676767;
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
+.offer-banner-details-link {
+	color: #26b9e4;
+	text-decoration: none;
+}
+
+.offer-preference-header {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.offer-preference-table {
+	width: 100%;
+	table-layout: fixed;
+	vertical-align: middle;
+}
+
+.offer-preference-table td, .offer-preference-table th {
+	padding: 10px;
+	text-align: left;
+}
+
+.offer-preference-table tr:nth-child(even) td {
+	background-color: #fafafa;
+}
+
+.offer-preference-table thead .offer-preference-salary {
+	background-color: #f2f2f2;
+	text-align: center;
+}
+
+.offer-preference-table .col-headers th {
+	background-color: #f2f2f2;
+}
+
+.offer-preference-table .col-headers .offer-preference-credit-type {
+	background-color: #d9d9d9;
+}
+
+.bank-banners {
+	margin-bottom: 30px;
+}
+
+.bank-banners-row {
+	margin-bottom: 18px;
+}
+
+.bank-banner {
+	width: 32%;
+	float: left;
+	margin-left: 2%;
+}
+
+.bank-banner:first-child {
+	margin-left: 0;
+}
+
+.bank-banner-inner {
+	padding: 15px;
+	border: 2px solid #e3e3e3;
+}
+
+.bank-banner-logo {
+	margin-bottom: 15px;
+	height: 80px;
+	text-align: center;
+}
+
+.bank-banner-content {
+	text-align: center;
+}
+
+.bank-banners-more {
+	text-align: center;
+	padding: 15px;
+	color: #818587;
+	font-size: 18px;
+	background-color: #ebebeb;
+	display: block;
+	text-decoration: none;
+}
+
+.bank-banner-icon {
+	margin: 0 5px;
+}
+
+/* ----------------------------------------------- OFFERS PAGE END -------------------------------------------------- */
+
+/* ----------------------------------------------- FOOTER START ----------------------------------------------------- */
+
+footer {
+	background: #818587;
+	padding: 40px 145px;
+}
+
+.footer-fixed {
+	height: 100px;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 100px;
+}
+
+.reqistration-form {
+	width: 460px;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.reqistration-form-content {
+	padding: 40px 40px 15px 40px;
+	border: 1px solid #6c7071;
+	box-shadow: inset 0 0 1px rgba(255, 255, 255,.5);
+	border-radius: 10px;
+}
+
+.reqistration-form-header {
+	font-size: 18px;
+	background: #818587;
+	position: relative;
+	text-align: center;
+	top: 12px;
+	color: #E6E6E6;
+	width: 180px;
+	margin: auto;
+}
+
+.registration-form-input {
+	height: 35px;
+	padding: 8px;
+	border-radius: 3px;
+	background-color: #e6e6e6;
+	border: solid 1px #75797b;
+	font-size: 18px;
+	color: #717171;
+	width: 100%;
+}
+
+.registration-form-row {
+	margin-bottom: 10px;
+}
+
+.registration-form-row > .registration-form-input,
+.registration-form-captcha {
+	float: right;
+	width: 49%;
+}
+
+.registration-form-captcha {
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+
+.registration-form-row > .registration-form-input:first-child {
+	float: left;
+}
+
+.registration-form-input-company {
+	margin-bottom: 10px;
+}
+
+.registration-form-button {
+	width: 100%;
+	height: 35px;
+	line-height: 32px;
+	border-radius: 3px;
+	background-color: #3ac0e6;
+	box-shadow: inset -1px -1px rgba(255,255,255,.25);
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255,.4), rgba(255,255,255,0));
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,.4), rgba(255,255,255,0));
+	background-image: -o-linear-gradient(top, rgba(255,255,255,.4), rgba(255,255,255,0));
+	background-image: -ms-linear-gradient(top, rgba(255,255,255,.4), rgba(255,255,255,0));
+	background-image: linear-gradient(to bottom, rgba(255,255,255,.4), rgba(255,255,255,0));
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.registration-form-button-text {
+	color: #ffffff;
+	font-size: 18px;
+	text-shadow: -1px -1px 0 rgba(0,0,0,.3);
+	position: relative;
+}
+
+.registration-form-required {
+	text-align: center;
+	font-size: 12px;
+	color: #b0b0b0;
+	padding: 2px 0;
+}
+
+.footer-copyright, .footer-made-by {
+	font-size: 12px;
+	float: left;
+	color: #e6e6e6;
+}
+
+.footer-made-by {
+	float: right;
+}
+
+.footer-made-by > a {
+	color: #e6e6e6;
+}
+
+/* ----------------------------------------------- FOOTER END ------------------------------------------------------- */
