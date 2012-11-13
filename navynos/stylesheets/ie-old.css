@@ -1,0 +1,24 @@
+/* ------------------------------------------------------ HEADER START ------------------------------------------------------- */
+/* line 3, ../sass/ie-old.scss */
+.main-navigation .dropdown-toggle {
+  margin-bottom: 0;
+}
+
+/* line 7, ../sass/ie-old.scss */
+.header-logo {
+  background-image: url("../img/logo.png");
+}
+
+/* line 11, ../sass/ie-old.scss */
+.header-top-logo {
+  background-image: url("../img/logo-icon.png");
+}
+
+/* ------------------------------------------------------ HEADER END --------------------------------------------------------- */
+/* ------------------------------------------------------ INDEX PAGE START --------------------------------------------------- */
+/* line 19, ../sass/ie-old.scss */
+.index-form-search-curly {
+  background-image: url("../img/curly.png");
+}
+
+/* ------------------------------------------------------ INDEX PAGE END ----------------------------------------------------- */

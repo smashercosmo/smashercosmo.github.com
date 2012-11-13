@@ -1,0 +1,27 @@
+$experimental-support-for-svg: true;
+$legacy-support-for-ie: false;
+
+@import "compass/css3/images";
+@import "compass/css3/box-shadow";
+
+$orange      : #F4521A;
+$brown       : #382E27;
+$brownlight  : #8E6648;
+$brownlighter: #8F7763;
+
+$large-screen:  979px;
+$medium-screen: 767px;
+$small-screen: 480px;
+
+@mixin respond-to($media) {
+  @if $media == large-screen {
+	@media (max-width: $large-screen) { @content; }
+  }
+  @else if $media == medium-screen {
+	@media (max-width: $medium-screen) { @content; }
+  }
+  @else if $media == small-screen {
+	@media (max-width: $small-screen) { @content; }
+  }
+}
+
