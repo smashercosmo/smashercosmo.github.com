@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="stylesheets/bootstrap.css">
 	<link rel="stylesheet" href="stylesheets/bootstrap-responsive.css">
+	<link rel="stylesheet" href="stylesheets/fonts.css">
 	<link rel="stylesheet" href="stylesheets/main.css">
 	<title></title>
 	<!--[if lte IE 8]>
@@ -70,7 +71,7 @@
 		<div class="span4 header-order-details-column">
 			<div class="header-order-details-title">Ваш заказ:</div>
 			<div class="header-order-details-content">
-				<span class="header-order-details-order">3 блюда на сумму 125.0 q</span>
+				<span class="header-order-details-order">3 блюда на сумму <span class="price">125.0 <span class="rub"></span></span></span>
 				<span class="action-link">изменить</span>
 			</div>
 		</div>
@@ -95,7 +96,7 @@
 			<img src="img/tmp/pizza.jpg" class="promo-banner-image" alt="">
 		</div>
 	</div>
-	<div class="row-fluid">
+	<div class="row-fluid index-sections">
 		<div class="span8 column">
 			<h2>Все рестораны и кафе с доставкой в Санкт-Петербурге</h2>
 			<div class="catalog">
@@ -157,7 +158,7 @@
 							<li><a href="#">Fasta Pasta</a></li>
 							<li><a href="#">Francesco</a></li>
 							<li><a href="#">Fresh Point</a></li>
-							<li><a href="#">Fresh Susi</a></li>
+							<li><a href="#">Fresh Susi</a> <sup class="catalog-section-list-item-new">new</sup></li>
 						</ul>
 					</div>
 				</div>
@@ -207,7 +208,7 @@
 					<div class="catalog-section-inner">
 						<div class="catalog-section-title">P</div>
 						<ul class="catalog-section-list">
-							<li><a href="#">Peperonin</a></li>
+							<li><a href="#">Peperonin</a> <sup class="catalog-section-list-item-new">new</sup></li>
 							<li><a href="#">Pizza Rolla</a></li>
 						</ul>
 					</div>
@@ -253,29 +254,31 @@
 				</div>
 			</div>
 		</div>
-		<div class="span4 column">
-			<div>
-				<h2>Популярные блюда</h2>
-				<ul>
-					<li><a href="#">Роллы «Филадельфия» в Двух Палочках — 230 q</a></li>
-					<li><a href="#">Пицца «Гусарская» в Патио Пицца — 460 q</a></li>
-				</ul>
-			</div>
-			<div>
-				<h2>Популярные заведения</h2>
-				<ul>
-					<li><a href="#">Кукарача</a></li>
-					<li><a href="#">Две Палочки</a></li>
-					<li><a href="#">Хачапури и хинкали</a></li>
-					<li><a href="#">Макарони</a></li>
-				</ul>
-			</div>
-			<div>
-				<h2>Недавно заказали</h2>
-				<ul>
-					<li><a href="#">Пицца «Капрезе» и апельсиновый сок из Пито Пицца в 12:45</a></li>
-					<li><a href="#">Лапша удон, острый тайский суп, набор суши для двоих номер 4 и пепси из Две Палочки в 12:43</a></li>
-				</ul>
+		<div class="span4 column ">
+			<div class="digest-sections">
+				<div class="digest-section">
+					<h2>Популярные блюда</h2>
+					<ul class="digest-section-dishes-list">
+						<li><a href="#">Роллы «Филадельфия» в Двух Палочках — <span class="price">230 <span class="rub"></span></span></a></li>
+						<li><a href="#">Пицца «Гусарская» в Патио Пицца — <span class="price">460 <span class="rub"></span></span></a></li>
+					</ul>
+				</div>
+				<div class="digest-section">
+					<h2>Популярные заведения</h2>
+					<ul class="digest-section-places-list">
+						<li><a href="#">Кукарача</a></li>
+						<li><a href="#">Две Палочки</a></li>
+						<li><a href="#">Хачапури и хинкали</a></li>
+						<li><a href="#">Макарони</a></li>
+					</ul>
+				</div>
+				<div class="digest-section">
+					<h2>Недавно заказали</h2>
+					<ul class="digest-section-ordered-list">
+						<li><a href="#">Пицца «Капрезе» и апельсиновый сок из Пито Пицца в 12:45</a></li>
+						<li><a href="#">Лапша удон, острый тайский суп, набор суши для двоих номер 4 и пепси из Две Палочки в 12:43</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -286,34 +289,44 @@
 <footer class="container footer">
 	<div class="row-fluid">
 		<div class="span5 column footer-left-column">
-			<h3>&mdash; Служба доставки еды из ресторанов и кафе.</h3>
-			<div class="vcard footer-vcard">
-				<div class="footer-phone">
-					<div class="footer-phone-title">Заказ еды на вынос в Санкт-Петербурге по телефону</div>
-					<span class="footer-phone-number tel">+7 (890) 123-45-67</span>
+			<section class="footer-section">
+				<h3>&mdash; Служба доставки еды из ресторанов и кафе.</h3>
+				<div class="vcard footer-vcard">
+					<div class="footer-phone">
+						<div class="footer-phone-title">Заказ еды на вынос в Санкт-Петербурге по телефону</div>
+						<span class="footer-phone-number tel">+7 (890) 123-45-67</span>
+					</div>
+					<div class="workhours">
+						будни – 10:00 - 23:00, пятница и суббота – 10:00 - 23:00
+					</div>
 				</div>
-				<div class="workhours">
-					будни – 10:00 - 23:00, пятница и суббота – 10:00 - 23:00
-				</div>
-			</div>
+			</section>
 			<nav class="footer-navigation">
 				<ul>
 					<li><a href="">Главная</a></li>
 					<li><a href="">Рестораны и кафе</a></li>
 					<li><a href="">общая информация</a></li>
 					<li><a href="">Компания</a></li>
-					<li><a href="">Рестораны и кафе  Доставка  Компания  Блог</a></li>
+					<li><a href="">Блог</a></li>
 				</ul>
 			</nav>
 		</div>
 		<div class="span5 column">
-			<h3>Заказывйте еду из ресторанов неподалеку</h3>
-			<p class="footer-cuisine-list"><b>Выберите ближайшую станцию метро: </b><a href="#">Лиговсикй проспект</a>, <a href="#">Маяковская</a>, <a href="#">Звенигородская</a>, <a href="#">Фрунзенская</a>.</p>
-			<p class="footer-cuisine-list"><b>Выберите ваш район: </b><a href="#">Московский</a>, <a href="#">Центральный</a>, <a href="#">Кировский</a>, <a href="#">Фрунзенский</a>.</p>
-			<h3>Доставка блюд любой кухни</h3>
-			<p class="footer-cuisine-list"><b>Выберите кухню: </b><a href="#">Европейская</a>, <a href="#">Русская</a>, <a href="#">Японская</a>, <a href="#">Итальянская</a>, <a href="#">Китайская</a>, <a href="#">Мексиканская</a>, <a href="#">Авторская</a>, <a href="#">Азербайджанская</a>, <a href="#">Американская</a>, <a href="#">Арабская</a>, <a href="#">Аргентинская</a>, <a href="#">Армянская</a>, <a href="#">Белорусская</a>, <a href="#">Бельгийская</a>, <a href="#">Болгарская</a>, <a href="#">Вьетнамская</a>, <a href="#">Греческая</a>, <a href="#">Грузинская</a>, <a href="#">Датская</a>, <a href="#">Еврейская</a>, <a href="#">Индийская</a>, <a href="#">Индонезийская</a>, <a href="#">Интернациональная</a>, <a href="#">Испанская</a>, <a href="#">Карибская</a>, <a href="#">Корейская</a>, <a href="#">Кубинская</a>, <a href="#">Латвийская</a>, <a href="#">Литовская</a>, <a href="#">Марокканская</a>, <a href="#">Молдавская</a>, <a href="#">Немецкая</a>, <a href="#">Норвежская</a>, <a href="#">Пивные Рестораны</a>, <a href="#">Португальская</a>, <a href="#">Рыбные Рестораны</a>, <a href="#">Сербская</a>, <a href="#">Средиземноморская</a>, <a href="#">Тайская</a>, <a href="#">Татарская</a>, <a href="#">Турецкая</a>, <a href="#">Узбекская</a>, <a href="#">Украинская</a>, <a href="#">Французская</a>, <a href="#">Чешская</a>, <a href="#">Шведская</a>, <a href="#">Югославская</a>.</p>
+			<section class="footer-section">
+				<h3>Заказывйте еду из ресторанов неподалеку</h3>
+				<p class="footer-section-list"><b>Выберите ближайшую станцию метро: </b><a href="#">Лиговсикй проспект</a>, <a href="#">Маяковская</a>, <a href="#">Звенигородская</a>, <a href="#">Фрунзенская</a>.</p>
+				<p class="footer-section-list"><b>Выберите ваш район: </b><a href="#">Московский</a>, <a href="#">Центральный</a>, <a href="#">Кировский</a>, <a href="#">Фрунзенский</a>.</p>
+			</section>
+			<section class="footer-section">
+				<h3>Доставка блюд любой кухни</h3>
+				<p class="footer-section-list"><b>Выберите кухню: </b><a href="#">Европейская</a>, <a href="#">Русская</a>, <a href="#">Японская</a>, <a href="#">Итальянская</a>, <a href="#">Китайская</a>, <a href="#">Мексиканская</a>, <a href="#">Авторская</a>, <a href="#">Азербайджанская</a>, <a href="#">Американская</a>, <a href="#">Арабская</a>, <a href="#">Аргентинская</a>, <a href="#">Армянская</a>, <a href="#">Белорусская</a>, <a href="#">Бельгийская</a>, <a href="#">Болгарская</a>, <a href="#">Вьетнамская</a>, <a href="#">Греческая</a>, <a href="#">Грузинская</a>, <a href="#">Датская</a>, <a href="#">Еврейская</a>, <a href="#">Индийская</a>, <a href="#">Индонезийская</a>, <a href="#">Интернациональная</a>, <a href="#">Испанская</a>, <a href="#">Карибская</a>, <a href="#">Корейская</a>, <a href="#">Кубинская</a>, <a href="#">Латвийская</a>, <a href="#">Литовская</a>, <a href="#">Марокканская</a>, <a href="#">Молдавская</a>, <a href="#">Немецкая</a>, <a href="#">Норвежская</a>, <a href="#">Пивные Рестораны</a>, <a href="#">Португальская</a>, <a href="#">Рыбные Рестораны</a>, <a href="#">Сербская</a>, <a href="#">Средиземноморская</a>, <a href="#">Тайская</a>, <a href="#">Татарская</a>, <a href="#">Турецкая</a>, <a href="#">Узбекская</a>, <a href="#">Украинская</a>, <a href="#">Французская</a>, <a href="#">Чешская</a>, <a href="#">Шведская</a>, <a href="#">Югославская</a>.</p>
+			</section>
 		</div>
-		<div class="span2 column"></div>
+		<div class="span2 column">
+			<img src="img/tmp/vk.jpg" alt=""/>
+			<img src="img/tmp/fb.jpg" alt=""/>
+			<img src="img/tmp/tw.jpg" alt=""/>
+		</div>
 	</div>
 	<div class="row-fluid">
 		<div class="span5 footer-copyright">

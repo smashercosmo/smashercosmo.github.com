@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'Ruble';
+	src: url('../fonts/rouble.eot');
+	src: url('../fonts/rouble.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/rouble.woff') format('woff'),
+	url('../fonts/rouble.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+.rub:after {
+	font-family: 'Ruble', sans-serif;
+	content: 'a';
+	font-size: 114%;
+}
+
+i.rub:after {
+	content: 'b';
+}
+
+b.rub:after {
+	content: 'c'
+}

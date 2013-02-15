@@ -21,4 +21,11 @@
   background-image: url("../img/curly.png");
 }
 
+/* line 23, ../sass/ie-old.scss */
+.catalog-section {
+  display: inline-block;
+  width: 23%;
+  vertical-align: top;
+}
+
 /* ------------------------------------------------------ INDEX PAGE END ----------------------------------------------------- */
