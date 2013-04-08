@@ -2,11 +2,11 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4b464', endColorstr='#fbedba',GradientType=1 );
 }
 
-.header-enter-button {
+.button_standard {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#9f9f9f',GradientType=0 );
 }
 
-.header-social-box-bg-ie {
+.header-box-bg-ie {
 	position: absolute; top: 0; bottom: 0; left: 0; right: 0;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#33ffffff',GradientType=0 );
 }
@@ -23,4 +23,9 @@
 
 .catalog-item-info-bg {
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+}
+
+.btn {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }

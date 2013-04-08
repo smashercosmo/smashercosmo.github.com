@@ -1,0 +1,13 @@
+.icon {
+	display: inline-block;
+}
+
+.icon-clocks {
+	width: 18px; height: 18px;
+	background-image: url('../img/clocks-icon.png');
+}
+
+.icon-pin {
+	width: 15px; height: 22px;
+	background-image: url('../img/pin-icon.png');
+}

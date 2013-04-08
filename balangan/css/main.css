@@ -1,3 +1,12 @@
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -150px;
+}
+
 body {
 	background: #f5f2ee;
 	min-width: 1020px;
@@ -22,6 +31,99 @@ body {
 	width: 1000px;
 }
 
+a {
+	color: inherit;
+}
+
+.action-link {
+	display: inline-block;
+	border-bottom: 1px dotted;
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: 1;
+}
+
+/* ----------------------------------------------------- TABLES START ----------------------------------------------- */
+
+.table_standard {
+    width: 100%;
+    text-align: center;
+	margin-bottom: 15px;
+}
+
+.table_standard td, .table_standard th {
+    padding: 8px 5px;
+    border: 1px solid #b4b4b4;
+    border-right: none;
+    word-wrap: break-word;
+}
+
+.table_standard td:first-child, .table_standard th:first-child {
+    border-left: none;
+}
+
+.table_standard thead tr:first-child th {
+    border-top: none;
+}
+
+.table_standard tbody td {
+    text-transform: uppercase;
+}
+
+.table_standard tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table_standard tfoot td {
+    border: none;
+    background-color: #e0ddd9;
+}
+
+.table_standard tfoot td:first-child {
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.table_standard tfoot td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* to provide highest priority without !important */
+.table_standard tr > td.table-separator {
+    background: none;
+    border: none;
+    padding: 0;
+    height: 10px;
+}
+
+
+.cell_left-aligned {
+	text-align: left;
+}
+
+.history-table td,
+.history-table th {
+	padding: 10px 20px;
+}
+
+.history-table td:first-child {
+	text-align: left;
+}
+
+.units-row {
+    white-space: nowrap;
+}
+
+.table-link_orange {
+    color: #ef7f1a;
+}
+
+
+/* ----------------------------------------------------- TABLES END ------------------------------------------------- */
+
 /* ----------------------------------------------------- HEADER START ----------------------------------------------- */
 
 header {
@@ -44,7 +146,7 @@ header {
 .header-inner {
 	min-height: 180px;
 	position: relative;
-	padding: 10px 0;
+	padding: 15px 0;
 }
 
 .header-right {
@@ -53,9 +155,35 @@ header {
 	padding-right: 10px;
 }
 
-.header-login-form {
-	font-size: 0;
+.header-right-logged-in {
+	width: 400px;
+}
+
+.header-form {
 	margin-bottom: 15px;
+}
+
+
+.header-form-logged-in {
+	color: #fff;
+	overflow: hidden;
+	padding-left: 10px;
+}
+
+.header-form-logged-in-greeting {
+	margin-bottom: 10px;
+}
+
+.header-form-login {
+	font-size: 0;
+}
+
+.header-button-exit {
+	float: right;
+}
+
+.header-button-enter {
+	vertical-align: top;
 }
 
 .header-login-field-box {
@@ -64,60 +192,36 @@ header {
 	margin-right: 5px;
 }
 
-.header-login-field {
-	width: 140px;
-	height: 16px;
-	line-height: 16px;
-	font-size: 12px;
-	padding: 5px;
-	color: #6f6f6f;
-	border: 0;
-	border-radius: 5px;
-	vertical-align: top;
-}
-
 .header-reg-link, .header-forgot-password-link {
 	color: #ffffff;
 	display: block;
 	margin-top: 5px;
 }
 
-.header-enter-button {
-	font-size: 12px;
-	line-height: 16px;
-	height: 16px;
-	padding: 5px 20px;
-	border-radius: 5px;
-	display: inline-block;
-	vertical-align: top;
-	cursor: pointer;
-	text-shadow: 1px 1px 0 #e1e1e1;
-
-	background: #fafafa;
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZhZmFmYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5ZjlmOWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: -moz-linear-gradient(top, #fafafa 0%, #9f9f9f 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#9f9f9f));
-	background: -webkit-linear-gradient(top, #fafafa 0%,#9f9f9f 100%);
-	background: -o-linear-gradient(top, #fafafa 0%,#9f9f9f 100%);
-	background: -ms-linear-gradient(top, #fafafa 0%,#9f9f9f 100%);
-	background: linear-gradient(top, #fafafa 0%,#9f9f9f 100%);
-}
-
-.header-social-box {
+.header-box {
 	background-color: rgba(255, 255, 255, 0.2);
-	font-size: 0;
 	border-radius: 5px;
 	position: relative;
 	margin-bottom: 15px;
+	color: #fff;
+	min-height: 80px;
 }
 
-.header-social-box-content {
+.header-box-content {
 	padding: 10px;
 	position: relative;
 	overflow: hidden;
 }
 
-.header-social-box-title {
+.header-box-points > .header-box-content {
+	padding: 30px;
+}
+
+.header-box_hidden {
+	visibility: hidden;
+}
+
+.header-social-title {
 	color: #ffffff;
 	font-size: 12px;
 	width: 140px;
@@ -125,7 +229,7 @@ header {
 }
 
 .header-social-buttons {
-	overflow: hidden;
+	float: right;
 }
 
 .header-social-button {
@@ -142,18 +246,31 @@ header {
 .header-social-button-mail { background-position: -127px 0; }
 .header-social-button-odnokl { background-position: -168px 0; }
 
-.header-city-select-box {
-	text-align: right;
+.header-box-points-link {
+	font-size: 18px;
+	color: #e4d0b5;
+	margin-left: 5px;
+}
+
+.header-city {
+	color: #fff;
+	padding-left: 15px;
 }
 
 .header-city-select {
 	width: 220px;
-	font-size: 12px;
-	padding: 4px;
-	border-radius: 7px;
-	border: 1px solid transparent;
+	float: right;
 }
 
+.header-city-icon {
+	vertical-align: middle;
+	margin-right: 5px;
+	margin-top: -3px;
+}
+
+.header-city-text {
+	vertical-align: middle;
+}
 
 /* ----------------------------------------------------- HEADER END ------------------------------------------------- */
 
@@ -534,9 +651,6 @@ header {
 }
 
 .catalog-item-info-time-icon {
-	display: inline-block;
-	width: 18px; height: 18px;
-	background-image: url('../img/clocks.png');
 	vertical-align: middle;
 	margin-right: 5px;
 }
@@ -617,15 +731,62 @@ div.vacancy-description-item-content {
 	padding-left: 10px;
 }
 
+.vacancy-form-row {
+	margin-bottom: 15px;
+}
+
+.vacancy-resume {
+	display: block;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 340px;
+}
+
+/* overriding bootstrap styles */
+input.vacancy-email,
+select.vacancy-position {
+	margin-right: 20px;
+}
+
 /* ----------------------------------------------------- about pages end -------------------------------------------- */
 
 /* ----------------------------------------------------- profile start ---------------------------------------------- */
 
 .profile-page-content {
-	padding: 20px;
+	padding: 15px;
 	background-color: #fff;
 	border-radius: 10px;
 	margin-bottom: 10px;
+	min-height: 400px;
+}
+
+.invite-friend-page {
+	padding: 15px;
+	text-transform: uppercase;
+	line-height: 1.4;
+}
+
+.invite-friend-page-header {
+	font-size: 13px;
+}
+
+.invite-friend-page-link {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.invite-friend-page-form {
+	margin-top: 20px;
+}
+
+.invite-friend-page-form-button {
+	margin-right: 10px;
+}
+
+.lk-invite-button {
+	text-align: right;
 }
 
 /* ----------------------------------------------------- profile end ------------------------------------------------ */
@@ -634,12 +795,16 @@ div.vacancy-description-item-content {
 
 /* ----------------------------------------------------- FOOTER START ----------------------------------------------- */
 
+footer, .footer-offset {
+	height: 150px;
+}
+
 footer {
 	background: #2c080a url('../img/footer-bg.png') repeat-x left bottom;
 }
 
 .footer-inner {
-	padding: 20px 0 35px;
+	padding: 20px 0 0;
 	position: relative;
 	overflow: hidden;
 }
