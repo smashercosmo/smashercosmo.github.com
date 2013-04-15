@@ -48,6 +48,10 @@
 
 .restaurant-details-base-style-name {
     display: block;
+    padding: 1em 2em 0 0.5em;
+}
+
+.main-choose-restaurant.promo .restaurant-details-base-style-name {
     padding: 1em 2em 0 1.5em;
 }
 
@@ -61,7 +65,7 @@
     position: absolute;
     top: -.8em;
     right: 0;
-    padding: 2em 0 0 1.5em;
+    padding: 2em 0 0 0.5em;
 }
 
 .restaurant-details-base-style-logo a {
@@ -75,6 +79,10 @@
 }
 
 .restaurant-details-base-style-stars {
+    padding: 0.2em 2em 0 0.5em;
+}
+
+.main-choose-restaurant.promo .restaurant-details-base-style-stars {
     padding: 0.2em 2em 0 1.5em;
 }
 
@@ -103,10 +111,6 @@
     padding: 1em 2em 0 0;
 }
 
-.restaurant-details-delivery-cost {
-    color: #5d5043;
-}
-
 .restaurant-details-delivery-cost-currency {
     margin-top: 9px;
     line-height: 1;
@@ -125,12 +129,20 @@
     padding: 0.3em 2em 0 0;
 }
 
-.restaurant-details.promo-banner {
-    margin-top: -3em;
-}
-
 .restaurant-details-section-list {
     padding: 0.3em 2em 1em 0;
+}
+
+.restaurant-details-section-list a, .restaurant-details-time span, .restaurant-details-delivery-cost {
+    color: $brownlighter;
+    line-height: 1.8;
+}
+
+.restaurant-details.promo-banner {
+    margin-top: -3em;
+    @include respond-to(medium-screen) {
+        margin-top: 15px;
+      }
 }
 
 .promo-banner-image.company-special-height120 {
