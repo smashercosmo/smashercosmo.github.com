@@ -797,3 +797,64 @@ input.index-form-search-input {
 .promo-banner-image.company-special-height55:first-child {
   margin-bottom: 20px;
 }
+
+/* line 157, ../sass/searchByAddress.scss */
+.button {
+  margin-bottom: 10px;
+}
+
+/* line 161, ../sass/searchByAddress.scss */
+.button a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  border-radius: 7px;
+}
+
+/* line 168, ../sass/searchByAddress.scss */
+.button a:hover {
+  color: white;
+}
+
+/* line 172, ../sass/searchByAddress.scss */
+.button-brown {
+  background: #c6af99;
+}
+
+/* line 176, ../sass/searchByAddress.scss */
+.button-text {
+  font-family: 'Georgia', 'Times New Roman', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+/* line 183, ../sass/searchByAddress.scss */
+.show-all-items {
+  padding: 1px 10px;
+  width: 19%;
+}
+
+/* line 188, ../sass/searchByAddress.scss */
+.digest-section-kitchen-area {
+  margin: 0;
+  float: left;
+}
+
+/* line 193, ../sass/searchByAddress.scss */
+.digest-section-kitchen-area.column-left {
+  margin-right: 40px;
+}
+
+/* line 197, ../sass/searchByAddress.scss */
+.digest-section-kitchen-area li {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* line 202, ../sass/searchByAddress.scss */
+.digest-section-kitchen-area a {
+  color: #8f7763;
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}

@@ -153,3 +153,54 @@
 .promo-banner-image.company-special-height55:first-child {
     margin-bottom: 20px;
 }
+
+.button {
+    margin-bottom: 10px;
+}
+
+.button a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    border-radius: 7px;
+}
+
+.button a:hover {
+    color: white;
+}
+
+.button-brown {
+    background: #c6af99;
+}
+
+.button-text {
+    font-family: 'Georgia', 'Times New Roman', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+.show-all-items {
+    padding: 1px 10px;
+    width: 19%;
+}
+
+.digest-section-kitchen-area {
+    margin: 0;
+    float: left;
+}
+
+.digest-section-kitchen-area.column-left {
+    margin-right: 40px;
+}
+
+.digest-section-kitchen-area li {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.digest-section-kitchen-area a {
+    color: $brownlighter;
+    border-bottom: 1px dotted;
+    text-decoration: none;
+}
