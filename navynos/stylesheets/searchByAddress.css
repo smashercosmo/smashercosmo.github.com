@@ -612,116 +612,106 @@ input.index-form-search-input {
 .main-order-details-row {
   margin-bottom: 30px;
 }
-@media (max-width: 767px) {
-  /* line 6, ../sass/searchByAddress.scss */
-  .main-order-details-row {
-    margin-bottom: 30px;
-  }
-}
 
-/* line 14, ../sass/searchByAddress.scss */
+/* line 10, ../sass/searchByAddress.scss */
 .main-order-details-title {
   font-family: 'Georgia', 'Times New Roman', sans-serif;
   font-size: 16px;
 }
 
-/* line 19, ../sass/searchByAddress.scss */
-.action-link {
+/* line 15, ../sass/searchByAddress.scss */
+.action-link-color {
   color: #5d5043;
 }
 
-/* line 23, ../sass/searchByAddress.scss */
-.promo-banner-image-long {
-  height: 120px;
-  width: 100%;
+/* line 19, ../sass/searchByAddress.scss */
+.promo-banner-main-full {
+  margin-bottom: 30px;
 }
 
-/* line 28, ../sass/searchByAddress.scss */
-.row-fluid.main-choose-restaurant:last-child {
+/* line 23, ../sass/searchByAddress.scss */
+.main-choose-restaurant:last-child {
   margin-bottom: 100px;
 }
 
-/* line 32, ../sass/searchByAddress.scss */
+/* line 27, ../sass/searchByAddress.scss */
 .main-choose-restaurant {
-  padding: 15px 0;
+  padding-bottom: 15px;
+}
+
+/* line 31, ../sass/searchByAddress.scss */
+.dotted-line {
+  height: 0;
   border-bottom: 1px dotted #8f7763;
+  margin-bottom: 15px;
 }
 
 /* line 37, ../sass/searchByAddress.scss */
-.main-choose-restaurant.promo {
-  margin-bottom: 0;
-}
-
-/* line 41, ../sass/searchByAddress.scss */
-.main-choose-restaurant.promo .restaurant-details-inner {
+.main-choose-restaurant_promo {
+  padding-bottom: 0;
+  margin-bottom: 15px;
   border-left: 5px solid #F4521A;
 }
 
-/* line 45, ../sass/searchByAddress.scss */
+/* line 43, ../sass/searchByAddress.scss */
 .restaurant-details-base-style {
   position: relative;
 }
 
-/* line 49, ../sass/searchByAddress.scss */
+/* line 47, ../sass/searchByAddress.scss */
 .restaurant-details-base-style li {
   white-space: nowrap;
 }
 
-/* line 53, ../sass/searchByAddress.scss */
+/* line 51, ../sass/searchByAddress.scss */
 .restaurant-details-base-style-name {
   display: block;
-  padding: 1em 2em 0 0.5em;
+  padding: 10px 0 0 5px;
 }
 
-/* line 58, ../sass/searchByAddress.scss */
-.main-choose-restaurant.promo .restaurant-details-base-style-name {
-  padding: 1em 2em 0 1.5em;
+/* line 56, ../sass/searchByAddress.scss */
+.main-choose-restaurant_promo .restaurant-details-base-style-name {
+  padding: 10px 0 0 15px;
 }
 
-/* line 62, ../sass/searchByAddress.scss */
+/* line 60, ../sass/searchByAddress.scss */
 .restaurant-details-base-style-name a {
   font-family: 'Georgia', 'Times New Roman', sans-serif;
   font-size: 14px;
   font-weight: bold;
 }
 
-/* line 68, ../sass/searchByAddress.scss */
+/* line 66, ../sass/searchByAddress.scss */
 .restaurant-details-base-style-logo {
   position: absolute;
-  top: -.8em;
+  top: -11px;
   right: 0;
-  padding: 2em 0 0 0.5em;
-}
-@media (max-width: 767px) {
-  /* line 68, ../sass/searchByAddress.scss */
-  .restaurant-details-base-style-logo {
-    display: inline-block;
-  }
+  padding: 24px 0 0 20px;
 }
 
-/* line 78, ../sass/searchByAddress.scss */
+/* line 73, ../sass/searchByAddress.scss */
 .restaurant-details-base-style-logo a {
   display: block;
   position: relative;
 }
 
-/* line 83, ../sass/searchByAddress.scss */
+/* line 78, ../sass/searchByAddress.scss */
 .restaurant-details-base-style-logo img {
   max-width: 140px;
   max-height: 60px;
 }
 
-/* line 88, ../sass/searchByAddress.scss */
+/* line 83, ../sass/searchByAddress.scss */
 .restaurant-details-base-style-stars {
-  padding: 0.2em 2em 0 0.5em;
+  padding: 3px 0 0 5px;
 }
 
-/* line 92, ../sass/searchByAddress.scss */
-.main-choose-restaurant.promo .restaurant-details-base-style-stars {
-  padding: 0.2em 2em 0 1.5em;
+/* line 87, ../sass/searchByAddress.scss */
+.main-choose-restaurant_promo .restaurant-details-base-style-stars {
+  padding: 3px 0 0 15px;
 }
 
-/* line 96, ../sass/searchByAddress.scss */
+/* line 91, ../sass/searchByAddress.scss */
 .restaurant-details-stars-rating {
   width: 13px;
   height: 12px;
@@ -729,81 +719,76 @@ input.index-form-search-input {
   display: inline-block;
 }
 
-/* line 103, ../sass/searchByAddress.scss */
+/* line 98, ../sass/searchByAddress.scss */
 .restaurant-details-stars-rating.zero {
   background: url("../img/tmp/rest-star.png") no-repeat 0 0;
 }
 
-/* line 107, ../sass/searchByAddress.scss */
+/* line 102, ../sass/searchByAddress.scss */
 .restaurant-details-stars-rating.point {
   background: url("../img/tmp/rest-star.png") no-repeat 0 -12px;
 }
 
-/* line 111, ../sass/searchByAddress.scss */
-.main-choose-restaurant.promo .restaurant-details-conditions {
+/* line 106, ../sass/searchByAddress.scss */
+.main-choose-restaurant_promo .restaurant-details-conditions {
   clear: both;
   padding-left: 15px;
   margin-left: 0;
 }
 
-/* line 117, ../sass/searchByAddress.scss */
+/* line 112, ../sass/searchByAddress.scss */
 .restaurant-details-delivery {
-  padding: 1em 2em 0 0;
+  padding: 10px 0 0 0;
 }
 
-/* line 121, ../sass/searchByAddress.scss */
+/* line 116, ../sass/searchByAddress.scss */
+.main-choose-restaurant_promo .restaurant-details-delivery {
+  padding: 30px 0 0 0;
+}
+
+/* line 120, ../sass/searchByAddress.scss */
 .restaurant-details-time {
-  padding: 0.3em 2em 0 0;
+  padding: 5px 0 0 0;
 }
 
-/* line 125, ../sass/searchByAddress.scss */
+/* line 124, ../sass/searchByAddress.scss */
 .restaurant-details-section-list {
-  padding: 0.3em 2em 1em 0;
+  padding: 5px 0 10px 0;
 }
 
-/* line 129, ../sass/searchByAddress.scss */
+/* line 128, ../sass/searchByAddress.scss */
 .restaurant-details-section-list, .restaurant-details-time span, .restaurant-details-delivery-cost {
   color: #8f7763;
   line-height: 1.8;
 }
 
-/* line 134, ../sass/searchByAddress.scss */
+/* line 133, ../sass/searchByAddress.scss */
 .restaurant-details-section-list b {
   color: #382e27;
 }
 
-/* line 138, ../sass/searchByAddress.scss */
+/* line 137, ../sass/searchByAddress.scss */
 .restaurant-details.promo-banner {
-  margin-top: -3em;
+  margin-top: -38px;
 }
 @media (max-width: 767px) {
-  /* line 138, ../sass/searchByAddress.scss */
+  /* line 137, ../sass/searchByAddress.scss */
   .restaurant-details.promo-banner {
     margin-top: 15px;
   }
 }
 
-/* line 145, ../sass/searchByAddress.scss */
-.promo-banner-image.company-special-height120 {
-  height: 120px;
+/* line 144, ../sass/searchByAddress.scss */
+.promo-banner-image-choose-restaurant-half:first-child {
+  margin-bottom: 10px;
 }
 
-/* line 149, ../sass/searchByAddress.scss */
-.promo-banner-image.company-special-height55 {
-  height: 55px;
-}
-
-/* line 153, ../sass/searchByAddress.scss */
-.promo-banner-image.company-special-height55:first-child {
-  margin-bottom: 20px;
-}
-
-/* line 157, ../sass/searchByAddress.scss */
+/* line 148, ../sass/searchByAddress.scss */
 .button {
   margin-bottom: 10px;
 }
 
-/* line 161, ../sass/searchByAddress.scss */
+/* line 152, ../sass/searchByAddress.scss */
 .button a {
   text-decoration: none;
   display: block;
@@ -811,17 +796,17 @@ input.index-form-search-input {
   border-radius: 7px;
 }
 
-/* line 168, ../sass/searchByAddress.scss */
+/* line 159, ../sass/searchByAddress.scss */
 .button a:hover {
   color: white;
 }
 
-/* line 172, ../sass/searchByAddress.scss */
+/* line 163, ../sass/searchByAddress.scss */
 .button-brown {
   background: #c6af99;
 }
 
-/* line 176, ../sass/searchByAddress.scss */
+/* line 167, ../sass/searchByAddress.scss */
 .button-text {
   font-family: 'Georgia', 'Times New Roman', sans-serif;
   font-weight: bold;
@@ -829,30 +814,30 @@ input.index-form-search-input {
   color: white;
 }
 
-/* line 183, ../sass/searchByAddress.scss */
+/* line 174, ../sass/searchByAddress.scss */
 .show-all-items {
   padding: 1px 10px;
   width: 19%;
 }
 
-/* line 188, ../sass/searchByAddress.scss */
+/* line 179, ../sass/searchByAddress.scss */
 .digest-section-kitchen-area {
   margin: 0;
   float: left;
 }
 
-/* line 193, ../sass/searchByAddress.scss */
+/* line 184, ../sass/searchByAddress.scss */
 .digest-section-kitchen-area.column-left {
   margin-right: 40px;
 }
 
-/* line 197, ../sass/searchByAddress.scss */
+/* line 188, ../sass/searchByAddress.scss */
 .digest-section-kitchen-area li {
   display: block;
   margin-bottom: 5px;
 }
 
-/* line 202, ../sass/searchByAddress.scss */
+/* line 193, ../sass/searchByAddress.scss */
 .digest-section-kitchen-area a {
   color: #8f7763;
   border-bottom: 1px dotted;

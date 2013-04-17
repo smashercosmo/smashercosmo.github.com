@@ -5,10 +5,6 @@
 
 .main-order-details-row {
   margin-bottom: 30px;
-
-  @include respond-to(medium-screen) {
-    margin-bottom: 30px;
-  }
 }
 
 .main-order-details-title {
@@ -16,29 +12,31 @@
   font-size: 16px;
 }
 
-.action-link {
+.action-link-color {
   color: $brownlight;
 }
 
-.promo-banner-image-long {
-    height: 120px;
-    width: 100%;
+.promo-banner-main-full {
+    margin-bottom: 30px;
 }
 
-.row-fluid.main-choose-restaurant:last-child {
+.main-choose-restaurant:last-child {
     margin-bottom: 100px;
 }
 
 .main-choose-restaurant {
-    padding: 15px 0;
+    padding-bottom: 15px;
+}
+
+.dotted-line {
+    height: 0;
     border-bottom: 1px dotted $brownlighter;
+    margin-bottom: 15px;
 }
 
-.main-choose-restaurant.promo {
-    margin-bottom: 0;
-}
-
-.main-choose-restaurant.promo .restaurant-details-inner {
+.main-choose-restaurant_promo {
+    padding-bottom: 0;
+    margin-bottom: 15px;
     border-left: 5px solid #F4521A;
 }
 
@@ -52,11 +50,11 @@
 
 .restaurant-details-base-style-name {
     display: block;
-    padding: 1em 2em 0 0.5em;
+    padding: 10px 0 0 5px;
 }
 
-.main-choose-restaurant.promo .restaurant-details-base-style-name {
-    padding: 1em 2em 0 1.5em;
+.main-choose-restaurant_promo .restaurant-details-base-style-name {
+    padding: 10px 0 0 15px;
 }
 
 .restaurant-details-base-style-name a {
@@ -67,12 +65,9 @@
 
 .restaurant-details-base-style-logo {
     position: absolute;
-    top: -.8em;
+    top: -11px;
     right: 0;
-    padding: 2em 0 0 0.5em;
-    @include respond-to(medium-screen) {
-        display: inline-block;
-      }
+    padding: 24px 0 0 20px;
 }
 
 .restaurant-details-base-style-logo a {
@@ -86,11 +81,11 @@
 }
 
 .restaurant-details-base-style-stars {
-    padding: 0.2em 2em 0 0.5em;
+    padding: 3px 0 0 5px;
 }
 
-.main-choose-restaurant.promo .restaurant-details-base-style-stars {
-    padding: 0.2em 2em 0 1.5em;
+.main-choose-restaurant_promo .restaurant-details-base-style-stars {
+    padding: 3px 0 0 15px;
 }
 
 .restaurant-details-stars-rating {
@@ -108,22 +103,26 @@
     background: url("../img/tmp/rest-star.png") no-repeat 0 -12px;
 }
 
-.main-choose-restaurant.promo .restaurant-details-conditions {
+.main-choose-restaurant_promo .restaurant-details-conditions {
     clear: both;
     padding-left: 15px;
     margin-left: 0;
 }
 
 .restaurant-details-delivery {
-    padding: 1em 2em 0 0;
+    padding: 10px 0 0 0;
+}
+
+.main-choose-restaurant_promo .restaurant-details-delivery {
+    padding: 30px 0 0 0;
 }
 
 .restaurant-details-time {
-    padding: 0.3em 2em 0 0;
+    padding: 5px 0 0 0;
 }
 
 .restaurant-details-section-list {
-    padding: 0.3em 2em 1em 0;
+    padding: 5px 0 10px 0;
 }
 
 .restaurant-details-section-list, .restaurant-details-time span, .restaurant-details-delivery-cost {
@@ -136,22 +135,14 @@
 }
 
 .restaurant-details.promo-banner {
-    margin-top: -3em;
+    margin-top: -38px;
     @include respond-to(medium-screen) {
         margin-top: 15px;
       }
 }
 
-.promo-banner-image.company-special-height120 {
-    height: 120px;
-}
-
-.promo-banner-image.company-special-height55 {
-    height: 55px;
-}
-
-.promo-banner-image.company-special-height55:first-child {
-    margin-bottom: 20px;
+.promo-banner-image-choose-restaurant-half:first-child {
+    margin-bottom: 10px;
 }
 
 .button {
