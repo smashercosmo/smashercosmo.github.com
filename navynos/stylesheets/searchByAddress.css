@@ -821,24 +821,32 @@ input.index-form-search-input {
 }
 
 /* line 179, ../sass/searchByAddress.scss */
-.digest-section-kitchen-area {
-  margin: 0;
-  float: left;
+.choose-kitchen-area {
+  -webkit-column-width: 130px;
+  -moz-column-width: 130px;
+  -ms-column-width: 130px;
+  -o-column-width: 130px;
+  column-width: 130px;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  -ms-column-gap: 10px;
+  -o-column-gap: 10px;
+  column-gap: 10px;
 }
 
 /* line 184, ../sass/searchByAddress.scss */
-.digest-section-kitchen-area.column-left {
-  margin-right: 40px;
+.choose-kitchen-area-section {
+  position: relative;
 }
 
 /* line 188, ../sass/searchByAddress.scss */
-.digest-section-kitchen-area li {
-  display: block;
-  margin-bottom: 5px;
+.choose-kitchen-area-section-inner {
+  display: inline-block;
+  width: 100%;
 }
 
 /* line 193, ../sass/searchByAddress.scss */
-.digest-section-kitchen-area a {
+.choose-kitchen-area a {
   color: #8f7763;
   border-bottom: 1px dotted;
   text-decoration: none;

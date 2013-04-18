@@ -176,21 +176,21 @@
     width: 19%;
 }
 
-.digest-section-kitchen-area {
-    margin: 0;
-    float: left;
+.choose-kitchen-area {
+    @include column-width(130px);
+    @include column-gap(10px);
 }
 
-.digest-section-kitchen-area.column-left {
-    margin-right: 40px;
+.choose-kitchen-area-section {
+    position: relative;
 }
 
-.digest-section-kitchen-area li {
-    display: block;
-    margin-bottom: 5px;
+.choose-kitchen-area-section-inner {
+    display: inline-block;
+    width: 100%;
 }
 
-.digest-section-kitchen-area a {
+.choose-kitchen-area a {
     color: $brownlighter;
     border-bottom: 1px dotted;
     text-decoration: none;
