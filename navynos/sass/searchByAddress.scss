@@ -20,22 +20,19 @@
 .restaurant-list__item_promo .restaurant-list__item__content {
     position: relative;
     border-left: 5px solid #F4521A;
+    padding: 15px 0 15px 15px;
+}
+
+.restaurant-list__item__content {
+    padding: 0 0 0 5px;
 }
 
 .restaurant-list__item__corporate-identity {
     position: relative;
-    padding: 0 0 0 5px;
+    margin-bottom: 35px;
 }
 
-.restaurant-list__item_promo .restaurant-list__item__corporate-identity {
-    padding: 10px 0 0 15px;
-}
-
-.restaurant-list__item__corporate-identity li {
-    white-space: nowrap;
-}
-
-.restaurant-list__item__corporate-identity__name a {
+.restaurant-list__item__corporate-identity__name {
     font-family: 'Georgia', 'Times New Roman', sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -45,16 +42,7 @@
     position: absolute;
     top: -18px;
     right: 0;
-    padding: 24px 0 0 20px;
-}
-
-.restaurant-list__item_promo .restaurant-list__item__corporate-identity__logo {
-    top: -11px;
-}
-
-.restaurant-list__item__corporate-identity__logo a {
-    display: block;
-    position: relative;
+    padding: 22px 0 0 20px;
 }
 
 .restaurant-list__item__corporate-identity__logo img {
@@ -81,44 +69,38 @@
     background: url("../img/tmp/rest-star.png") no-repeat 0 -12px;
 }
 
-.restaurant-list__item_promo .restaurant-list__item__operating-conditions {
+.restaurant-list__item_promo .restaurant-list__item__info {
     clear: both;
-    padding: 0 0 10px 15px;
     margin-left: 0;
 }
 
-.restaurant-list__item_promo .restaurant-list__item__operating-conditions__delivery {
-    padding: 10px 0 0 0;
+.restaurant-list__item__info li {
+    margin-top: 5px;
 }
 
-.restaurant-list__item_promo .restaurant-list__item__operating-conditions__delivery {
-    padding: 30px 0 0 0;
+.restaurant-list__item__info li:first-child {
+    margin-top: 0;
 }
 
-.restaurant-list__item__operating-conditions__open-hours {
-    padding: 5px 0 0 0;
-}
-
-.restaurant-list__item__kitchen-list {
-    padding: 5px 0 0 0;
-}
-
-.restaurant-list__item__kitchen-list a, 
-.restaurant-list__item__operating-conditions__open-hours span, 
-.restaurant-list__item__operating-conditions__delivery-cost {
+.restaurant-list__item__info a, .restaurant-list__item__info span {
     color: $brownlighter;
-    line-height: 1.8;
 }
 
-.restaurant-list__item__promo-banner {
-    margin-top: -38px;
+.restaurant-list__item__image {
+    margin-top: -73px;
     @include respond-to(medium-screen) {
         margin-top: 15px;
       }
 }
 
-.restaurant-list__item__promo-banner_half-size:first-child {
-    margin-bottom: 10px;
+.restaurant-list__item__image img {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.restaurant-list__item__image img:first-child {
+    margin-top: 0;
 }
 
 .button {
