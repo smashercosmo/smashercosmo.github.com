@@ -3,135 +3,107 @@
 
 /* ------------------------------------------------------ INDEX PAGE START --------------------------------------------------- */
 
-.main-order-details-row {
-  margin-bottom: 30px;
-}
-
-.main-order-details-title {
-  font-family: 'Georgia', 'Times New Roman', sans-serif;
-  font-size: 16px;
-}
-
-.action-link-color {
-  color: $brownlight;
-}
-
 .promo-banner-main-full {
     margin-bottom: 30px;
 }
 
-.main-choose-restaurant:last-child {
+.restaurant-list {
     margin-bottom: 100px;
 }
 
-.main-choose-restaurant {
+.restaurant-list__item {
     padding-bottom: 15px;
-}
-
-.dotted-line {
-    height: 0;
     border-bottom: 1px dotted $brownlighter;
-    margin-bottom: 15px;
 }
 
-.main-choose-restaurant_promo {
-    padding-bottom: 0;
-    margin-bottom: 15px;
+.restaurant-list__item_promo .restaurant-list__item__content {
+    position: relative;
+    display: inline-block;
     border-left: 5px solid #F4521A;
 }
 
-.restaurant-details-base-style {
+.restaurant-list__item__corporate-identity {
     position: relative;
-}
-
-.restaurant-details-base-style li {
-    white-space: nowrap;
-}
-
-.restaurant-details-base-style-name {
-    display: block;
     padding: 10px 0 0 5px;
 }
 
-.main-choose-restaurant_promo .restaurant-details-base-style-name {
+.restaurant-list__item_promo .restaurant-list__item__corporate-identity {
     padding: 10px 0 0 15px;
 }
 
-.restaurant-details-base-style-name a {
+.restaurant-list__item__corporate-identity li {
+    white-space: nowrap;
+}
+
+.restaurant-list__item__corporate-identity__name a {
     font-family: 'Georgia', 'Times New Roman', sans-serif;
     font-size: 14px;
     font-weight: bold;
 }
 
-.restaurant-details-base-style-logo {
+.restaurant-list__item__corporate-identity__logo {
     position: absolute;
     top: -11px;
     right: 0;
     padding: 24px 0 0 20px;
 }
 
-.restaurant-details-base-style-logo a {
+.restaurant-list__item__corporate-identity__logo a {
     display: block;
     position: relative;
 }
 
-.restaurant-details-base-style-logo img {
+.restaurant-list__item__corporate-identity__logo img {
     max-width: 140px;
     max-height: 60px;
 }
 
-.restaurant-details-base-style-stars {
-    padding: 3px 0 0 5px;
+.restaurant-list__item__corporate-identity__stars {
+    padding-top: 3px;
 }
 
-.main-choose-restaurant_promo .restaurant-details-base-style-stars {
-    padding: 3px 0 0 15px;
-}
-
-.restaurant-details-stars-rating {
+.restaurant-list__item__corporate-identity__stars span {
     width: 13px;
     height: 12px;
     position: relative;
     display: inline-block;
 }
 
-.restaurant-details-stars-rating.zero {
+.restaurant-list__item__corporate-identity__stars_zero {
     background: url("../img/tmp/rest-star.png") no-repeat 0 0;
 }
 
-.restaurant-details-stars-rating.point {
+.restaurant-list__item__corporate-identity__stars_point {
     background: url("../img/tmp/rest-star.png") no-repeat 0 -12px;
 }
 
-.main-choose-restaurant_promo .restaurant-details-conditions {
+.restaurant-list__item_promo .restaurant-list__item__operating-conditions {
     clear: both;
-    padding-left: 15px;
+    padding: 0 0 10px 15px;
     margin-left: 0;
 }
 
-.restaurant-details-delivery {
+.restaurant-list__item__operating-conditions__delivery {
     padding: 10px 0 0 0;
 }
 
-.main-choose-restaurant_promo .restaurant-details-delivery {
+.restaurant-list__item_promo .restaurant-list__item__operating-conditions__delivery {
     padding: 30px 0 0 0;
 }
 
-.restaurant-details-time {
+.restaurant-list__item__operating-conditions__open-hours {
     padding: 5px 0 0 0;
 }
 
-.restaurant-details-section-list {
-    padding: 5px 0 10px 0;
+.restaurant-list__item__kitchen-list {
+    padding: 5px 0 0 0;
 }
 
-.restaurant-details-section-list, .restaurant-details-time span, .restaurant-details-delivery-cost {
+.restaurant-list__item__kitchen-list a, 
+.restaurant-list__item__operating-conditions__open-hours span, 
+.restaurant-list__item__operating-conditions__delivery-cost {
     color: $brownlighter;
     line-height: 1.8;
-}
-
-.restaurant-details-section-list b {
-    color: #382e27;
 }
 
 .restaurant-details.promo-banner {

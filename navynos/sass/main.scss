@@ -82,6 +82,10 @@ a {
   padding-bottom: 30px;
 }
 
+.page-sections {
+  margin-bottom: 30px;
+}
+
 .price {
   white-space: nowrap;
 }
@@ -355,10 +359,6 @@ input.index-form-search-input {
   @include respond-to(large-screen) {
     color: #E73B23;
   }
-}
-
-.index-sections {
-  margin-bottom: 30px;
 }
 
 .index-form-search-submit-icon {
