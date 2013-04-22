@@ -13,18 +13,18 @@
 
 .restaurant-list__item {
     padding-bottom: 15px;
+    margin-bottom: 15px;
     border-bottom: 1px dotted $brownlighter;
 }
 
 .restaurant-list__item_promo .restaurant-list__item__content {
     position: relative;
-    display: inline-block;
     border-left: 5px solid #F4521A;
 }
 
 .restaurant-list__item__corporate-identity {
     position: relative;
-    padding: 10px 0 0 5px;
+    padding: 0 0 0 5px;
 }
 
 .restaurant-list__item_promo .restaurant-list__item__corporate-identity {
@@ -43,9 +43,13 @@
 
 .restaurant-list__item__corporate-identity__logo {
     position: absolute;
-    top: -11px;
+    top: -18px;
     right: 0;
     padding: 24px 0 0 20px;
+}
+
+.restaurant-list__item_promo .restaurant-list__item__corporate-identity__logo {
+    top: -11px;
 }
 
 .restaurant-list__item__corporate-identity__logo a {
@@ -83,7 +87,7 @@
     margin-left: 0;
 }
 
-.restaurant-list__item__operating-conditions__delivery {
+.restaurant-list__item_promo .restaurant-list__item__operating-conditions__delivery {
     padding: 10px 0 0 0;
 }
 
@@ -106,14 +110,14 @@
     line-height: 1.8;
 }
 
-.restaurant-details.promo-banner {
+.restaurant-list__item__promo-banner {
     margin-top: -38px;
     @include respond-to(medium-screen) {
         margin-top: 15px;
       }
 }
 
-.promo-banner-image-choose-restaurant-half:first-child {
+.restaurant-list__item__promo-banner_half-size:first-child {
     margin-bottom: 10px;
 }
 
