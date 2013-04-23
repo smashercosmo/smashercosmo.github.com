@@ -619,6 +619,11 @@ input.index-form-search-input {
 
 /* ------------------------------------------------------ MAKINGORDER PAGE START --------------------------------------------------- */
 /* line 6, ../sass/makingOrder.scss */
+.making-order__title {
+  font-size: 0;
+}
+
+/* line 10, ../sass/makingOrder.scss */
 .making-order__title h1, .making-order__title a {
   display: inline-block;
   position: relative;
@@ -626,37 +631,54 @@ input.index-form-search-input {
   margin-right: -100%;
 }
 @media (max-width: 767px) {
-  /* line 6, ../sass/makingOrder.scss */
+  /* line 10, ../sass/makingOrder.scss */
   .making-order__title h1, .making-order__title a {
     display: block;
   }
 }
 @media (max-width: 480px) {
-  /* line 6, ../sass/makingOrder.scss */
+  /* line 10, ../sass/makingOrder.scss */
   .making-order__title h1, .making-order__title a {
     display: block;
   }
 }
 
-/* line 20, ../sass/makingOrder.scss */
+/* line 24, ../sass/makingOrder.scss */
 .making-order__title a {
   text-align: right;
 }
 @media (max-width: 767px) {
-  /* line 20, ../sass/makingOrder.scss */
+  /* line 24, ../sass/makingOrder.scss */
   .making-order__title a {
     text-align: left;
   }
 }
 @media (max-width: 480px) {
-  /* line 20, ../sass/makingOrder.scss */
+  /* line 24, ../sass/makingOrder.scss */
   .making-order__title a {
     text-align: left;
   }
 }
 
-/* line 31, ../sass/makingOrder.scss */
+/* line 35, ../sass/makingOrder.scss */
+.back-to-menu_font {
+  font-family: 'Georgia', 'Times New Roman', sans-serif;
+  font-size: 18px;
+}
+
+/* line 40, ../sass/makingOrder.scss */
 .page-sections_makingOrder .column_border {
   border-top: 0;
   padding-top: 24px;
+}
+
+/* line 45, ../sass/makingOrder.scss */
+.making-order__image img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* line 50, ../sass/makingOrder.scss */
+.making-order__image img:first-child {
+  margin-top: 0;
 }

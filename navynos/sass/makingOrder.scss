@@ -3,6 +3,10 @@
 
 /* ------------------------------------------------------ MAKINGORDER PAGE START --------------------------------------------------- */
 
+.making-order__title {
+    font-size: 0;
+}
+
 .making-order__title h1, .making-order__title a {
     display: inline-block;
     position: relative;
@@ -28,7 +32,21 @@
       }
 }
 
+.back-to-menu_font {
+    font-family: 'Georgia', 'Times New Roman', sans-serif;
+    font-size: 18px;
+}
+
 .page-sections_makingOrder .column_border {
     border-top: 0;
     padding-top: 24px;
+}
+
+.making-order__image img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.making-order__image img:first-child {
+    margin-top: 0;
 }
