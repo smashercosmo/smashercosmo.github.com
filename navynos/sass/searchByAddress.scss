@@ -87,10 +87,13 @@
 }
 
 .restaurant-list__item__image {
-    margin-top: -73px;
+    overflow: hidden;
+    padding-left: 2.564102564102564%;
+    padding-top: 6px;
+    
     @include respond-to(medium-screen) {
-        margin-top: 15px;
-      }
+        padding: 15px 0 0 0;
+    }
 }
 
 .restaurant-list__item__image img {

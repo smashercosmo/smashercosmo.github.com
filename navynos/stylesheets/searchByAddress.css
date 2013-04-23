@@ -720,33 +720,35 @@ input.index-form-search-input {
 
 /* line 89, ../sass/searchByAddress.scss */
 .restaurant-list__item__image {
-  margin-top: -73px;
+  overflow: hidden;
+  padding-left: 2.564102564102564%;
+  padding-top: 6px;
 }
 @media (max-width: 767px) {
   /* line 89, ../sass/searchByAddress.scss */
   .restaurant-list__item__image {
-    margin-top: 15px;
+    padding: 15px 0 0 0;
   }
 }
 
-/* line 96, ../sass/searchByAddress.scss */
+/* line 99, ../sass/searchByAddress.scss */
 .restaurant-list__item__image img {
   display: block;
   margin-top: 10px;
   width: 100%;
 }
 
-/* line 102, ../sass/searchByAddress.scss */
+/* line 105, ../sass/searchByAddress.scss */
 .restaurant-list__item__image img:first-child {
   margin-top: 0;
 }
 
-/* line 106, ../sass/searchByAddress.scss */
+/* line 109, ../sass/searchByAddress.scss */
 .button {
   margin-bottom: 10px;
 }
 
-/* line 110, ../sass/searchByAddress.scss */
+/* line 113, ../sass/searchByAddress.scss */
 .button a {
   text-decoration: none;
   display: block;
@@ -754,17 +756,17 @@ input.index-form-search-input {
   border-radius: 7px;
 }
 
-/* line 117, ../sass/searchByAddress.scss */
+/* line 120, ../sass/searchByAddress.scss */
 .button a:hover {
   color: white;
 }
 
-/* line 121, ../sass/searchByAddress.scss */
+/* line 124, ../sass/searchByAddress.scss */
 .button-brown {
   background: #c6af99;
 }
 
-/* line 125, ../sass/searchByAddress.scss */
+/* line 128, ../sass/searchByAddress.scss */
 .button-text {
   font-family: 'Georgia', 'Times New Roman', sans-serif;
   font-weight: bold;
@@ -772,13 +774,13 @@ input.index-form-search-input {
   color: white;
 }
 
-/* line 132, ../sass/searchByAddress.scss */
+/* line 135, ../sass/searchByAddress.scss */
 .show-all-items {
   padding: 1px 10px;
   width: 19%;
 }
 
-/* line 137, ../sass/searchByAddress.scss */
+/* line 140, ../sass/searchByAddress.scss */
 .choose-kitchen-area {
   -webkit-column-width: 130px;
   -moz-column-width: 130px;
@@ -792,18 +794,18 @@ input.index-form-search-input {
   column-gap: 10px;
 }
 
-/* line 142, ../sass/searchByAddress.scss */
+/* line 145, ../sass/searchByAddress.scss */
 .choose-kitchen-area-section {
   position: relative;
 }
 
-/* line 146, ../sass/searchByAddress.scss */
+/* line 149, ../sass/searchByAddress.scss */
 .choose-kitchen-area-section-inner {
   display: inline-block;
   width: 100%;
 }
 
-/* line 151, ../sass/searchByAddress.scss */
+/* line 154, ../sass/searchByAddress.scss */
 .choose-kitchen-area a {
   color: #8f7763;
   border-bottom: 1px dotted;
