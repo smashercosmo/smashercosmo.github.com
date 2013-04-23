@@ -1,9 +1,9 @@
 @import "_base";
 @import "main";
 
-/* ------------------------------------------------------ INDEX PAGE START --------------------------------------------------- */
+/* ------------------------------------------------------ SEARCHBYADDRESS PAGE START --------------------------------------------------- */
 
-.promo-banner-main-full {
+.promo-banner__long {
     margin-bottom: 30px;
 }
 
@@ -27,45 +27,45 @@
     padding: 0 0 0 5px;
 }
 
-.restaurant-list__item__corporate-identity {
+.restaurant-list__item__basic {
     position: relative;
     margin-bottom: 35px;
 }
 
-.restaurant-list__item__corporate-identity__name {
+.restaurant-list__item__basic__name {
     font-family: 'Georgia', 'Times New Roman', sans-serif;
     font-size: 14px;
     font-weight: bold;
 }
 
-.restaurant-list__item__corporate-identity__logo {
+.restaurant-list__item__basic__logo {
     position: absolute;
     top: -18px;
     right: 0;
     padding: 22px 0 0 20px;
 }
 
-.restaurant-list__item__corporate-identity__logo img {
+.restaurant-list__item__basic__logo img {
     max-width: 140px;
     max-height: 60px;
 }
 
-.restaurant-list__item__corporate-identity__stars {
+.restaurant-list__item__basic__stars {
     padding-top: 3px;
 }
 
-.restaurant-list__item__corporate-identity__stars span {
+.restaurant-list__item__basic__stars span {
     width: 13px;
     height: 12px;
     position: relative;
     display: inline-block;
 }
 
-.restaurant-list__item__corporate-identity__stars_zero {
+.restaurant-list__item__basic__stars_zero {
     background: url("../img/tmp/rest-star.png") no-repeat 0 0;
 }
 
-.restaurant-list__item__corporate-identity__stars_point {
+.restaurant-list__item__basic__stars_point {
     background: url("../img/tmp/rest-star.png") no-repeat 0 -12px;
 }
 

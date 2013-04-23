@@ -1,0 +1,34 @@
+@import "_base";
+@import "main";
+
+/* ------------------------------------------------------ MAKINGORDER PAGE START --------------------------------------------------- */
+
+.making-order__title h1, .making-order__title a {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-right: -100%;
+    
+    @include respond-to(medium-screen) {
+        display: block;
+      }
+    @include respond-to(small-screen) {
+        display: block;
+      }
+}
+
+.making-order__title a {
+    text-align: right;
+    
+    @include respond-to(medium-screen) {
+        text-align: left;
+      }
+    @include respond-to(small-screen) {
+        text-align: left;
+      }
+}
+
+.page-sections_makingOrder .column_border {
+    border-top: 0;
+    padding-top: 24px;
+}
