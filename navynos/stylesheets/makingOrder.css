@@ -843,3 +843,59 @@ label {
   font-family: 'Georgia', 'Times New Roman', sans-serif;
   font-size: 18px;
 }
+
+/* line 184, ../sass/makingOrder.scss */
+.button {
+  padding: 4px 14px 7px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* line 194, ../sass/makingOrder.scss */
+.button_text {
+  font-family: 'Georgia', 'Times New Roman', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 205, ../sass/makingOrder.scss */
+.button_color {
+  background: #E73B23;
+  border: 1px solid #E73B23;
+}
+
+/* line 210, ../sass/makingOrder.scss */
+.button_size {
+  width: 40%;
+}
+
+/* line 214, ../sass/makingOrder.scss */
+.delivery-details__sum__total-amount {
+  margin: 30px 0;
+  border-bottom: 1px dotted #4A3E33;
+  font-size: 0;
+}
+
+/* line 221, ../sass/makingOrder.scss */
+.delivery-details__sum__total-amount .total,
+.delivery-details__sum__total-amount .price {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-right: -100%;
+  font-size: 24px;
+}
+
+/* line 229, ../sass/makingOrder.scss */
+.delivery-details__sum__total-amount .price {
+  text-align: right;
+}
