@@ -624,7 +624,7 @@ input.index-form-search-input {
 }
 
 /* line 10, ../sass/makingOrder.scss */
-.making-order__title h1, .making-order__title a {
+.making-order__title h1, .making-order__title a, .your-order__item_left-side, .your-order__item_right-side {
   display: inline-block;
   position: relative;
   width: 100%;
@@ -632,30 +632,30 @@ input.index-form-search-input {
 }
 @media (max-width: 767px) {
   /* line 10, ../sass/makingOrder.scss */
-  .making-order__title h1, .making-order__title a {
+  .making-order__title h1, .making-order__title a, .your-order__item_left-side, .your-order__item_right-side {
     display: block;
   }
 }
 @media (max-width: 480px) {
   /* line 10, ../sass/makingOrder.scss */
-  .making-order__title h1, .making-order__title a {
+  .making-order__title h1, .making-order__title a, .your-order__item_left-side, .your-order__item_right-side {
     display: block;
   }
 }
 
 /* line 24, ../sass/makingOrder.scss */
-.making-order__title a {
+.making-order__title a, .your-order__item_right-side {
   text-align: right;
 }
 @media (max-width: 767px) {
   /* line 24, ../sass/makingOrder.scss */
-  .making-order__title a {
+  .making-order__title a, .your-order__item_right-side {
     text-align: left;
   }
 }
 @media (max-width: 480px) {
   /* line 24, ../sass/makingOrder.scss */
-  .making-order__title a {
+  .making-order__title a, .your-order__item_right-side {
     text-align: left;
   }
 }
@@ -673,12 +673,126 @@ input.index-form-search-input {
 }
 
 /* line 45, ../sass/makingOrder.scss */
+.page-sections_makingOrder .column_padding {
+  padding-top: 0;
+}
+
+/* line 49, ../sass/makingOrder.scss */
 .making-order__image img {
   width: 100%;
   margin-top: 10px;
 }
 
-/* line 50, ../sass/makingOrder.scss */
+/* line 54, ../sass/makingOrder.scss */
 .making-order__image img:first-child {
   margin-top: 0;
+}
+
+/* line 58, ../sass/makingOrder.scss */
+.your-order {
+  background: #FFFFD0;
+}
+
+/* line 62, ../sass/makingOrder.scss */
+.your-order h2 {
+  padding: 10px 30px 0 30px;
+}
+
+/* line 66, ../sass/makingOrder.scss */
+.your-order__item {
+  padding: 10px 1%;
+  border-bottom: 1px dotted #cccccc;
+  display: block;
+  font-size: 0;
+}
+
+/* line 73, ../sass/makingOrder.scss */
+.your-order__item_left-side, .your-order__item_right-side, .your-order__item__index {
+  font-size: 13px;
+}
+
+/* line 79, ../sass/makingOrder.scss */
+.your-order__item__index,
+.your-order__item_left-side,
+.your-order__item_right-side {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 84, ../sass/makingOrder.scss */
+.your-order__item__index {
+  border: 1px solid #cccccc;
+  background: white;
+  padding: 3px 7px;
+  line-height: 1.2;
+  text-align: center;
+  margin-right: 10px;
+  float: left;
+}
+
+/* line 94, ../sass/makingOrder.scss */
+.your-order__item__description {
+  overflow: hidden;
+  zoom: 1;
+}
+
+/* line 99, ../sass/makingOrder.scss */
+.your-order__item_left-side, .your-order__item_right-side {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-right: -100%;
+}
+@media (max-width: 767px) {
+  /* line 99, ../sass/makingOrder.scss */
+  .your-order__item_left-side, .your-order__item_right-side {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  /* line 99, ../sass/makingOrder.scss */
+  .your-order__item_left-side, .your-order__item_right-side {
+    display: block;
+  }
+}
+
+/* line 113, ../sass/makingOrder.scss */
+.your-order__item_right-side {
+  text-align: right;
+}
+@media (max-width: 767px) {
+  /* line 113, ../sass/makingOrder.scss */
+  .your-order__item_right-side {
+    text-align: left;
+  }
+}
+@media (max-width: 480px) {
+  /* line 113, ../sass/makingOrder.scss */
+  .your-order__item_right-side {
+    text-align: left;
+  }
+}
+
+/* line 124, ../sass/makingOrder.scss */
+.your-order__item__menu-item__addition {
+  color: #795337;
+  font-style: italic;
+  margin: 0;
+}
+
+/* line 130, ../sass/makingOrder.scss */
+.your-order__item__menu-item__delete {
+  background: url("../img/tmp/delete.png") 0 0 no-repeat;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30px;
+}
+
+/* line 140, ../sass/makingOrder.scss */
+.your-order .action-link {
+  color: #5d5043;
+  margin-left: 10px;
 }

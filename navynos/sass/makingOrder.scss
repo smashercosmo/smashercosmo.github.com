@@ -7,7 +7,7 @@
     font-size: 0;
 }
 
-.making-order__title h1, .making-order__title a {
+.making-order__title h1, .making-order__title a, .your-order__item_left-side, .your-order__item_right-side {
     display: inline-block;
     position: relative;
     width: 100%;
@@ -21,7 +21,7 @@
       }
 }
 
-.making-order__title a {
+.making-order__title a, .your-order__item_right-side {
     text-align: right;
     
     @include respond-to(medium-screen) {
@@ -42,6 +42,10 @@
     padding-top: 24px;
 }
 
+.page-sections_makingOrder .column_padding {
+    padding-top: 0;
+}
+
 .making-order__image img {
     width: 100%;
     margin-top: 10px;
@@ -49,4 +53,91 @@
 
 .making-order__image img:first-child {
     margin-top: 0;
+}
+
+.your-order {
+    background: #FFFFD0;
+}
+
+.your-order h2 {
+    padding: 10px 30px 0 30px;
+}
+
+.your-order__item {
+    padding: 10px 1%;
+    border-bottom: 1px dotted #cccccc;
+    display: block;
+    font-size: 0;
+}
+
+.your-order__item_left-side, .your-order__item_right-side, .your-order__item__index {
+    font-size: 13px;
+}
+
+.your-order__item__index,
+.your-order__item_left-side,
+.your-order__item_right-side {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.your-order__item__index {
+    border: 1px solid #cccccc;
+    background: white;
+    padding: 3px 7px;
+    line-height: 1.2;
+    text-align: center;
+    margin-right: 10px;
+    float: left;
+}
+
+.your-order__item__description {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.your-order__item_left-side, .your-order__item_right-side {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-right: -100%;
+    
+    @include respond-to(medium-screen) {
+        display: block;
+      }
+    @include respond-to(small-screen) {
+        display: block;
+      }
+}
+
+.your-order__item_right-side {
+    text-align: right;
+    
+    @include respond-to(medium-screen) {
+        text-align: left;
+      }
+    @include respond-to(small-screen) {
+        text-align: left;
+      }
+}
+
+.your-order__item__menu-item__addition {
+    color: #795337;
+    font-style: italic;
+    margin: 0;
+}
+
+.your-order__item__menu-item__delete {
+    background: url('../img/tmp/delete.png') 0 0 no-repeat;
+    width: 19px;
+    height: 19px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.your-order .action-link {
+    color: #5d5043;
+    margin-left: 10px;
 }
