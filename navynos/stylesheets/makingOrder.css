@@ -673,7 +673,7 @@ input.index-form-search-input {
 }
 
 /* line 45, ../sass/makingOrder.scss */
-.page-sections_makingOrder .column_padding {
+.page-sections_makingOrder .column_border_padding {
   padding-top: 0;
 }
 
@@ -789,10 +789,57 @@ input.index-form-search-input {
   display: inline-block;
   vertical-align: middle;
   margin-left: 30px;
+  cursor: pointer;
 }
 
-/* line 140, ../sass/makingOrder.scss */
+/* line 141, ../sass/makingOrder.scss */
 .your-order .action-link {
   color: #5d5043;
   margin-left: 10px;
+}
+
+/* line 146, ../sass/makingOrder.scss */
+.delivery-details .column_border_style {
+  border-top: 2px dotted #B99F87;
+}
+
+/* line 150, ../sass/makingOrder.scss */
+.delivery-details .column_border {
+  border: 0;
+}
+
+/* line 154, ../sass/makingOrder.scss */
+.delivery-details__address span {
+  font-family: 'Georgia', 'Times New Roman', sans-serif;
+  font-size: 18px;
+}
+
+/* line 160, ../sass/makingOrder.scss */
+.delivery-details__contact__form input,
+.delivery-details__contact__form textarea {
+  width: 96%;
+  border-radius: 0;
+}
+
+/* line 165, ../sass/makingOrder.scss */
+.must-add {
+  color: #F4521A;
+}
+
+/* line 169, ../sass/makingOrder.scss */
+label {
+  color: #4A3E33;
+}
+
+/* line 173, ../sass/makingOrder.scss */
+.caption {
+  position: relative;
+  top: -10px;
+  color: #7B6350;
+}
+
+/* line 179, ../sass/makingOrder.scss */
+.delivery-details__sum span {
+  font-family: 'Georgia', 'Times New Roman', sans-serif;
+  font-size: 18px;
 }
