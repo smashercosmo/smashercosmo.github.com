@@ -110,48 +110,11 @@
     margin-bottom: 10px;
 }
 
-.button a {
-    text-decoration: none;
-    display: block;
-    position: relative;
-    border-radius: 7px;
+.cuisine_section-list {
+    @include columns(2 150px)
 }
 
-.button a:hover {
-    color: white;
-}
-
-.button-brown {
-    background: #c6af99;
-}
-
-.button-text {
-    font-family: 'Georgia', 'Times New Roman', sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    color: white;
-}
-
-.show-all-items {
-    padding: 1px 10px;
-    width: 19%;
-}
-
-.choose-kitchen-area {
-    @include column-width(130px);
-    @include column-gap(10px);
-}
-
-.choose-kitchen-area-section {
-    position: relative;
-}
-
-.choose-kitchen-area-section-inner {
-    display: inline-block;
-    width: 100%;
-}
-
-.choose-kitchen-area a {
+.cuisine_section-list a {
     color: $brownlighter;
     border-bottom: 1px dotted;
     text-decoration: none;

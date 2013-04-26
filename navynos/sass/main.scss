@@ -99,6 +99,51 @@ a {
     margin-right: 4px;
 }
 
+.column_border_style {
+    border-top: 2px dotted #B99F87;
+}
+
+.column_border {
+    border: 0;
+    padding-top: 24px;
+}
+
+.column_border_padding {
+    padding-top: 0;
+}
+
+.button {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    display: block;
+    border-radius: 10px;
+    padding: 4px 14px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button_text-stylish {
+    font-family: 'Georgia', 'Times New Roman', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.button_red {
+    background: #E73B23;
+}
+
+.button_dark-brown {
+    background: #4A3E33;
+}
+
+.button_light-brown {
+    background: #c6af99;
+}
+
 /* ------------------------------------------------------ BASE STYLES END ---------------------------------------------------- */
 
 /* ------------------------------------------------------ HEADER START ------------------------------------------------------- */

@@ -1,0 +1,32 @@
+@import "_base";
+@import "main";
+
+/* ------------------------------------------------------ RESTAURANT PAGE START --------------------------------------------------- */
+
+.restaurant-name, .restaurant-logo {
+    display: inline-block;
+}
+
+.restaurant-logo {
+    float: right;
+    position: relative;
+    right: 26.623932%;
+    
+    @include respond-to(medium-screen) {
+        right: 0;
+    }
+    
+    @include respond-to(small-screen) {
+        right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+.restaurant-page__main-info__image img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.restaurant-page__main-info__delivery .button {
+    border-radius: 5px;
+}

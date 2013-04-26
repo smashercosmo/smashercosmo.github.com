@@ -37,15 +37,6 @@
     font-size: 18px;
 }
 
-.page-sections_makingOrder .column_border {
-    border-top: 0;
-    padding-top: 24px;
-}
-
-.page-sections_makingOrder .column_border_padding {
-    padding-top: 0;
-}
-
 .making-order__image img {
     width: 100%;
     margin-top: 10px;
@@ -56,6 +47,12 @@
 }
 
 .your-order {
+    background: #FFFFD0;
+    border: 0;
+    width: 100%;
+}
+
+thead {
     background: #FFFFD0;
 }
 
@@ -143,14 +140,6 @@
     margin-left: 10px;
 }
 
-.delivery-details .column_border_style {
-    border-top: 2px dotted #B99F87;
-}
-
-.delivery-details .column_border {
-    border: 0;
-}
-
 .delivery-details__address span {
     font-family: 'Georgia', 'Times New Roman', sans-serif;
     font-size: 18px;
@@ -162,7 +151,7 @@
     border-radius: 0;
 }
 
-.must-add {
+.required2 {
     color: #F4521A;
 }
 
@@ -179,36 +168,6 @@ label {
 .delivery-details__sum span {
     font-family: 'Georgia', 'Times New Roman', sans-serif;
     font-size: 18px;
-}
-
-.button {
-    padding: 4px 14px 7px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    border-radius: 10px;
-    vertical-align: middle;
-    display: inline-block;
-}
-
-.button_text {
-    font-family: 'Georgia', 'Times New Roman', sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    color: white;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.button_color {
-    background: #E73B23;
-    border: 1px solid #E73B23;
-}
-
-.button_size {
-    width: 40%;
 }
 
 .delivery-details__sum__total-amount {
@@ -228,4 +187,8 @@ label {
 
 .delivery-details__sum__total-amount .price {
     text-align: right;
+}
+
+.delivery-details .button_size {
+    width: 40%;
 }

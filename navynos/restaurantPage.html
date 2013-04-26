@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="stylesheets/bootstrap-responsive.css">
 	<link rel="stylesheet" href="stylesheets/fonts.css">
 	<link rel="stylesheet" href="stylesheets/main.css">
-	<link rel="stylesheet" href="stylesheets/makingOrder.css">
+	<link rel="stylesheet" href="stylesheets/restaurantPage.css">
 	<title></title>
 	<!--[if lte IE 8]>
 	<link rel="stylesheet" href="stylesheets/ie-old.css">
@@ -83,9 +83,27 @@
 	</div>
 </header>
 <div class="main container">
-  <div class="making-order__title">
-  	<h1>Оформление заказа</h1>
-  	<a class="back-to-menu back-to-menu_font" href="#">&#8592 Вернуться в меню <span class="back-to-menu__restaurant-name">Самба Суши</span></a>
+  <div class="restaurant-page__main-info">
+	  <h1 class="restaurant-name">Макдональдс</h1>
+	  <img src="img/tmp/mcdonalds-logo.jpg" class="restaurant-logo" />
+	  <div class="row-fluid">
+	   <div class="span4 column column_border restaurant-page__main-info__intro">
+	     <p>
+	       Доставка из Макдональдс ваших любимых бургеров, горячей картошки фри, наггетсов и других блюд в Санкт-Петербурге.
+	     </p>
+	     <p>Закажите сейчас и наши курьеры быстро доставят вам еду из Макдональдса домой, в офис или общежитие. Недаром Макдональдс называют королем фастфуда, именно отсюда наши клиенты чаще всего заказывают бургеры и другие блюда американской кухни.
+       </p>
+       <p>По центру Санкт-Петербурга у нас работают пешие  курьеры, чтобы быстро доставлять заказы в час пик, а в других районах - курьеры на автомобилях.
+       </p>
+	   </div>
+	   <div class="span4 column column_border restaurant-page__main-info__image">
+	     <img src="img/tmp/mac-burger.jpg" />
+	   </div>
+	   <div class="span4 column column_border_style restaurant-page__main-info__delivery">
+	     <h2>Доставка</h2>
+	     <div><a class="button button_color_dark-brown button_text_regular button_size" href="#">Укажите адрес доставки</a></div>
+	   </div>
+	  </div>
   </div>
 	<div class="row-fluid page-sections page-sections_makingOrder">
 		<div class="span4 column column_border">
@@ -95,7 +113,7 @@
   		</div>
 		</div>
 		<div class="span8 column column_border_padding">
-      <!-- <div class="your-order">
+      <div class="your-order">
         <h2>Ваш заказ в <span class="your-order__restaurant-name">Самба Суши</span></h2>
         <div class="your-order__item">
           <span class="your-order__item__index">1</span>
@@ -147,30 +165,7 @@
             </div>
           </div>
         </div>
-      </div> -->
-      <table class="your-order">
-        <thead>
-          <tr>
-            <h2>Ваш заказ в <span class="your-order__restaurant-name">Самба Суши</span></h2>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="your-order__item">
-            <td class="your-order__item__index"><span>1</span></td>
-            <td class="your-order__item__menu-item">
-              <p>Роллы "Филадельфия" в наборе "Федор Конюхов"</p>
-              <p class="your-order__item__menu-item__addition">
-                опции:
-                <span class="your-order__item__menu-item__addition-item">больше васаби</span>,
-                <span class="your-order__item__menu-item__addition-item">больше имбиря</span>
-              </p>
-            </td>
-            <td class="price"><span>150.0 <span class="rub"></span></span></td>
-            <td class="action-link"><span>изменить</span></td>
-            <td class="your-order__item__menu-item__delete"><span></span></td>
-          </tr>
-        </tbody>
-      </table>
+      </div>
 		</div>
 	</div>
 	<div class="row-fluid page-sections delivery-details">
@@ -182,20 +177,20 @@
   	 <div class="span6 delivery-details__contact">
   	   <div class="delivery-details__contact__form">
          <h2>Данные для доставки</h2>
-         <form action="#" method="post">
+         <form action="#" method="post" class="commentform">
            <p>
-             <label for="name">Имя<span class="required">&#42</span></label>
+             <label for="name">Имя<span class="must-add">&#42</span></label>
              <input type="text" name="name">
            </p>
            <p>
-             <label for="phone">Телефон для подтверждения заказа<span class="required">&#42</span></label>
+             <label for="phone">Телефон для подтверждения заказа<span class="must-add">&#42</span></label>
              <input type="text" name="phone">
            </p>
            <p>
              <label for="order-comment">Комментарий к заказу</label>
              <textarea name="order-comment" class="textarea" rows="7"></textarea>
            </p>
-           <span class="caption"><span class="required">&#42</span> Поля обязательные для заполнения</span>
+           <span class="caption"><span class="must-add">&#42</span> Поля обязательные для заполнения</span>
          </form>
        </div>
   	 </div>
@@ -205,7 +200,7 @@
   	     <span class="total">Всего:</span>
   	     <span class="price">150.0 <span class="rub"></span></span>
   	   </div>
-       <div><a class="button button_color_red button_text_stylish button_size" href="#">заказать</a></div>
+       <div><a class="button button_color button_text button_size" href="#">заказать</a></div>
   	 </div>
    </div>
 	</div>
