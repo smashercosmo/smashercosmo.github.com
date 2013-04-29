@@ -802,16 +802,39 @@ input.index-form-search-input {
 }
 
 /* line 113, ../sass/searchByAddress.scss */
-.cuisine_section-list {
-  -webkit-columns: 2 150px;
-  -moz-columns: 2 150px;
-  -ms-columns: 2 150px;
-  -o-columns: 2 150px;
-  columns: 2 150px;
+.cuisine-list {
+  -webkit-column-width: 180px;
+  -moz-column-width: 180px;
+  -ms-column-width: 180px;
+  -o-column-width: 180px;
+  column-width: 180px;
+  -webkit-column-gap: 15px;
+  -moz-column-gap: 15px;
+  -ms-column-gap: 15px;
+  -o-column-gap: 15px;
+  column-gap: 15px;
 }
 
-/* line 117, ../sass/searchByAddress.scss */
-.cuisine_section-list a {
+/* line 118, ../sass/searchByAddress.scss */
+.cuisine-list_section {
+  position: relative;
+  padding: 0 0 15px;
+}
+
+/* line 123, ../sass/searchByAddress.scss */
+.cuisine-list_inner {
+  width: 100%;
+  display: inline-block;
+}
+
+/* line 128, ../sass/searchByAddress.scss */
+.cuisine-list_list li {
+  width: 48%;
+  display: inline-block;
+}
+
+/* line 133, ../sass/searchByAddress.scss */
+.cuisine-list_list li a {
   color: #8f7763;
   border-bottom: 1px dotted;
   text-decoration: none;
