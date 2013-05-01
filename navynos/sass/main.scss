@@ -144,6 +144,26 @@ a {
     background: #c6af99;
 }
 
+.column-list {
+    @include column-width(180px);
+    @include column-gap(15px);
+}
+
+.column-list_section {
+    position: relative;
+    padding: 0 0 15px;
+}
+
+.column-list_inner {
+    width: 100%;
+    display: inline-block;
+}
+
+.column-list_list li {
+    width: 48%;
+    display: inline-block;
+}
+
 /* ------------------------------------------------------ BASE STYLES END ---------------------------------------------------- */
 
 /* ------------------------------------------------------ HEADER START ------------------------------------------------------- */

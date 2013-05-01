@@ -110,7 +110,7 @@
     margin-bottom: 10px;
 }
 
-.cuisine-list {
+/*.cuisine-list {
     @include column-width(180px);
     @include column-gap(15px);
 }
@@ -128,9 +128,9 @@
 .cuisine-list_list li {
     width: 48%;
     display: inline-block;
-}
+}*/
 
-.cuisine-list_list li a {
+.column-list_list li a {
     color: $brownlighter;
     border-bottom: 1px dotted;
     text-decoration: none;

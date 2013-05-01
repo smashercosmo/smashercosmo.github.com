@@ -174,9 +174,41 @@ a {
   background: #c6af99;
 }
 
+/* line 147, ../sass/main.scss */
+.column-list {
+  -webkit-column-width: 180px;
+  -moz-column-width: 180px;
+  -ms-column-width: 180px;
+  -o-column-width: 180px;
+  column-width: 180px;
+  -webkit-column-gap: 15px;
+  -moz-column-gap: 15px;
+  -ms-column-gap: 15px;
+  -o-column-gap: 15px;
+  column-gap: 15px;
+}
+
+/* line 152, ../sass/main.scss */
+.column-list_section {
+  position: relative;
+  padding: 0 0 15px;
+}
+
+/* line 157, ../sass/main.scss */
+.column-list_inner {
+  width: 100%;
+  display: inline-block;
+}
+
+/* line 162, ../sass/main.scss */
+.column-list_list li {
+  width: 48%;
+  display: inline-block;
+}
+
 /* ------------------------------------------------------ BASE STYLES END ---------------------------------------------------- */
 /* ------------------------------------------------------ HEADER START ------------------------------------------------------- */
-/* line 151, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 .header-top {
   background: #55493f;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU1NDkzZiIvPjxzdG9wIG9mZnNldD0iODUlIiBzdG9wLWNvbG9yPSIjNDAzNTJjIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
@@ -193,7 +225,7 @@ a {
   position: relative;
 }
 
-/* line 161, ../sass/main.scss */
+/* line 181, ../sass/main.scss */
 .header-top-logo {
   position: absolute;
   top: 0;
@@ -204,7 +236,7 @@ a {
   background-size: 38px;
 }
 @media (max-width: 767px) {
-  /* line 161, ../sass/main.scss */
+  /* line 181, ../sass/main.scss */
   .header-top-logo {
     background-size: contain;
     background-position: center bottom;
@@ -213,29 +245,29 @@ a {
   }
 }
 
-/* line 178, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 .header {
   padding-top: 30px;
 }
 
-/* line 182, ../sass/main.scss */
+/* line 202, ../sass/main.scss */
 .header-logo {
   background: url("../img/logo.svg") left top no-repeat;
 }
 @media (max-width: 767px) {
-  /* line 182, ../sass/main.scss */
+  /* line 202, ../sass/main.scss */
   .header-logo {
     width: 100%;
   }
 }
 
-/* line 190, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 .main-navigation {
   text-transform: uppercase;
   font-size: 12px;
 }
 
-/* line 195, ../sass/main.scss */
+/* line 215, ../sass/main.scss */
 .main-navigation-inner {
   background: none;
   box-shadow: none;
@@ -246,19 +278,19 @@ a {
   border-bottom: 4px solid #382e27;
 }
 @media (max-width: 767px) {
-  /* line 195, ../sass/main.scss */
+  /* line 215, ../sass/main.scss */
   .main-navigation-inner {
     border-bottom: none;
   }
 }
 
-/* line 209, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 .main-navigation .brand {
   padding: 0 20px 0 0;
   margin: 0;
 }
 @media (max-width: 767px) {
-  /* line 209, ../sass/main.scss */
+  /* line 229, ../sass/main.scss */
   .main-navigation .brand {
     margin-bottom: 20px;
     padding-right: 0;
@@ -266,18 +298,18 @@ a {
   }
 }
 
-/* line 220, ../sass/main.scss */
+/* line 240, ../sass/main.scss */
 .main-navigation .nav {
   margin: 0 0 -4px 0;
 }
 @media (max-width: 767px) {
-  /* line 220, ../sass/main.scss */
+  /* line 240, ../sass/main.scss */
   .main-navigation .nav {
     margin: 0 0 0 -10px;
   }
 }
 
-/* line 228, ../sass/main.scss */
+/* line 248, ../sass/main.scss */
 .main-navigation .nav > li > a {
   padding: 6px 10px 0 10px;
   color: #382e27;
@@ -286,13 +318,13 @@ a {
   text-shadow: none;
 }
 @media (max-width: 767px) {
-  /* line 228, ../sass/main.scss */
+  /* line 248, ../sass/main.scss */
   .main-navigation .nav > li > a {
     border-bottom: none;
   }
 }
 
-/* line 245, ../sass/main.scss */
+/* line 265, ../sass/main.scss */
 .main-navigation .nav > li > a:focus,
 .main-navigation .nav > li > a:hover,
 .main-navigation .nav > .active > a,
@@ -305,7 +337,7 @@ a {
   border-bottom-color: #f4521a;
 }
 
-/* line 253, ../sass/main.scss */
+/* line 273, ../sass/main.scss */
 .main-navigation .nav li.dropdown.open > .dropdown-toggle,
 .main-navigation .nav li.dropdown.open.active > .dropdown-toggle {
   color: #fff;
@@ -316,7 +348,7 @@ a {
   box-shadow: 6px 6px 6px -3px rgba(0, 0, 0, 0.2);
 }
 
-/* line 262, ../sass/main.scss */
+/* line 282, ../sass/main.scss */
 .main-navigation .dropdown-menu {
   border-top-left-radius: 0;
   background: #f4521a;
@@ -326,20 +358,20 @@ a {
   box-shadow: 6px 6px 6px -3px rgba(0, 0, 0, 0.2);
 }
 
-/* line 272, ../sass/main.scss */
+/* line 292, ../sass/main.scss */
 .main-navigation .nav > li > .dropdown-menu:after,
 .main-navigation .nav > li > .dropdown-menu:before {
   display: none;
 }
 
-/* line 276, ../sass/main.scss */
+/* line 296, ../sass/main.scss */
 .main-navigation .dropdown-menu a {
   padding: 3px 10px;
   text-decoration: underline;
   color: #fff;
 }
 
-/* line 284, ../sass/main.scss */
+/* line 304, ../sass/main.scss */
 .main-navigation .dropdown-menu li > a:hover,
 .main-navigation .dropdown-menu li > a:focus,
 .main-navigation .dropdown-submenu:hover > a {
@@ -347,86 +379,86 @@ a {
   text-decoration: none;
 }
 
-/* line 289, ../sass/main.scss */
+/* line 309, ../sass/main.scss */
 .header-order-details {
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
-  /* line 289, ../sass/main.scss */
+  /* line 309, ../sass/main.scss */
   .header-order-details {
     margin-bottom: 30px;
   }
 }
 
 @media (max-width: 767px) {
-  /* line 297, ../sass/main.scss */
+  /* line 317, ../sass/main.scss */
   .header-order-details-column {
     margin-top: 15px;
   }
 }
 
 @media (max-width: 767px) {
-  /* line 303, ../sass/main.scss */
+  /* line 323, ../sass/main.scss */
   .header-order-details-column:first-child {
     margin-top: 0;
   }
 }
 
-/* line 309, ../sass/main.scss */
+/* line 329, ../sass/main.scss */
 .header-order-details-title {
   font-weight: bold;
 }
 
-/* line 313, ../sass/main.scss */
+/* line 333, ../sass/main.scss */
 .header-order-details-content {
   color: #5d5043;
 }
 
 /* ------------------------------------------------------ HEADER END --------------------------------------------------------- */
 /* ------------------------------------------------------ INDEX PAGE START --------------------------------------------------- */
-/* line 321, ../sass/main.scss */
+/* line 341, ../sass/main.scss */
 .promo {
   margin-bottom: 30px;
 }
 
-/* line 325, ../sass/main.scss */
+/* line 345, ../sass/main.scss */
 .promo-banner {
   overflow: hidden;
 }
 @media (max-width: 767px) {
-  /* line 325, ../sass/main.scss */
+  /* line 345, ../sass/main.scss */
   .promo-banner {
     margin-top: 30px;
   }
 }
 
 @media (max-width: 767px) {
-  /* line 333, ../sass/main.scss */
+  /* line 353, ../sass/main.scss */
   .promo-banner:first-child {
     margin-top: 0;
   }
 }
 
-/* line 339, ../sass/main.scss */
+/* line 359, ../sass/main.scss */
 .promo-banner-image {
   width: 100%;
 }
 
-/* line 343, ../sass/main.scss */
+/* line 363, ../sass/main.scss */
 .index-form-search {
   text-align: center;
   padding-top: 30px;
   margin-bottom: 60px;
 }
 @media (max-width: 767px) {
-  /* line 343, ../sass/main.scss */
+  /* line 363, ../sass/main.scss */
   .index-form-search {
     margin-bottom: 40px;
     padding-top: 10px;
   }
 }
 
-/* line 354, ../sass/main.scss */
+/* line 374, ../sass/main.scss */
 .index-form-search-instruction {
   font-family: 'Georgia', 'Times New Roman', sans-serif;
   font-size: 18px;
@@ -436,7 +468,7 @@ a {
   width: 31.623931623931625%;
 }
 @media (max-width: 979px) {
-  /* line 354, ../sass/main.scss */
+  /* line 374, ../sass/main.scss */
   .index-form-search-instruction {
     width: 100%;
     text-align: center;
@@ -444,7 +476,7 @@ a {
   }
 }
 
-/* line 369, ../sass/main.scss */
+/* line 389, ../sass/main.scss */
 .index-form-search-curly {
   display: inline-block;
   vertical-align: middle;
@@ -454,27 +486,27 @@ a {
   background: url("../img/curly.svg") center center no-repeat;
 }
 @media (max-width: 979px) {
-  /* line 369, ../sass/main.scss */
+  /* line 389, ../sass/main.scss */
   .index-form-search-curly {
     display: none;
   }
 }
 
-/* line 382, ../sass/main.scss */
+/* line 402, ../sass/main.scss */
 input.index-form-search-input {
   width: 40.17094017094017%;
   margin-left: 2.564102564102564%;
   margin-bottom: 0;
 }
 @media (max-width: 979px) {
-  /* line 382, ../sass/main.scss */
+  /* line 402, ../sass/main.scss */
   input.index-form-search-input {
     margin-left: 0;
     width: 65.81196581196582%;
   }
 }
 
-/* line 393, ../sass/main.scss */
+/* line 413, ../sass/main.scss */
 .index-form-search-submit {
   font-family: 'Georgia', 'Times New Roman', sans-serif;
   font-weight: bold;
@@ -496,13 +528,13 @@ input.index-form-search-input {
   position: relative;
 }
 @media (max-width: 979px) {
-  /* line 393, ../sass/main.scss */
+  /* line 413, ../sass/main.scss */
   .index-form-search-submit {
     color: #E73B23;
   }
 }
 
-/* line 418, ../sass/main.scss */
+/* line 438, ../sass/main.scss */
 .index-form-search-submit-icon {
   position: absolute;
   top: 50%;
@@ -512,13 +544,13 @@ input.index-form-search-input {
   display: none;
 }
 @media (max-width: 979px) {
-  /* line 418, ../sass/main.scss */
+  /* line 438, ../sass/main.scss */
   .index-form-search-submit-icon {
     display: block;
   }
 }
 
-/* line 431, ../sass/main.scss */
+/* line 451, ../sass/main.scss */
 .catalog {
   -webkit-column-width: 150px;
   -moz-column-width: 150px;
@@ -532,19 +564,19 @@ input.index-form-search-input {
   column-gap: 10px;
 }
 
-/* line 436, ../sass/main.scss */
+/* line 456, ../sass/main.scss */
 .catalog-section {
   position: relative;
   margin: 0 0 15px;
 }
 
-/* line 441, ../sass/main.scss */
+/* line 461, ../sass/main.scss */
 .catalog-section-inner {
   width: 100%;
   display: inline-block;
 }
 
-/* line 446, ../sass/main.scss */
+/* line 466, ../sass/main.scss */
 .catalog-section-title {
   font-family: 'Georgia', 'Times New Roman', sans-serif;
   font-size: 30px;
@@ -554,45 +586,45 @@ input.index-form-search-input {
   top: 10px;
 }
 
-/* line 455, ../sass/main.scss */
+/* line 475, ../sass/main.scss */
 .catalog-section-list {
   margin-left: 35px;
 }
 
-/* line 459, ../sass/main.scss */
+/* line 479, ../sass/main.scss */
 .catalog-section-list-item-new {
   color: #f4521a;
   font-weight: bold;
   font-family: 'Georgia', 'Times New Roman', sans-serif;
 }
 
-/* line 465, ../sass/main.scss */
+/* line 485, ../sass/main.scss */
 .digest-section {
   margin-top: 15px;
   border-top: 1px dotted #8f7763;
   padding-top: 15px;
 }
 
-/* line 471, ../sass/main.scss */
+/* line 491, ../sass/main.scss */
 .digest-section:first-child {
   margin-top: 0;
   padding-top: 0;
   border: none;
 }
 
-/* line 478, ../sass/main.scss */
+/* line 498, ../sass/main.scss */
 .digest-section-dishes-list,
 .digest-section-ordered-list {
   color: #8f7763;
 }
 
-/* line 482, ../sass/main.scss */
+/* line 502, ../sass/main.scss */
 .digest-section li {
   line-height: 1.4;
   margin-bottom: 10px;
 }
 
-/* line 487, ../sass/main.scss */
+/* line 507, ../sass/main.scss */
 .digest-section-places-list {
   font-size: 14px;
   font-weight: bold;
@@ -601,68 +633,68 @@ input.index-form-search-input {
 }
 
 /* ------------------------------------------------------ INDEX PAGE END ----------------------------------------------------- */
-/* line 497, ../sass/main.scss */
+/* line 517, ../sass/main.scss */
 .footer {
   padding-bottom: 30px;
 }
 
-/* line 501, ../sass/main.scss */
+/* line 521, ../sass/main.scss */
 .footer-left-column {
   text-align: right;
 }
 @media (max-width: 767px) {
-  /* line 501, ../sass/main.scss */
+  /* line 521, ../sass/main.scss */
   .footer-left-column {
     text-align: left;
   }
 }
 
-/* line 508, ../sass/main.scss */
+/* line 528, ../sass/main.scss */
 .footer-section {
   margin-bottom: 20px;
 }
 
-/* line 512, ../sass/main.scss */
+/* line 532, ../sass/main.scss */
 .footer-section-list {
   line-height: 1.8;
   color: #8f7763;
 }
 
-/* line 517, ../sass/main.scss */
+/* line 537, ../sass/main.scss */
 .footer-section-list b {
   color: #000;
 }
 
-/* line 521, ../sass/main.scss */
+/* line 541, ../sass/main.scss */
 .footer-vcard {
   padding-bottom: 20px;
   border-bottom: 1px dotted #8f7763;
 }
 
-/* line 526, ../sass/main.scss */
+/* line 546, ../sass/main.scss */
 .footer-phone {
   margin-bottom: 3px;
 }
 
-/* line 530, ../sass/main.scss */
+/* line 550, ../sass/main.scss */
 .footer-phone-title {
   margin-bottom: 5px;
 }
 
-/* line 534, ../sass/main.scss */
+/* line 554, ../sass/main.scss */
 .footer-phone-number {
   font-size: 18px;
   font-weight: bold;
 }
 
-/* line 539, ../sass/main.scss */
+/* line 559, ../sass/main.scss */
 .footer-navigation {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 545, ../sass/main.scss */
+/* line 565, ../sass/main.scss */
 .footer-copyright {
   padding-top: 15px;
   border-top: 1px dotted #8F7763;
@@ -801,40 +833,27 @@ input.index-form-search-input {
   margin-bottom: 10px;
 }
 
-/* line 113, ../sass/searchByAddress.scss */
-.cuisine-list {
-  -webkit-column-width: 180px;
-  -moz-column-width: 180px;
-  -ms-column-width: 180px;
-  -o-column-width: 180px;
-  column-width: 180px;
-  -webkit-column-gap: 15px;
-  -moz-column-gap: 15px;
-  -ms-column-gap: 15px;
-  -o-column-gap: 15px;
-  column-gap: 15px;
+/*.cuisine-list {
+    @include column-width(180px);
+    @include column-gap(15px);
 }
 
-/* line 118, ../sass/searchByAddress.scss */
 .cuisine-list_section {
-  position: relative;
-  padding: 0 0 15px;
+    position: relative;
+    padding: 0 0 15px;
 }
 
-/* line 123, ../sass/searchByAddress.scss */
 .cuisine-list_inner {
-  width: 100%;
-  display: inline-block;
+    width: 100%;
+    display: inline-block;
 }
 
-/* line 128, ../sass/searchByAddress.scss */
 .cuisine-list_list li {
-  width: 48%;
-  display: inline-block;
-}
-
+    width: 48%;
+    display: inline-block;
+}*/
 /* line 133, ../sass/searchByAddress.scss */
-.cuisine-list_list li a {
+.column-list_list li a {
   color: #8f7763;
   border-bottom: 1px dotted;
   text-decoration: none;
