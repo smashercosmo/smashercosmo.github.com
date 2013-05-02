@@ -164,6 +164,21 @@ a {
     display: inline-block;
 }
 
+.restaurant-stars span {
+    width: 13px;
+    height: 12px;
+    position: relative;
+    display: inline-block;
+}
+
+.restaurant-stars_zero {
+    background: url("../img/tmp/rest-star.png") no-repeat 0 0;
+}
+
+.restaurant-stars_point {
+    background: url("../img/tmp/rest-star.png") no-repeat 0 -12px;
+}
+
 /* ------------------------------------------------------ BASE STYLES END ---------------------------------------------------- */
 
 /* ------------------------------------------------------ HEADER START ------------------------------------------------------- */

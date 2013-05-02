@@ -50,23 +50,8 @@
     max-height: 60px;
 }
 
-.restaurant-list__item__basic__stars {
+.restaurant-stars {
     padding-top: 3px;
-}
-
-.restaurant-list__item__basic__stars span {
-    width: 13px;
-    height: 12px;
-    position: relative;
-    display: inline-block;
-}
-
-.restaurant-list__item__basic__stars_zero {
-    background: url("../img/tmp/rest-star.png") no-repeat 0 0;
-}
-
-.restaurant-list__item__basic__stars_point {
-    background: url("../img/tmp/rest-star.png") no-repeat 0 -12px;
 }
 
 .restaurant-list__item_promo .restaurant-list__item__info {
