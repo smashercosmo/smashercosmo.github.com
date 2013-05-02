@@ -118,8 +118,8 @@ a {
     cursor: pointer;
     vertical-align: middle;
     display: block;
-    border-radius: 10px;
-    padding: 4px 14px;
+    border-radius: 5px;
+    padding: 1px 10px;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -177,6 +177,86 @@ a {
 
 .restaurant-stars_point {
     background: url("../img/tmp/rest-star.png") no-repeat 0 -12px;
+}
+
+.restaurant-list__item {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px dotted $brownlighter;
+}
+
+.restaurant-list__item_promo .restaurant-list__item__content {
+    position: relative;
+    border-left: 5px solid #F4521A;
+    padding: 15px 0 15px 15px;
+}
+
+.restaurant-list__item__content {
+    padding: 0 0 0 5px;
+}
+
+.restaurant-list__item__basic {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.restaurant-list__item__basic__name {
+    font-family: 'Georgia', 'Times New Roman', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.restaurant-list__item__basic__logo {
+    position: absolute;
+    top: -18px;
+    right: 0;
+    padding: 22px 0 0 20px;
+}
+
+.restaurant-list__item__basic__logo img {
+    max-width: 140px;
+    max-height: 60px;
+}
+
+.restaurant-stars {
+    padding-top: 3px;
+}
+
+.restaurant-list__item_promo .restaurant-list__item__info {
+    clear: both;
+    margin-left: 0;
+}
+
+.restaurant-list__item__info li {
+    margin-top: 5px;
+}
+
+.restaurant-list__item__info li:first-child {
+    margin-top: 0;
+}
+
+.restaurant-list__item__info a, .restaurant-list__item__info span {
+    color: $brownlighter;
+}
+
+.restaurant-list__item__image {
+    overflow: hidden;
+    padding-left: 2.564102564102564%;
+    padding-top: 6px;
+    
+    @include respond-to(medium-screen) {
+        padding: 15px 0 0 0;
+    }
+}
+
+.restaurant-list__item__image img {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.restaurant-list__item__image img:first-child {
+    margin-top: 0;
 }
 
 /* ------------------------------------------------------ BASE STYLES END ---------------------------------------------------- */
