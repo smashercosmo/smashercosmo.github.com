@@ -6,22 +6,22 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#9f9f9f',GradientType=0 );
 }
 
-.header-box-bg-ie {
+.header__box__bg_ie {
 	position: absolute; top: 0; bottom: 0; left: 0; right: 0;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#33ffffff',GradientType=0 );
 }
 
-.categories-menu-bg-ie, .side-menu-bg-ie {
+.categories-menu__bg_ie, .side-menu__bg_ie {
 	position: absolute; top: 0; left: 0; bottom: 0; right: 0;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#dcdfe2',GradientType=0 );
 }
 
-.main-menu-bg-ie {
+.main-menu__bg_ie {
 	position: absolute; top: 0; left: 0; bottom: 0; right: 0;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eedec7', endColorstr='#b48e5a',GradientType=0 );
 }
 
-.catalog-item-info-bg {
+.catalog__item__info__bg {
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
 }
 

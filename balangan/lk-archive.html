@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/buttons.css">
 	<link rel="stylesheet" href="css/icons.css">
 	<link rel="stylesheet" href="css/ui.css">
+	<link rel="stylesheet" href="css/jqueryui.css">
 	<link rel="stylesheet" href="css/main.css">
 	<!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/ie.css">
@@ -19,29 +20,29 @@
 <body>
 	<div class="wrapper">
 		<header>
-			<div class="header-inner clearfix">
-				<div class="header-logo">
-					<div class="header-logo-coming-soon"></div>
+			<div class="header__inner clearfix">
+				<div class="header__logo">
+					<div class="header__logo__coming-soon"></div>
 				</div>
-				<div class="header-right header-right-logged-in">
-					<div class="header-form header-form-logged-in">
+				<div class="header__right header__right_logged-in">
+					<div class="header__form header__form_logged-in">
 						<form action="">
-							<button class="btn header-button-exit">Выход</button>
+							<button class="btn header__form__button_exit">Выход</button>
 							<div class="header-form-logged-in-info">
-								<div class="header-form-logged-in-greeting">Добро пожаловать, Александр!</div>
+								<div class="header__form_logged-in__greeting">Добро пожаловать, Александр!</div>
 								Вы можете войти в <a href="#" class="action-link">личный кабинет партнера</a>
 							</div>
 						</form>
 					</div>
-					<div class="header-box header-box-points">
-						<div class="header-box-bg-ie"></div>
-						<div class="header-box-content">
-							Ваш баланс: <a href="#" class="action-link header-box-points-link">465 балла</a>
+					<div class="header__box header__box_points">
+						<div class="header__box__bg_ie"></div>
+						<div class="header__box__content">
+							Ваш баланс: <a href="#" class="action-link header__box_points__link">465 балла</a>
 						</div>
 					</div>
-					<div class="header-city clearfix">
-						<span class="icon icon-pin header-city-icon"></span>
-						<span class="header-city-text">
+					<div class="header__city clearfix">
+						<span class="icon icon-pin header__city__icon"></span>
+						<span class="header__city__text">
 							Текущий город: <a href="#" class="action-link">Москва</a>
 						</span>
 					</div>
@@ -50,126 +51,126 @@
 			<div class="golden-border"></div>
 		</header>
 		<div class="main">
-			<div class="main-inner">
-				<div class="main-header">
-					<a class="main-header-banner" href="#">
-						<img src="img/tmp/banner.jpg" alt="баннер" class="main-header-banner-image">
+			<div class="main__inner">
+				<div class="main__header">
+					<a class="main__header__banner" href="#">
+						<img src="img/tmp/banner.jpg" alt="баннер" class="main__header__banner__image">
 					</a>
 					<nav class="categories-menu">
 						<div class="justification">
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Все</span><span class="menu-item-quantity">3</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Товары</span><span class="menu-item-quantity">4</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Красота</span><span class="menu-item-quantity">55</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Здоровье</span><span class="menu-item-quantity">123</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Спорт</span><span class="menu-item-quantity">5</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Фото/Видео</span><span class="menu-item-quantity">8</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Обучение</span><span class="menu-item-quantity">10</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Дети</span><span class="menu-item-quantity">18</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Авто</span><span class="menu-item-quantity">24</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Еда</span><span class="menu-item-quantity">66</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Путешествия</span><span class="menu-item-quantity">156</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Аренда</span><span class="menu-item-quantity">98</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Животные</span><span class="menu-item-quantity">87</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Бизнес</span><span class="menu-item-quantity">43</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Дом/Дача</span><span class="menu-item-quantity">1</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Быт. услуги</span><span class="menu-item-quantity">0</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Билеты</span><span class="menu-item-quantity">18</span></a>
-							<a href="#"><span class="categories-menu-bg-ie"></span><span class="menu-item-category">Другое</span><span class="menu-item-quantity">25</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Все</span><span class="categories-menu__item__quantity">3</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Товары</span><span class="categories-menu__item__quantity">4</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Красота</span><span class="categories-menu__item__quantity">55</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Здоровье</span><span class="categories-menu__item__quantity">123</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Спорт</span><span class="categories-menu__item__quantity">5</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Фото/Видео</span><span class="categories-menu__item__quantity">8</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Обучение</span><span class="categories-menu__item__quantity">10</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Дети</span><span class="categories-menu__item__quantity">18</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Авто</span><span class="categories-menu__item__quantity">24</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Еда</span><span class="categories-menu__item__quantity">66</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Путешествия</span><span class="categories-menu__item__quantity">156</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Аренда</span><span class="categories-menu__item__quantity">98</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Животные</span><span class="categories-menu__item__quantity">87</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Бизнес</span><span class="categories-menu__item__quantity">43</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Дом/Дача</span><span class="categories-menu__item__quantity">1</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Быт. услуги</span><span class="categories-menu__item__quantity">0</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Билеты</span><span class="categories-menu__item__quantity">18</span></a>
+							<a href="#"><span class="categories-menu__bg_ie"></span><span class="categories-menu__item__category">Другое</span><span class="categories-menu__item__quantity">25</span></a>
 						</div>
 					</nav>
 				</div>
-				<div class="main-content">
+				<div class="main__content">
 					<nav class="main-menu">
-						<div class="main-menu-bg-ie"></div>
+						<div class="main-menu__bg_ie"></div>
 						<ul>
-							<li class="main-menu-item"><a href="#"><span>Наши акции</span></a>
-							<li class="main-menu-item"><a href="#"><span>О нас/FAQ</span></a>
-							<li class="main-menu-item"><a href="#"><span>Архив предложений</span></a>
-							<li class="main-menu-item selected"><a href="#"><span>Личный кабинет</span></a>
-							<li class="main-menu-item"><a href="#"><span>Купить баллы</span></a>
+							<li class="main-menu__item"><a href="#"><span>Наши акции</span></a>
+							<li class="main-menu__item"><a href="#"><span>О нас/FAQ</span></a>
+							<li class="main-menu__item"><a href="#"><span>Архив предложений</span></a>
+							<li class="main-menu__item selected"><a href="#"><span>Личный кабинет</span></a>
+							<li class="main-menu__item"><a href="#"><span>Купить баллы</span></a>
 						</ul>
 					</nav>
 					<div class="clearfix">
 						<nav class="span-3 side-menu">
-							<div class="side-menu-bg-ie"></div>
+							<div class="side-menu__bg_ie"></div>
 							<ul>
-								<li class="side-menu-item opened">
+								<li class="side-menu__item opened">
 									<a href="#">
-										<span class="side-menu-item-text">
-											<span class="side-menu-item-triangle opened"></span>
+										<span class="side-menu__item__text">
+											<span class="side-menu__item__triangle opened"></span>
 											Активность
 										</span>
 									</a>
 									<ul>
-										<li class="side-menu-item selected">
+										<li class="side-menu__item selected">
 											<a href="#">
-												<span class="side-menu-item-text">
+												<span class="side-menu__item__text">
 													Мои покупки
 												</span>
 											</a>
 										</li>
-										<li class="side-menu-item">
+										<li class="side-menu__item">
 											<a href="#">
-												<span class="side-menu-item-text">
+												<span class="side-menu__item__text">
 													Слежу за акцией
 												</span>
 											</a>
 										</li>
-										<li class="side-menu-item">
+										<li class="side-menu__item">
 											<a href="#">
-												<span class="side-menu-item-text">
+												<span class="side-menu__item__text">
 													Архив
 												</span>
 											</a>
 										</li>
 									</ul>
 								</li>
-								<li class="side-menu-item opened">
+								<li class="side-menu__item opened">
 									<a href="#">
-										<span class="side-menu-item-text">
+										<span class="side-menu__item__text">
 											Мои данные
 										</span>
 									</a>
 								</li>
-								<li class="side-menu-item opened">
+								<li class="side-menu__item opened">
 									<a href="#">
-										<span class="side-menu-item-text">
-											<span class="side-menu-item-triangle opened"></span>
+										<span class="side-menu__item__text">
+											<span class="side-menu__item__triangle opened"></span>
 											Бонусные баллы
 										</span>
 									</a>
 									<ul>
-										<li class="side-menu-item">
+										<li class="side-menu__item">
 											<a href="#">
-												<span class="side-menu-item-text">
+												<span class="side-menu__item__text">
 													История
 												</span>
 											</a>
 										</li>
-										<li class="side-menu-item">
+										<li class="side-menu__item">
 											<a href="#">
-												<span class="side-menu-item-text">
+												<span class="side-menu__item__text">
 													Мои покупки
 												</span>
 											</a>
 										</li>
-										<li class="side-menu-item">
+										<li class="side-menu__item">
 											<a href="#">
-												<span class="side-menu-item-text">
+												<span class="side-menu__item__text">
 													Покупки друга
 												</span>
 											</a>
 										</li>
-										<li class="side-menu-item">
+										<li class="side-menu__item">
 											<a href="#">
-												<span class="side-menu-item-text">
+												<span class="side-menu__item__text">
 													Регистрации
 												</span>
 											</a>
 										</li>
-										<li class="side-menu-item">
+										<li class="side-menu__item">
 											<a href="#">
-												<span class="side-menu-item-text">
+												<span class="side-menu__item__text">
 													Пригласи друга
 												</span>
 											</a>
@@ -178,8 +179,8 @@
 								</li>
 							</ul>
 						</nav>
-						<div class="span-12 profile-page last">
-							<div class="profile-page-content">
+						<div class="span-12">
+							<div class="page-content">
 								<table class="table_standard">
                                 <thead>
                                     <tr>
@@ -206,7 +207,7 @@
                                         <td>65</td>
                                         <td>31</td>
                                         <td>500</td>
-                                        <td><input type="checkbox" name="" id=""></td>
+                                        <td><input type="checkbox" name=""></td>
                                     </tr>
                                     <tr>
                                         <td><a href="#" class="table-link_orange">баллы</a></td>
@@ -216,7 +217,7 @@
                                         <td>65</td>
                                         <td>31</td>
                                         <td>500</td>
-                                        <td><input type="checkbox" name="" id=""></td>
+                                        <td><input type="checkbox" name=""></td>
                                     </tr>
                                 </tbody>
                                 <tfoot>
@@ -240,156 +241,156 @@
 								</div>
 							</div>
 
-							<div class="catalog-separator"></div>
-							<div class="catalog-section-title"><span class="catalog-section-title-text">Акции дня</span></div>
+							<div class="catalog__separator"></div>
+							<div class="catalog-section-title"><span class="catalog__section__title__text">Акции дня</span></div>
 
-							<div class="span-4 catalog-item">
-								<div class="catalog-item-inner">
-									<div class="catalog-item-title">Куртка</div>
-									<div class="catalog-item-content">
-										<img class="catalog-item-image" src="img/tmp/clocks.jpg" alt="item's picture"/>
-										<div class="catalog-item-label">
-											<div class="catalog-item-label-text">50%</div>
+							<div class="span-4 catalog__item">
+								<div class="catalog__item__inner">
+									<div class="catalog__item__title">Куртка</div>
+									<div class="catalog__item__content">
+										<img class="catalog__item__image" src="img/tmp/clocks.jpg" alt="item's picture"/>
+										<div class="catalog__item__label">
+											<div class="catalog__item__label__text">50%</div>
 										</div>
-										<div class="catalog-item-look"></div>
+										<div class="catalog__item__look"></div>
 									</div>
-									<div class="catalog-item-info">
-										<table class="catalog-item-info-table">
+									<div class="catalog__item__info">
+										<table class="catalog__item__info__table">
 											<tr>
 												<td>
-													<div class="catalog-item-info-bought-title">Куплено</div>
-													<span class="catalog-item-info-bought-number">2</span>
+													<div class="catalog__item__info__bought__title">Куплено</div>
+													<span class="catalog__item__info__bought__number">2</span>
 												</td>
 												<td>
-													<div class="catalog-item-info-bonus">
-														Бонус: <span class="catalog-item-info-bonus-number">6</span> баллов
+													<div class="catalog__item__info__bonus">
+														Бонус: <span class="catalog__item__info__bonus__number">6</span> баллов
 													</div>
 													<div class="catalog-item-info-time">
-														<span class="icon icon-clocks catalog-item-info-time-icon"></span>
-														<span class="catalog-item-info-time-text">20:10:33</span>
+														<span class="icon icon-clocks catalog__item__info__time__icon"></span>
+														<span class="catalog__item__info__time__text">20:10:33</span>
 													</div>
 												</td>
 												<td>
-													<div class="catalog-item-info-left-title">Осталось</div>
-													<span class="catalog-item-info-left-number">0</span>
+													<div class="catalog__item__info__left__title">Осталось</div>
+													<span class="catalog__item__info__left__number">0</span>
 												</td>
 											</tr>
 											<tr>
 												<td>
-													<div class="catalog-item-info-in-rubbles-title">в рублях</div>
-													<div class="catalog-item-info-in-rubbles-number">20</div>
+													<div class="catalog__item__info__in-rubbles__title">в рублях</div>
+													<div class="catalog__item__info__in-rubbles__number">20</div>
 												</td>
 												<td>
-													<div class="catalog-item-info-no-discount-title">без скидки</div>
-													<div class="catalog-item-info-no-discount-number">20</div>
+													<div class="catalog__item__info__no-discount__title">без скидки</div>
+													<div class="catalog__item__info__no-discount__number">20</div>
 												</td>
 												<td>
-													<div class="catalog-item-info-points-title">в баллах</div>
-													<div class="catalog-item-info-points-number">1</div>
+													<div class="catalog__item__info__in-points__title">в баллах</div>
+													<div class="catalog__item__info__in-points__number">1</div>
 												</td>
 											</tr>
 										</table>
-										<div class="catalog-item-info-bg"></div>
+										<div class="catalog__item__info__bg"></div>
 									</div>
 								</div>
 							</div>
-							<div class="span-4 catalog-item">
-								<div class="catalog-item-inner">
-									<div class="catalog-item-title">Куртка</div>
-									<div class="catalog-item-content">
-										<img class="catalog-item-image" src="img/tmp/clocks.jpg" alt="item's picture"/>
-										<div class="catalog-item-label">
-											<div class="catalog-item-label-text">3%</div>
+							<div class="span-4 catalog__item">
+								<div class="catalog__item__inner">
+									<div class="catalog__item__title">Куртка</div>
+									<div class="catalog__item__content">
+										<img class="catalog__item__image" src="img/tmp/clocks.jpg" alt="item's picture"/>
+										<div class="catalog__item__label">
+											<div class="catalog__item__label__text">3%</div>
 										</div>
-										<div class="catalog-item-look"></div>
+										<div class="catalog__item__look"></div>
 									</div>
-									<div class="catalog-item-info">
-										<table class="catalog-item-info-table">
+									<div class="catalog__item__info">
+										<table class="catalog__item__info__table">
 											<tr>
 												<td>
-													<div class="catalog-item-info-bought-title">Куплено</div>
-													<span class="catalog-item-info-bought-number">2</span>
+													<div class="catalog__item__info__bought__title">Куплено</div>
+													<span class="catalog__item__info__bought__number">2</span>
 												</td>
 												<td>
-													<div class="catalog-item-info-bonus">
-														Бонус: <span class="catalog-item-info-bonus-number">6</span> баллов
+													<div class="catalog__item__info__bonus">
+														Бонус: <span class="catalog__item__info__bonus__number">6</span> баллов
 													</div>
 													<div class="catalog-item-info-time">
-														<span class="icon icon-clocks catalog-item-info-time-icon"></span>
-														<span class="catalog-item-info-time-text">20:10:33</span>
+														<span class="icon icon-clocks catalog__item__info__time__icon"></span>
+														<span class="catalog__item__info__time__text">20:10:33</span>
 													</div>
 												</td>
 												<td>
-													<div class="catalog-item-info-left-title">Осталось</div>
-													<span class="catalog-item-info-left-number">0</span>
+													<div class="catalog__item__info__left__title">Осталось</div>
+													<span class="catalog__item__info__left__number">0</span>
 												</td>
 											</tr>
 											<tr>
 												<td>
-													<div class="catalog-item-info-in-rubbles-title">в рублях</div>
-													<div class="catalog-item-info-in-rubbles-number">20</div>
+													<div class="catalog__item__info__in-rubbles__title">в рублях</div>
+													<div class="catalog__item__info__in-rubbles__number">20</div>
 												</td>
 												<td>
-													<div class="catalog-item-info-no-discount-title">без скидки</div>
-													<div class="catalog-item-info-no-discount-number">20</div>
+													<div class="catalog__item__info__no-discount__title">без скидки</div>
+													<div class="catalog__item__info__no-discount__number">20</div>
 												</td>
 												<td>
-													<div class="catalog-item-info-points-title">в баллах</div>
-													<div class="catalog-item-info-points-number">1</div>
+													<div class="catalog__item__info__in-points__title">в баллах</div>
+													<div class="catalog__item__info__in-points__number">1</div>
 												</td>
 											</tr>
 										</table>
-										<div class="catalog-item-info-bg"></div>
+										<div class="catalog__item__info__bg"></div>
 									</div>
 								</div>
 							</div>
-							<div class="span-4 catalog-item last">
-								<div class="catalog-item-inner">
-									<div class="catalog-item-title">Куртка</div>
-									<div class="catalog-item-content">
-										<img class="catalog-item-image" src="img/tmp/clocks.jpg" alt="item's picture"/>
-										<div class="catalog-item-label">
-											<div class="catalog-item-label-text">100%</div>
+							<div class="span-4 catalog__item">
+								<div class="catalog__item__inner">
+									<div class="catalog__item__title">Куртка</div>
+									<div class="catalog__item__content">
+										<img class="catalog__item__image" src="img/tmp/clocks.jpg" alt="item's picture"/>
+										<div class="catalog__item__label">
+											<div class="catalog__item__label__text">100%</div>
 										</div>
-										<div class="catalog-item-look catalog-item-look__disabled"></div>
+										<div class="catalog__item__look catalog-item-look__disabled"></div>
 									</div>
-									<div class="catalog-item-info">
-										<table class="catalog-item-info-table">
+									<div class="catalog__item__info">
+										<table class="catalog__item__info__table">
 											<tr>
 												<td>
-													<div class="catalog-item-info-bought-title">Куплено</div>
-													<span class="catalog-item-info-bought-number">2</span>
+													<div class="catalog__item__info__bought__title">Куплено</div>
+													<span class="catalog__item__info__bought__number">2</span>
 												</td>
 												<td>
-													<div class="catalog-item-info-bonus">
-														Бонус: <span class="catalog-item-info-bonus-number">6</span> баллов
+													<div class="catalog__item__info__bonus">
+														Бонус: <span class="catalog__item__info__bonus__number">6</span> баллов
 													</div>
 													<div class="catalog-item-info-time">
-														<span class="icon icon-clocks catalog-item-info-time-icon"></span>
-														<span class="catalog-item-info-time-text">20:10:33</span>
+														<span class="icon icon-clocks catalog__item__info__time__icon"></span>
+														<span class="catalog__item__info__time__text">20:10:33</span>
 													</div>
 												</td>
 												<td>
-													<div class="catalog-item-info-left-title">Осталось</div>
-													<span class="catalog-item-info-left-number">0</span>
+													<div class="catalog__item__info__left__title">Осталось</div>
+													<span class="catalog__item__info__left__number">0</span>
 												</td>
 											</tr>
 											<tr>
 												<td>
-													<div class="catalog-item-info-in-rubbles-title">в рублях</div>
-													<div class="catalog-item-info-in-rubbles-number">20</div>
+													<div class="catalog__item__info__in-rubbles__title">в рублях</div>
+													<div class="catalog__item__info__in-rubbles__number">20</div>
 												</td>
 												<td>
-													<div class="catalog-item-info-no-discount-title">без скидки</div>
-													<div class="catalog-item-info-no-discount-number">20</div>
+													<div class="catalog__item__info__no-discount__title">без скидки</div>
+													<div class="catalog__item__info__no-discount__number">20</div>
 												</td>
 												<td>
-													<div class="catalog-item-info-points-title">в баллах</div>
-													<div class="catalog-item-info-points-number">1</div>
+													<div class="catalog__item__info__in-points__title">в баллах</div>
+													<div class="catalog__item__info__in-points__number">1</div>
 												</td>
 											</tr>
 										</table>
-										<div class="catalog-item-info-bg"></div>
+										<div class="catalog__item__info__bg"></div>
 									</div>
 								</div>
 							</div>
@@ -402,43 +403,46 @@
 	</div>
 	<footer>
 		<div class="golden-border"></div>
-		<div class="footer-inner">
-			<div class="footer-columns">
-				<div class="footer-columns-inner">
-					<nav class="span-4 footer-column">
-						<div class="footer-column-title">Balangan.ru</div>
-						<ul class="footer-menu">
-							<li><a href="#">О нас</a></li>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#">Правила</a></li>
-							<li><a href="#">Вакансии</a></li>
-						</ul>
-					</nav>
-					<nav class="span-4 footer-column">
-						<div class="footer-column-title">Партнерам</div>
-						<ul class="footer-menu">
-							<li><a href="#">Условия сотрудничества</a></li>
-							<li><a href="#">Правила</a></li>
-						</ul>
-					</nav>
-					<div class="span-3 footer-column">
-						<div class="footer-column-title">Контактная информация</div>
-						<div class="footer-contact-info">
-							Санкт-Петербург,<br>
-							8 (800) 0000000
+		<div class="footer__inner">
+			<div class="footer__columns">
+				<div class="footer__columns__inner">
+					<div>
+						<nav class="span-4 footer__column">
+							<div class="footer__column__title">Balangan.ru</div>
+							<ul class="footer__menu">
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">Правила</a></li>
+								<li><a href="#">Вакансии</a></li>
+							</ul>
+						</nav>
+						<nav class="span-4 footer__column">
+							<div class="footer__column__title">Партнерам</div>
+							<ul class="footer__menu">
+								<li><a href="#">Условия сотрудничества</a></li>
+								<li><a href="#">Правила</a></li>
+							</ul>
+						</nav>
+						<div class="span-3 footer__column">
+							<div class="footer__column__title">Контактная информация</div>
+							<div class="footer__contact-info">
+								Санкт-Петербург,<br>
+								8 (800) 0000000
+							</div>
+						</div>
+						<div class="span-3 footer__column">
+							<a class="footer__invite-friend__link" href="#">Пригласи друга</a>
 						</div>
 					</div>
-					<div class="span-3 footer-column last">
-						<a class="footer-invite-friend-link" href="#">Пригласи друга</a>
-					</div>
-					<div class="footer-copyright">&copy; 2011-2012 Balangan</div>
+					<div class="footer__copyright">&copy; 2011-2012 Balangan</div>
 				</div>
 			</div>
 		</div>
 	</footer>
 
 
-<script src="js/jquery-1.9.1.js"></script>
-<script src="js/main.js"></script>
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jqueryui.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
