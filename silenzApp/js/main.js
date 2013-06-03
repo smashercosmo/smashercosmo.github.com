@@ -61,7 +61,7 @@
 
 		if(qs) createCookie('aff_id', qs, 30);
 		if(aff_id){
-			JSONp('http://localhost:5000/secret/?callback={callback}&aff_id=' + aff_id, function(response) {
+			JSONp('http://afternoon-reef-3203.herokuapp.com/secret/?callback={callback}&aff_id=' + aff_id, function(response) {
 				alert(response.data);
 			});
 		}
