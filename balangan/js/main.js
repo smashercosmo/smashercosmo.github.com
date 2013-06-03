@@ -4,6 +4,12 @@ $('.side-menu').on('click', '.side-menu__item__triangle', function(e){
 	e.preventDefault();
 });
 
+// toggle catalog eye
+$('.catalog__item__look').on('click', function(){
+    console.log(this)
+    $(this).toggleClass('catalog__item__look_disabled');
+});
+
 // Buy points slider
 (function(){
 

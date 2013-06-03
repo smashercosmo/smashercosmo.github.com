@@ -49,7 +49,7 @@ a {
 	background-color: #fff;
 	border-radius: 10px;
 	margin-bottom: 10px;
-	min-height: 400px;
+	min-height: 290px;
 	position: relative;
 }
 
@@ -57,6 +57,70 @@ a {
 	text-align: right;
 }
 
+.info-block {
+	margin-bottom: 10px;
+}
+
+.info-block__inner {
+	border: 1px solid #fff;
+	border-radius: 10px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.info-block__header {
+	background-color: #ecdbc3;
+	font-weight: bold;
+	padding: 8px 10px;
+}
+
+.info-block__header__icon {
+	float: right;
+}
+
+.info-block__header__icon > img {
+	display: block;
+}
+
+.info-block__header_centered {
+	text-align: center;
+}
+
+.info-block__content {
+	padding: 10px;
+	min-height: 30px;
+}
+
+.info-block__contacts td,
+.info-block__contacts th {
+	padding: 10px;
+	vertical-align: top;
+	text-align: left;
+	border-left: 1px solid #ecdbc3;
+}
+
+.info-block__contacts th {
+	white-space: nowrap;
+	padding-bottom: 0;
+}
+
+.info-block__contacts td:first-child,
+.info-block__contacts th:first-child {
+	border-left: none;
+}
+
+.info-block__comments__textarea {
+	display: block;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100px;
+}
+
+.info-block__comments__button {
+	margin-top: 10px;
+}
 
 /* ----------------------------------------------------- TABLES START ----------------------------------------------- */
 
@@ -538,6 +602,10 @@ header {
 	margin-bottom: 10px;
 }
 
+.catalog__item_rounded > .catalog__item__inner {
+	border-radius: 10px;
+}
+
 .catalog__item__inner {
 	font-size: 12px;
 	padding: 10px;
@@ -580,9 +648,10 @@ header {
 	background-image: url('../img/eye.png');
 	width: 44px; height: 27px;
 	position: absolute; top: 0; left: 0;
+    cursor: pointer;
 }
 
-.catalog-item-look__disabled {
+.catalog__item__look_disabled {
 	background-image: url('../img/eye-disabled.png');
 }
 
@@ -609,12 +678,12 @@ header {
 .catalog__item__info__bought__title,
 .catalog__item__info__bonus,
 .catalog__item__info__left__title,
-.catalog-item-info-offer-ended {
+.catalog__item__info__offer-ended {
 	color: #58422a;
 	margin-bottom: 4px;
 }
 
-.catalog-item-info-offer-ended {
+.catalog__item__info__offer-ended {
 	line-height: 1.2;
 }
 
@@ -786,10 +855,6 @@ select.vacancy__position {
 
 /* ----------------------------------------------------- buy points start ------------------------------------------- */
 
-.buy-points__control {
-	margin-bottom: 50px;
-}
-
 .buy-points__control__slider__range .ui-slider-handle.ui-state-default,
 .buy-points__control__slider__range .ui-slider-handle.ui-state-hover,
 .buy-points__control__slider__range .ui-slider-handle.ui-state-active {
@@ -872,7 +937,7 @@ input.buy-points__control__field__input {
 	padding: 8px;
 	width: 60%;
 	text-align: center;
-	margin: 0 auto 50px auto;
+	margin: auto;
 	font-weight: bold;
 	background-color: #efeeec;
 	border-radius: 5px;
@@ -899,9 +964,17 @@ input.buy-points__control__field__input {
 	font-family: 'PT Sans Narrow', sans-serif;
 }
 
+.buy-points__offer-price,
+.buy-points__offer-reward {
+	min-height: 20px;
+	padding: 11px 0;
+	text-align: center;
+	line-height: 1.6;
+}
+
 .buy-points__button {
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
 
 .buy-points__text {
@@ -911,6 +984,34 @@ input.buy-points__control__field__input {
 	width: 80%;
 	line-height: 2;
 	margin-bottom: 30px;
+}
+
+.buy-points__social {
+	margin: auto;
+	position: relative;
+	text-align: center;
+}
+
+.buy-points__social__like-button {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+
+.buy-points__social__follow-button {
+	display: inline-block;
+   	border: 1px solid #93795d;
+	background-color: #ecdbc3;
+	color: #93795d;
+	font-size: 11px;
+	-moz-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.5) inset;
+	-webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.5) inset;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.5) inset;
+	vertical-align: middle;
+	padding: 1px 25px;
+	line-height: 20px;
+	margin: 0 5px;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);;
 }
 
 /* ----------------------------------------------------- buy points end --------------------------------------------- */
