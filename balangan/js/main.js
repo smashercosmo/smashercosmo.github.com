@@ -109,3 +109,17 @@ $('.catalog__item__look').on('click', function(){
 	counter.on('click', '.counter-input__control_down', { dir: 'down' }, count);
 
 }());
+
+var cityPopup = $('#cityPopup').dialog({
+	autoOpen: true,
+	modal: true,
+	dialogClass: 'popup',
+	width: 500,
+	open: function(e){
+		$(e.target).find('.popup__close').on('click', function(){
+			cityPopup.dialog('close');
+		})
+	}
+});
+
+
