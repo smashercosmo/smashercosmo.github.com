@@ -53,6 +53,19 @@ a {
 	position: relative;
 }
 
+.page-content__info-sign {
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	color: #fff;
+	background-color: #d4ba96;
+	position: absolute; top: 15px; right: 15px;
+	font-size: 26px;
+	border-radius: 35px;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
 .lk-invite-button {
 	text-align: right;
 }
@@ -232,7 +245,18 @@ header {
 	padding-right: 10px;
 }
 
-.header__right_logged-in {
+.control-panel {
+	display: inline-block;
+	text-align: left;
+}
+
+.control-panel__header {
+	color: #fff;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+
+.control-panel_logged-in {
 	width: 400px;
 }
 
@@ -242,7 +266,7 @@ header {
 	overflow: hidden;
 }
 
-.control-panel__form_logged-in {
+.control-panel_logged-in > .control-panel__form {
 	padding-left: 10px;
 }
 
@@ -275,8 +299,8 @@ header {
 	border-radius: 5px;
 	position: relative;
 	margin-bottom: 15px;
-	color: #fff;
 	min-height: 80px;
+	color: #fff;
 }
 
 .control-panel__box__content {
@@ -326,7 +350,7 @@ header {
 
 .control-panel__city {
 	color: #fff;
-	padding-left: 15px;
+	padding-left: 10px;
 }
 
 .control-panel__city:before,
@@ -957,19 +981,6 @@ input.buy-points__control__field__input {
 	margin-top: 0;
 }
 
-.buy-points__info-sign {
-	width: 35px;
-	height: 35px;
-	line-height: 35px;
-	text-align: center;
-	color: #fff;
-	background-color: #d4ba96;
-	position: absolute; top: 22px; right: 22px;
-	font-size: 26px;
-	border-radius: 35px;
-	font-family: 'PT Sans Narrow', sans-serif;
-}
-
 .buy-points__offer-price,
 .buy-points__offer-reward {
 	min-height: 20px;
@@ -992,21 +1003,26 @@ input.buy-points__control__field__input {
 	margin-bottom: 30px;
 }
 
-.buy-points__social {
+/* ----------------------------------------------------- buy points end --------------------------------------------- */
+
+/* ----------------------------------------------------- about offer start ------------------------------------------ */
+
+.about-offer__social {
 	margin: auto;
 	position: relative;
 	text-align: center;
+	margin-top: 6px;
 }
 
-.buy-points__social__like-button {
+.about-offer__social__like-button {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 5px;
 }
 
-.buy-points__social__follow-button {
+.about-offer__social__follow-button {
 	display: inline-block;
-   	border: 1px solid #93795d;
+	border: 1px solid #93795d;
 	background-color: #ecdbc3;
 	color: #93795d;
 	font-size: 11px;
@@ -1020,7 +1036,32 @@ input.buy-points__control__field__input {
 	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);;
 }
 
-/* ----------------------------------------------------- buy points end --------------------------------------------- */
+.about-offer__price-reward {
+	padding: 0 50px;
+	line-height: 1.6;
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+.about-offer__control-panel {
+	background: #c9bdaf;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M5YmRhZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5YzkwODQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #c9bdaf 0%, #9c9084 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c9bdaf), color-stop(100%,#9c9084));
+	background: -webkit-linear-gradient(top, #c9bdaf 0%,#9c9084 100%);
+	background: -o-linear-gradient(top, #c9bdaf 0%,#9c9084 100%);
+	background: -ms-linear-gradient(top, #c9bdaf 0%,#9c9084 100%);
+	background: linear-gradient(to bottom, #c9bdaf 0%,#9c9084 100%);
+	padding: 15px 0;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.about-offer__control-panel .control-panel__box {
+	min-height: 0;
+}
+
+/* ----------------------------------------------------- about offer end -------------------------------------------- */
 
 /* ----------------------------------------------------- CONTENT END ------------------------------------------------ */
 
