@@ -57,33 +57,55 @@ $('.catalog__item__look').on('click', function(){
 	/* this is fake constant. just for demo purposes. feel free to delete and change logic */
 	var PRICE = 200;
 
-	var up = $('.counter__field__control_up'),
-		down = $('.counter__field__control_down'),
-		input = $('.counter__field__input'),
-		reset = $('.counter__reset'),
-		total = $('.counter__total__value');
+	var counter = $('.counter');
 
 	function count(e){
-		var val = parseFloat(input.val()),
+		var input = $(e.delegateTarget).find('.counter__field__input'),
+			total = $(e.delegateTarget).find('.counter__total__value'),
+			val = parseFloat(input.val()), newVal,
 			index = e.data.dir === 'up' ? 1 : -1;
 
 		if(val || val === 0) {
-			input.val(val + index);
-			total.html((val + index) * PRICE);
+			newVal = val + index;
+			if(newVal >= 0){
+				input.val(newVal);
+				total.html(newVal * PRICE);
+			}
 		}
 	}
 
-	reset.on('click', function(){
-		input.val(0);
-		total.html(0);
+	counter.on('click', '.counter__reset', function(e){
+		$(e.delegateTarget).find('.counter__field__input').val(0);
+		$(e.delegateTarget).find('.counter__total__value').html(0);
 	});
 
-	up.on('click', { dir: 'up' }, count);
-	down.on('click', { dir: 'down' }, count);
+	counter.on('click', '.counter__field__control_up', { dir: 'up' }, count);
+	counter.on('click', '.counter__field__control_down', { dir: 'down' }, count);
 
-	input.on('change', function(){
-		var val = parseFloat(input.val());
-		if(val || val === 0) total.html(val * PRICE);
+	counter.on('change', '.counter__field__input', function(e){
+		var val = parseFloat($(this).val());
+		if(val || val === 0) $(e.delegateTarget).find('.counter__total__value').html(val * PRICE);
 	})
+
+}());
+
+// counter-input
+(function(){
+
+	var counter = $('.counter-input');
+
+	function count(e){
+		var input = $(e.delegateTarget).find('input'),
+			val = parseFloat(input.val()), newVal,
+			index = e.data.dir === 'up' ? 1 : -1;
+
+		if(val || val === 0) {
+			newVal = val + index;
+			if(newVal >= 0) input.val(newVal);
+		}
+	}
+
+	counter.on('click', '.counter-input__control_up', { dir: 'up' }, count);
+	counter.on('click', '.counter-input__control_down', { dir: 'down' }, count);
 
 }());
