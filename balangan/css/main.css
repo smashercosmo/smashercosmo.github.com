@@ -236,45 +236,41 @@ header {
 	width: 400px;
 }
 
-.header__form {
-	margin-bottom: 15px;
-}
-
-.header__form_logged-in {
+.control-panel__form {
+	margin-bottom: 10px;
 	color: #fff;
 	overflow: hidden;
+}
+
+.control-panel__form_logged-in {
 	padding-left: 10px;
 }
 
-.header__form_logged-in__greeting {
+.control-panel__form__user__greeting {
 	margin-bottom: 10px;
 }
 
-.header__form_login {
-	font-size: 0;
-}
-
-.header__form__button_exit {
+.control-panel__form__button_exit {
 	float: right;
 }
 
-.header__form__button_enter {
+.control-panel__form__button_enter {
 	vertical-align: top;
 }
 
-.header__form_login__field {
+.control-panel__form__field {
 	display: inline-block;
 	font-size: 12px;
 	margin-right: 5px;
 }
 
-.header__reg-link, .header__forgot-password-link {
+.control-panel__reg-link, .control-panel__forgot-password-link {
 	color: #ffffff;
 	display: block;
 	margin-top: 5px;
 }
 
-.header__box {
+.control-panel__box {
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
 	position: relative;
@@ -283,32 +279,32 @@ header {
 	min-height: 80px;
 }
 
-.header__box__content {
+.control-panel__box__content {
 	padding: 10px;
 	position: relative;
 	overflow: hidden;
 }
 
-.header__box_points > .header__box__content {
-	padding: 30px;
+.control-panel__box__points {
+	padding: 20px;
 }
 
-.header__box_hidden {
+.control-panel__box_hidden {
 	visibility: hidden;
 }
 
-.header__social__title {
+.control-panel__social__title {
 	color: #ffffff;
 	font-size: 12px;
 	width: 140px;
 	float: left;
 }
 
-.header__social__buttons {
+.control-panel__social__buttons {
 	float: right;
 }
 
-.header__social__button {
+.control-panel__social__button {
 	background-image: url('../img/social-buttons.png');
 	display: inline-block;
 	margin-left: 8px;
@@ -316,35 +312,45 @@ header {
 	height: 35px;
 }
 
-.header__social__button_fb { background-position: 0 0; }
-.header__social__button_vk { background-position: -42px 0; }
-.header__social__button_tw { background-position: -85px 0; }
-.header__social__button_mail { background-position: -127px 0; }
-.header__social__button_ok { background-position: -168px 0; }
+.control-panel__social__button_fb { background-position: 0 0; }
+.control-panel__social__button_vk { background-position: -42px 0; }
+.control-panel__social__button_tw { background-position: -85px 0; }
+.control-panel__social__button_mail { background-position: -127px 0; }
+.control-panel__social__button_ok { background-position: -168px 0; }
 
-.header__box_points__link {
+.control-panel__box__points__link {
 	font-size: 18px;
 	color: #e4d0b5;
 	margin-left: 5px;
 }
 
-.header__city {
+.control-panel__city {
 	color: #fff;
 	padding-left: 15px;
 }
 
-.header__city__select {
+.control-panel__city:before,
+.control-panel__city:after {
+	content: "";
+	display: table;
+}
+
+.control-panel__city:after {
+	clear: both;
+}
+
+.control-panel__city__select {
 	width: 220px;
 	float: right;
 }
 
-.header__city__icon {
+.control-panel__city__icon {
 	vertical-align: middle;
 	margin-right: 5px;
 	margin-top: -3px;
 }
 
-.header__city__text {
+.control-panel__city__text {
 	vertical-align: middle;
 }
 

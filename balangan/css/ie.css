@@ -6,7 +6,7 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#9f9f9f',GradientType=0 );
 }
 
-.header__box__bg_ie {
+.control-panel__box__bg_ie {
 	position: absolute; top: 0; bottom: 0; left: 0; right: 0;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#33ffffff',GradientType=0 );
 }
