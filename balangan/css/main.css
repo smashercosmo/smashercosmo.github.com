@@ -305,6 +305,15 @@ a {
 	color: #fff;
 }
 
+.login-popup__control-panel {
+	text-align: center;
+}
+
+.login-popup__control-panel .control-panel__reg-link,
+.login-popup__control-panel .control-panel__forgot-password-link {
+	color: #fff;
+}
+
 /* ----------------------------------------------------- POPUPS END ------------------------------------------------- */
 
 /* ----------------------------------------------------- TABLES START ----------------------------------------------- */

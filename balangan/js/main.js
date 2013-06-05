@@ -110,16 +110,32 @@ $('.catalog__item__look').on('click', function(){
 
 }());
 
-var cityPopup = $('#cityPopup').dialog({
-	autoOpen: true,
-	modal: true,
-	dialogClass: 'popup',
-	width: 500,
-	open: function(e){
-		$(e.target).find('.popup__close').on('click', function(){
-			cityPopup.dialog('close');
-		})
-	}
-});
+(function(){
+
+	var cityPopup = $('#cityPopup').dialog({
+		autoOpen: true,
+		modal: true,
+		dialogClass: 'popup',
+		width: 500,
+		open: function(e){
+			$(e.target).find('.popup__close').on('click', function(){
+				cityPopup.dialog('close');
+			})
+		}
+	});
+
+	var loginPopup = $('#loginPopup').dialog({
+		autoOpen: true,
+		modal: true,
+		dialogClass: 'popup',
+		width: 500,
+		open: function(e){
+			$(e.target).find('.popup__close').on('click', function(){
+				loginPopup.dialog('close');
+			})
+		}
+	});
+
+}());
 
 
