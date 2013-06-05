@@ -6,7 +6,6 @@ $('.side-menu').on('click', '.side-menu__item__triangle', function(e){
 
 // toggle catalog eye
 $('.catalog__item__look').on('click', function(){
-    console.log(this)
     $(this).toggleClass('catalog__item__look_disabled');
 });
 
@@ -49,5 +48,42 @@ $('.catalog__item__look').on('click', function(){
 	rightArrow.on('click', function(){
 		slider.slider('value', slider.slider('value') + 1 );
 	});
+
+}());
+
+// counter
+(function(){
+
+	/* this is fake constant. just for demo purposes. feel free to delete and change logic */
+	var PRICE = 200;
+
+	var up = $('.counter__field__control_up'),
+		down = $('.counter__field__control_down'),
+		input = $('.counter__field__input'),
+		reset = $('.counter__reset'),
+		total = $('.counter__total__value');
+
+	function count(e){
+		var val = parseFloat(input.val()),
+			index = e.data.dir === 'up' ? 1 : -1;
+
+		if(val || val === 0) {
+			input.val(val + index);
+			total.html((val + index) * PRICE);
+		}
+	}
+
+	reset.on('click', function(){
+		input.val(0);
+		total.html(0);
+	});
+
+	up.on('click', { dir: 'up' }, count);
+	down.on('click', { dir: 'down' }, count);
+
+	input.on('change', function(){
+		var val = parseFloat(input.val());
+		if(val || val === 0) total.html(val * PRICE);
+	})
 
 }());

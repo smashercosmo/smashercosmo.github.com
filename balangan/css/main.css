@@ -5,6 +5,7 @@ html, body {
 .wrapper {
 	min-height: 100%;
 	margin: 0 auto -150px;
+	overflow: hidden;
 }
 
 body {
@@ -133,6 +134,57 @@ a {
 
 .info-block__comments__button {
 	margin-top: 10px;
+}
+
+.counter {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.counter__field {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 6px;
+}
+
+.counter__field__control {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	font-size: 16px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+	margin: auto;
+	font-family: Courier, monospace;
+}
+
+.counter__field__input {
+	text-align: center;
+	width: 40px;
+}
+
+.counter__total {
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.counter__reset {
+	font-size: 24px;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	line-height: 26px;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	font-weight: normal;
+	font-family: Courier, monospace;
 }
 
 /* ----------------------------------------------------- TABLES START ----------------------------------------------- */
@@ -1101,6 +1153,82 @@ input.buy-points__control__field__input {
 }
 
 /* ----------------------------------------------------- restore password end --------------------------------------- */
+
+/* ----------------------------------------------------- certificate start ------------------------------------------ */
+
+.certificate {
+	padding: 25px;
+}
+
+.certificate h2 {
+	margin-bottom: 25px;
+}
+
+.certificate__offer {
+	margin-bottom: 50px;
+}
+
+.certificate__offer__img {
+	margin-right: 20px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.certificate__offer__desc {
+	color: #6f6f6f;
+	width: 250px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.certificate__offer__price {
+	width: 120px;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.certificate__offer__price__points {
+	color: #8b2d0f;
+}
+
+.certificate__payment {
+	width: 100%;
+}
+
+.certificate__payment td,
+.certificate__payment th {
+	padding: 10px 20px;
+	vertical-align: top;
+	text-align: center;
+	border-left: 1px solid #d4d4d4;
+	width: 20%;
+}
+
+.certificate__payment th {
+	white-space: nowrap;
+	padding-top: 0;
+	padding-bottom: 0;
+	color: #6f6f6f;
+}
+
+.certificate__payment td:first-child,
+.certificate__payment th:first-child {
+	border-left: none;
+}
+
+.certificate__payment__methods > li {
+	margin-bottom: 5px;
+	color: #d18f33;
+}
+
+.certificate__pay-button {
+	text-align: right;
+	margin-top: 25px;
+}
+
+/* ----------------------------------------------------- certificate end -------------------------------------------- */
 
 /* ----------------------------------------------------- CONTENT END ------------------------------------------------ */
 
