@@ -384,6 +384,8 @@ header {
 
 .main {
 	background: #9c9084 url('../img/main-bg.png') repeat-x left top;
+	padding-bottom: 1000px;
+	margin-bottom: -1000px;
 }
 
 .main__inner {
@@ -1062,6 +1064,43 @@ input.buy-points__control__field__input {
 }
 
 /* ----------------------------------------------------- about offer end -------------------------------------------- */
+
+/* ----------------------------------------------------- restore password start ------------------------------------- */
+
+.restore-password {
+	background-color: #e4d0b5;
+	padding: 30px;
+	min-height: 0;
+	margin-bottom: 0;
+}
+
+.restore-password__header {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.restore-password__form {
+	margin-bottom: 20px;
+}
+
+.restore-password__button {
+	margin-top: 10px;
+}
+
+.restore-password__label {
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.restore-password__info {
+	margin-top: 5px;
+}
+
+.restore-password__info__link {
+	color: #8e6122;
+}
+
+/* ----------------------------------------------------- restore password end --------------------------------------- */
 
 /* ----------------------------------------------------- CONTENT END ------------------------------------------------ */
 
