@@ -4,6 +4,15 @@ body, html {
     border: none;
 }
 
+h1 {
+    margin: 0;
+}
+
+header {
+    height: 100px;
+    background-color: pink;
+}
+
 .main-nav {
     background-color: #005580;
     text-align: center;
