@@ -1,5 +1,16 @@
 $(function(){
 
+    window.requestAnimFrame = (function(){
+        return  window.requestAnimationFrame       ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame    ||
+            window.oRequestAnimationFrame      ||
+            window.msRequestAnimationFrame     ||
+            function(/* function */ callback, /* DOMElement */ element){
+                window.setTimeout(callback, 1000 / 60);
+            };
+    })();
+
     var $mainNav = $('.main-nav'),
         sticked = false;
 
@@ -22,12 +33,12 @@ $(function(){
         } else if (scrollTop < 100 && sticked) {
             sticked = false;
             $mainNav.css({ opacity: 1 });
-            $clonedNav.css({ opacity: 0 });
+            $clonedNav.css({ opacity: 0  });
         }
     }
 
     scroller();
 
-    window.addEventListener('scroll', scroller, false);
+    window.addEventListener('touchmove', scroller, false);
 
 });
