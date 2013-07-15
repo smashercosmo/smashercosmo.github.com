@@ -1,0 +1,16 @@
+.main-navigation {
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+.main-navigation > li {
+    margin-bottom: 10px;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    background: none;
+}
