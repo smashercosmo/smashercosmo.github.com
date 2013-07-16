@@ -1,0 +1,21 @@
+.wrapper {
+    height: 400px;
+    background-color: #afeafe;
+    position: relative;
+    overflow: hidden;
+}
+
+.cloud {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@-webkit-keyframes anim {
+    to {
+        top: 400px
+    }
+}
