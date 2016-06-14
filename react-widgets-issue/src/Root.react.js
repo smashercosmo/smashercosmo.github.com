@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {debounce} from 'lodash';
 import {Multiselect} from 'react-widgets';
 import 'react-widgets/lib/less/react-widgets.less'
 
-export default class App extends Component {
+export default class Root extends React.Component {
 
   constructor(props) {
     super(props);
-    this.getItems = this.getItems.bind(this);
-    this.onSearch = this.onSearch.bind(this);
     this.onChange = this.onChange.bind(this);
+    this.onSearch = this.onSearch.bind(this);
+    this.getItems = debounce(this.getItems.bind(this), 150);
 
     this.state = {
       value: [{value: ''}],
       searchTerm: '',
       data: [{value: ''}]
     };
-    //this.getItems = debounce(this.getItems, 150);
   }
 
   getItems(term) {
@@ -38,7 +38,7 @@ export default class App extends Component {
   render() {
     return (
       <Multiselect
-        id="search-filter-keywords"
+        id="search"
         data={this.state.data}
         value={this.state.value}
         onSearch={this.onSearch}
