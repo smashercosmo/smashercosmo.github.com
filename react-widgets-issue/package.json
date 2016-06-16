@@ -31,8 +31,6 @@
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "lodash": "^4.13.1",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
     "react-widgets": "^3.3.2",
     "rimraf": "^2.4.3",
     "style-loader": "^0.13.1",
