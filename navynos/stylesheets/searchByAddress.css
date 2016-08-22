@@ -959,3 +959,26 @@ input.index-form-search-input {
   text-align: right;
   font-size: 11px;
 }
+
+/* ------------------------------------------------------ SEARCHBYADDRESS PAGE START --------------------------------------------------- */
+/* line 6, ../sass/searchByAddress.scss */
+.promo-banner {
+  margin-bottom: 30px;
+}
+
+/* line 10, ../sass/searchByAddress.scss */
+.restaurant-list {
+  margin-bottom: 50px;
+}
+
+/* line 14, ../sass/searchByAddress.scss */
+.button_light-brown {
+  margin-bottom: 10px;
+}
+
+/* line 18, ../sass/searchByAddress.scss */
+.column-list_list li a {
+  color: #8f7763;
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}

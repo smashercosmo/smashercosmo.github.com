@@ -1,0 +1,22 @@
+@import "_base";
+@import "main";
+
+/* ------------------------------------------------------ SEARCHBYADDRESS PAGE START --------------------------------------------------- */
+
+.promo-banner {
+    margin-bottom: 30px;
+}
+
+.restaurant-list {
+    margin-bottom: 50px;
+}
+
+.button_light-brown {
+    margin-bottom: 10px;
+}
+
+.column-list_list li a {
+    color: $brownlighter;
+    border-bottom: 1px dotted;
+    text-decoration: none;
+}
